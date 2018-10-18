@@ -1,181 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="e73b5725-8c76-4d87-965a-bfcc7ed83ab4" name="Default" comment="This is the first phase of basic changes">
-      <change beforePath="$PROJECT_DIR$/.htaccess" beforeDir="false" afterPath="$PROJECT_DIR$/.htaccess" afterDir="false" />
+    <list default="true" id="e73b5725-8c76-4d87-965a-bfcc7ed83ab4" name="Default" comment="">
+      <change afterPath="$PROJECT_DIR$/backend/web/.htaccess" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/css/site.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/favicon.ico" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/forum/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/forum/LICENSE.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/forum/README copy.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/forum/README.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/forum/Vagrantfile" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/forum/backend/assets/AppAsset.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/forum/backend/codeception.yml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/forum/backend/config/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/forum/backend/config/bootstrap.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/forum/backend/config/main.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/forum/backend/config/params.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/forum/backend/config/test.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/forum/backend/controllers/SiteController.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/forum/backend/models/.gitkeep" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/forum/backend/runtime/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/forum/backend/tests/_bootstrap.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/forum/backend/tests/_data/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/forum/backend/tests/_data/login_data.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/forum/backend/tests/_output/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/forum/backend/tests/_support/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/forum/backend/tests/_support/FunctionalTester.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/forum/backend/tests/_support/UnitTester.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/forum/backend/tests/functional.suite.yml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/forum/backend/tests/functional/LoginCest.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/forum/backend/tests/functional/_bootstrap.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/forum/backend/tests/unit.suite.yml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/forum/backend/tests/unit/_bootstrap.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/forum/backend/views/layouts/main.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/forum/backend/views/site/error.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/forum/backend/views/site/index.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/forum/backend/views/site/login.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/forum/backend/web/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/forum/backend/web/assets/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/forum/backend/web/css/site.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/forum/backend/web/favicon.ico" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/forum/codeception.yml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/forum/common/codeception.yml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/forum/common/config/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/forum/common/config/bootstrap.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/forum/common/config/main.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/forum/common/config/params.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/forum/common/config/test.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/forum/common/fixtures/UserFixture.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/forum/common/mail/layouts/html.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/forum/common/mail/layouts/text.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/forum/common/mail/passwordResetToken-html.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/forum/common/mail/passwordResetToken-text.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/forum/common/models/LoginForm.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/forum/common/models/User.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/forum/common/tests/_bootstrap.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/forum/common/tests/_data/user.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/forum/common/tests/_output/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/forum/common/tests/_support/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/forum/common/tests/_support/UnitTester.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/forum/common/tests/unit.suite.yml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/forum/common/tests/unit/models/LoginFormTest.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/forum/common/widgets/Alert.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/forum/composer.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/forum/composer.lock" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/forum/console/config/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/forum/console/config/bootstrap.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/forum/console/config/main.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/forum/console/config/params.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/forum/console/controllers/.gitkeep" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/forum/console/migrations/m130524_201442_init.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/forum/console/models/.gitkeep" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/forum/console/runtime/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/forum/environments/dev/backend/config/main-local.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/forum/environments/dev/backend/config/params-local.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/forum/environments/dev/backend/config/test-local.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/forum/environments/dev/backend/web/index-test.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/forum/environments/dev/backend/web/index.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/forum/environments/dev/backend/web/robots.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/forum/environments/dev/common/config/main-local.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/forum/environments/dev/common/config/params-local.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/forum/environments/dev/common/config/test-local.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/forum/environments/dev/console/config/main-local.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/forum/environments/dev/console/config/params-local.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/forum/environments/dev/frontend/config/main-local.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/forum/environments/dev/frontend/config/params-local.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/forum/environments/dev/frontend/config/test-local.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/forum/environments/dev/frontend/web/index-test.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/forum/environments/dev/frontend/web/index.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/forum/environments/dev/frontend/web/robots.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/forum/environments/dev/yii" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/forum/environments/dev/yii_test" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/forum/environments/dev/yii_test.bat" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/forum/environments/index.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/forum/environments/prod/backend/config/main-local.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/forum/environments/prod/backend/config/params-local.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/forum/environments/prod/backend/web/index.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/forum/environments/prod/backend/web/robots.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/forum/environments/prod/common/config/main-local.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/forum/environments/prod/common/config/params-local.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/forum/environments/prod/console/config/main-local.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/forum/environments/prod/console/config/params-local.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/forum/environments/prod/frontend/config/main-local.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/forum/environments/prod/frontend/config/params-local.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/forum/environments/prod/frontend/web/index.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/forum/environments/prod/frontend/web/robots.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/forum/environments/prod/yii" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/forum/frontend/assets/AppAsset.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/forum/frontend/codeception.yml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/forum/frontend/config/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/forum/frontend/config/bootstrap.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/forum/frontend/config/main.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/forum/frontend/config/params.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/forum/frontend/config/test.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/forum/frontend/controllers/AboutUsController.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/forum/frontend/controllers/SiteController.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/forum/frontend/models/ContactForm.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/forum/frontend/models/PasswordResetRequestForm.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/forum/frontend/models/ResetPasswordForm.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/forum/frontend/models/SignupForm.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/forum/frontend/runtime/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/forum/frontend/tests/_bootstrap.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/forum/frontend/tests/_data/login_data.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/forum/frontend/tests/_data/user.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/forum/frontend/tests/_output/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/forum/frontend/tests/_support/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/forum/frontend/tests/_support/FunctionalTester.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/forum/frontend/tests/_support/UnitTester.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/forum/frontend/tests/acceptance.suite.yml.example" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/forum/frontend/tests/acceptance/HomeCest.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/forum/frontend/tests/acceptance/_bootstrap.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/forum/frontend/tests/functional.suite.yml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/forum/frontend/tests/functional/AboutCest.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/forum/frontend/tests/functional/ContactCest.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/forum/frontend/tests/functional/HomeCest.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/forum/frontend/tests/functional/LoginCest.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/forum/frontend/tests/functional/SignupCest.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/forum/frontend/tests/functional/_bootstrap.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/forum/frontend/tests/unit.suite.yml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/forum/frontend/tests/unit/_bootstrap.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/forum/frontend/tests/unit/models/ContactFormTest.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/forum/frontend/tests/unit/models/PasswordResetRequestFormTest.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/forum/frontend/tests/unit/models/ResetPasswordFormTest.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/forum/frontend/tests/unit/models/SignupFormTest.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/forum/frontend/views/layouts/footer.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/forum/frontend/views/layouts/header.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/forum/frontend/views/layouts/main.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/forum/frontend/views/site/about.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/forum/frontend/views/site/contact.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/forum/frontend/views/site/error.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/forum/frontend/views/site/index.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/forum/frontend/views/site/login.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/forum/frontend/views/site/requestPasswordResetToken.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/forum/frontend/views/site/resetPassword.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/forum/frontend/views/site/signup.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/forum/frontend/web/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/forum/frontend/web/.htaccess" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/forum/init" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/forum/init.bat" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/forum/requirements.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/forum/vagrant/config/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/forum/vagrant/config/vagrant-local.example.yml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/forum/vagrant/nginx/app.conf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/forum/vagrant/nginx/log/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/forum/vagrant/provision/always-as-root.sh" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/forum/vagrant/provision/common.sh" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/forum/vagrant/provision/once-as-root.sh" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/forum/vagrant/provision/once-as-vagrant.sh" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/forum/yii" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/forum/yii.bat" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/forum/yii_test" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/forum/yii_test.bat" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/index-test.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/index.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/robots.txt" beforeDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -193,7 +21,7 @@
         <entry file="file://$PROJECT_DIR$/frontend/config/main.php">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="345">
-              <caret line="19" column="33" lean-forward="true" selection-start-line="19" selection-start-column="12" selection-end-line="19" selection-end-column="33" />
+              <caret line="19" column="33" selection-start-line="19" selection-start-column="12" selection-end-line="19" selection-end-column="33" />
             </state>
           </provider>
         </entry>
@@ -202,18 +30,32 @@
         <entry file="file://$PROJECT_DIR$/.htaccess">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="207">
-              <caret line="9" column="26" lean-forward="true" selection-start-line="9" selection-start-column="26" selection-end-line="9" selection-end-column="26" />
+              <caret line="9" column="26" selection-start-line="9" selection-start-column="26" selection-end-line="9" selection-end-column="26" />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name=".htaccess" pinned="false" current-in-tab="true">
+      <file leaf-file-name=".htaccess" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/frontend/web/.htaccess">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="161">
               <caret line="7" column="23" selection-end-line="7" selection-end-column="23" />
             </state>
           </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="main.php" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/backend/config/main.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="138">
+              <caret line="6" column="2" selection-start-line="6" selection-start-column="2" selection-end-line="6" selection-end-column="2" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name=".htaccess" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/backend/web/.htaccess">
+          <provider selected="true" editor-type-id="text-editor" />
         </entry>
       </file>
     </leaf>
@@ -240,6 +82,7 @@
         <option value="$PROJECT_DIR$/.htaccess" />
         <option value="$PROJECT_DIR$/frontend/config/main.php" />
         <option value="$PROJECT_DIR$/frontend/web/.htaccess" />
+        <option value="$PROJECT_DIR$/backend/config/main.php" />
       </list>
     </option>
   </component>
@@ -344,6 +187,23 @@
             <path>
               <item name="yii2-forum-training" type="b2602c69:ProjectViewProjectNode" />
               <item name="yii2-forum-training" type="462c0819:PsiDirectoryNode" />
+              <item name="backend" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="yii2-forum-training" type="b2602c69:ProjectViewProjectNode" />
+              <item name="yii2-forum-training" type="462c0819:PsiDirectoryNode" />
+              <item name="backend" type="462c0819:PsiDirectoryNode" />
+              <item name="config" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="yii2-forum-training" type="b2602c69:ProjectViewProjectNode" />
+              <item name="yii2-forum-training" type="462c0819:PsiDirectoryNode" />
+              <item name="backend" type="462c0819:PsiDirectoryNode" />
+              <item name="web" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="yii2-forum-training" type="b2602c69:ProjectViewProjectNode" />
+              <item name="yii2-forum-training" type="462c0819:PsiDirectoryNode" />
               <item name="frontend" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -372,6 +232,7 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/backend/web" />
       <recent name="$PROJECT_DIR$" />
     </key>
   </component>
@@ -441,7 +302,7 @@
       <option name="presentableId" value="Default" />
       <updated>1539859545213</updated>
       <workItem from="1539859550797" duration="411000" />
-      <workItem from="1539860303388" duration="5039000" />
+      <workItem from="1539860303388" duration="5778000" />
     </task>
     <task id="LOCAL-00001" summary="This is the first phase of basic changes">
       <created>1539864454073</created>
@@ -450,11 +311,18 @@
       <option name="project" value="LOCAL" />
       <updated>1539864454073</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="Structuring advanced URL so that it will no longer display frontend/web or backend/web">
+      <created>1539866325327</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1539866325328</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="5450000" />
+    <option name="totallyTimeSpent" value="6189000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1440" height="900" extended-state="0" />
@@ -527,7 +395,8 @@
   <component name="VcsManagerConfiguration">
     <option name="LOCAL_CHANGES_DETAILS_PREVIEW_SHOWN" value="true" />
     <MESSAGE value="This is the first phase of basic changes" />
-    <option name="LAST_COMMIT_MESSAGE" value="This is the first phase of basic changes" />
+    <MESSAGE value="Structuring advanced URL so that it will no longer display frontend/web or backend/web" />
+    <option name="LAST_COMMIT_MESSAGE" value="Structuring advanced URL so that it will no longer display frontend/web or backend/web" />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/frontend/config/main.php">
@@ -647,14 +516,14 @@
     <entry file="file://$PROJECT_DIR$/frontend/config/main.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="345">
-          <caret line="19" column="33" lean-forward="true" selection-start-line="19" selection-start-column="12" selection-end-line="19" selection-end-column="33" />
+          <caret line="19" column="33" selection-start-line="19" selection-start-column="12" selection-end-line="19" selection-end-column="33" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/.htaccess">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="207">
-          <caret line="9" column="26" lean-forward="true" selection-start-line="9" selection-start-column="26" selection-end-line="9" selection-end-column="26" />
+          <caret line="9" column="26" selection-start-line="9" selection-start-column="26" selection-end-line="9" selection-end-column="26" />
         </state>
       </provider>
     </entry>
@@ -662,6 +531,16 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="161">
           <caret line="7" column="23" selection-end-line="7" selection-end-column="23" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/backend/web/.htaccess">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/backend/config/main.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="138">
+          <caret line="6" column="2" selection-start-line="6" selection-start-column="2" selection-end-line="6" selection-end-column="2" />
         </state>
       </provider>
     </entry>
