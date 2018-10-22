@@ -12,6 +12,9 @@ class SignupForm extends Model
     public $username;
     public $email;
     public $password;
+    public $firstname;
+    public $lastname;
+
 
 
     /**
@@ -20,6 +23,12 @@ class SignupForm extends Model
     public function rules()
     {
         return [
+            [['firstname','lastname'],'required'],
+            [['firstname','lastname'],'trim'],
+            [['firstname','lastname'],'string','max'=>100],
+
+
+
             ['username', 'trim'],
             ['username', 'required'],
             ['username', 'unique', 'targetClass' => '\common\models\User', 'message' => 'This username has already been taken.'],
@@ -36,6 +45,13 @@ class SignupForm extends Model
         ];
     }
 
+    public function attributeLabels()
+    {
+        return [
+          'username'=>'My username'
+        ];
+    }
+
     /**
      * Signs user up.
      *
@@ -49,6 +65,8 @@ class SignupForm extends Model
         
         $user = new User();
         $user->username = $this->username;
+        $user->firstname = $this->firstname;
+        $user->lastname = $this->lastname;
         $user->email = $this->email;
         $user->setPassword($this->password);
         $user->generateAuthKey();
