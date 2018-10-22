@@ -2,299 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="e73b5725-8c76-4d87-965a-bfcc7ed83ab4" name="Default" comment="Project files accessible">
-      <change afterPath="$PROJECT_DIR$/LICENSE.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/README copy.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Vagrantfile" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend/assets/AppAsset.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend/codeception.yml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend/config/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend/config/bootstrap.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend/config/main.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend/config/params.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend/config/test.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend/controllers/SiteController.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend/models/.gitkeep" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend/runtime/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend/tests/_bootstrap.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend/tests/_data/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend/tests/_data/login_data.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend/tests/_output/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend/tests/_support/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend/tests/_support/FunctionalTester.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend/tests/_support/UnitTester.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend/tests/functional.suite.yml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend/tests/functional/LoginCest.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend/tests/functional/_bootstrap.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend/tests/unit.suite.yml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend/tests/unit/_bootstrap.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend/views/layouts/main.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend/views/site/error.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend/views/site/index.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend/views/site/login.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend/web/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend/web/assets/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend/web/css/site.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend/web/favicon.ico" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/codeception.yml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/common/codeception.yml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/common/config/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/common/config/bootstrap.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/common/config/main.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/common/config/params.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/common/config/test.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/common/fixtures/UserFixture.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/common/mail/layouts/html.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/common/mail/layouts/text.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/common/mail/passwordResetToken-html.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/common/mail/passwordResetToken-text.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/common/models/LoginForm.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/common/models/User.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/common/tests/_bootstrap.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/common/tests/_data/user.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/common/tests/_output/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/common/tests/_support/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/common/tests/_support/UnitTester.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/common/tests/unit.suite.yml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/common/tests/unit/models/LoginFormTest.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/common/widgets/Alert.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/composer.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/composer.lock" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/console/config/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/console/config/bootstrap.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/console/config/main.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/console/config/params.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/console/controllers/.gitkeep" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/console/migrations/m130524_201442_init.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/console/models/.gitkeep" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/console/runtime/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/environments/dev/backend/config/main-local.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/environments/dev/backend/config/params-local.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/environments/dev/backend/config/test-local.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/environments/dev/backend/web/index-test.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/environments/dev/backend/web/index.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/environments/dev/backend/web/robots.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/environments/dev/common/config/main-local.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/environments/dev/common/config/params-local.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/environments/dev/common/config/test-local.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/environments/dev/console/config/main-local.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/environments/dev/console/config/params-local.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/environments/dev/frontend/config/main-local.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/environments/dev/frontend/config/params-local.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/environments/dev/frontend/config/test-local.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/environments/dev/frontend/web/index-test.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/environments/dev/frontend/web/index.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/environments/dev/frontend/web/robots.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/environments/dev/yii" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/environments/dev/yii_test" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/environments/dev/yii_test.bat" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/environments/index.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/environments/prod/backend/config/main-local.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/environments/prod/backend/config/params-local.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/environments/prod/backend/web/index.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/environments/prod/backend/web/robots.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/environments/prod/common/config/main-local.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/environments/prod/common/config/params-local.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/environments/prod/console/config/main-local.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/environments/prod/console/config/params-local.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/environments/prod/frontend/config/main-local.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/environments/prod/frontend/config/params-local.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/environments/prod/frontend/web/index.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/environments/prod/frontend/web/robots.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/environments/prod/yii" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/frontend/assets/AppAsset.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/frontend/codeception.yml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/frontend/config/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/frontend/config/bootstrap.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/frontend/config/main.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/frontend/config/params.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/frontend/config/test.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/frontend/controllers/AboutUsController.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/frontend/controllers/SiteController.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/frontend/models/ContactForm.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/frontend/models/PasswordResetRequestForm.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/frontend/models/ResetPasswordForm.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/frontend/models/SignupForm.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/frontend/runtime/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/frontend/tests/_bootstrap.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/frontend/tests/_data/login_data.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/frontend/tests/_data/user.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/frontend/tests/_output/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/frontend/tests/_support/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/frontend/tests/_support/FunctionalTester.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/frontend/tests/_support/UnitTester.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/frontend/tests/acceptance.suite.yml.example" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/frontend/tests/acceptance/HomeCest.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/frontend/tests/acceptance/_bootstrap.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/frontend/tests/functional.suite.yml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/frontend/tests/functional/AboutCest.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/frontend/tests/functional/ContactCest.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/frontend/tests/functional/HomeCest.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/frontend/tests/functional/LoginCest.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/frontend/tests/functional/SignupCest.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/frontend/tests/functional/_bootstrap.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/frontend/tests/unit.suite.yml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/frontend/tests/unit/_bootstrap.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/frontend/tests/unit/models/ContactFormTest.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/frontend/tests/unit/models/PasswordResetRequestFormTest.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/frontend/tests/unit/models/ResetPasswordFormTest.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/frontend/tests/unit/models/SignupFormTest.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/frontend/views/layouts/footer.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/frontend/views/layouts/header.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/frontend/views/layouts/main.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/frontend/views/site/about.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/frontend/views/site/contact.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/frontend/views/site/error.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/frontend/views/site/index.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/frontend/views/site/login.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/frontend/views/site/requestPasswordResetToken.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/frontend/views/site/resetPassword.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/frontend/views/site/signup.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/frontend/web/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/frontend/web/.htaccess" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/frontend/web/assets/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/frontend/web/css/bootstrap.min.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/frontend/web/css/custom.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/frontend/web/css/site.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/frontend/web/css/style.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/frontend/web/favicon.ico" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/frontend/web/font-awesome-4.0.3/css/font-awesome.min.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/frontend/web/font-awesome-4.0.3/fonts/fontawesome-webfont.eot?" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/frontend/web/font-awesome-4.0.3/fonts/fontawesome-webfont.eot?v=4.0.3" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/frontend/web/font-awesome-4.0.3/fonts/fontawesome-webfont.svg?v=4.0.3" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/frontend/web/font-awesome-4.0.3/fonts/fontawesome-webfont.ttf?v=4.0.3" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/frontend/web/font-awesome-4.0.3/fonts/fontawesome-webfont.woff?v=4.0.3" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/frontend/web/fonts/glyphicons-halflings-regular.eot" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/frontend/web/fonts/glyphicons-halflings-regular.eot?" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/frontend/web/fonts/glyphicons-halflings-regular.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/frontend/web/fonts/glyphicons-halflings-regular.ttf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/frontend/web/fonts/glyphicons-halflings-regular.woff" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/frontend/web/images/avatar-blank.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/frontend/web/images/avatar.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/frontend/web/images/avatar2.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/frontend/web/images/avatar3.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/frontend/web/images/avatar4.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/frontend/web/images/icon1.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/frontend/web/images/icon2.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/frontend/web/images/icon3.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/frontend/web/images/icon4.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/frontend/web/images/icon5.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/frontend/web/images/icon6.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/frontend/web/images/logo.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/frontend/web/images/radio.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/frontend/web/images/slide.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/frontend/web/js/bootstrap.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/frontend/web/rs-plugin/assets/arrow_left.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/frontend/web/rs-plugin/assets/arrow_left2.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/frontend/web/rs-plugin/assets/arrow_right.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/frontend/web/rs-plugin/assets/arrow_right2.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/frontend/web/rs-plugin/assets/arrowleft.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/frontend/web/rs-plugin/assets/arrowright.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/frontend/web/rs-plugin/assets/boxed_bgtile.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/frontend/web/rs-plugin/assets/bullet.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/frontend/web/rs-plugin/assets/bullet_boxed.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/frontend/web/rs-plugin/assets/bullets.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/frontend/web/rs-plugin/assets/bullets2.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/frontend/web/rs-plugin/assets/coloredbg.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/frontend/web/rs-plugin/assets/large_left.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/frontend/web/rs-plugin/assets/large_right.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/frontend/web/rs-plugin/assets/loader.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/frontend/web/rs-plugin/assets/navigdots.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/frontend/web/rs-plugin/assets/navigdots_bgtile.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/frontend/web/rs-plugin/assets/shadow1.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/frontend/web/rs-plugin/assets/shadow2.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/frontend/web/rs-plugin/assets/shadow3.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/frontend/web/rs-plugin/assets/small_left.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/frontend/web/rs-plugin/assets/small_left_boxed.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/frontend/web/rs-plugin/assets/small_right.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/frontend/web/rs-plugin/assets/small_right_boxed.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/frontend/web/rs-plugin/assets/timer.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/frontend/web/rs-plugin/css/settings.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/frontend/web/rs-plugin/font/revicons.eot?5510888" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/frontend/web/rs-plugin/font/revicons.svg?5510888" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/frontend/web/rs-plugin/font/revicons.ttf?5510888" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/frontend/web/rs-plugin/font/revicons.woff?5510888" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/frontend/web/rs-plugin/images/gradient/g30.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/frontend/web/rs-plugin/images/gradient/g40.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/frontend/web/rs-plugin/js/jquery.themepunch.plugins.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/frontend/web/rs-plugin/js/jquery.themepunch.revolution.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/frontend/web/template/02_topic.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/frontend/web/template/04_new_account.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/frontend/web/template/css/bootstrap.min.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/frontend/web/template/css/custom.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/frontend/web/template/css/style.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/frontend/web/template/font-awesome-4.0.3/css/font-awesome.min.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/frontend/web/template/font-awesome-4.0.3/fonts/fontawesome-webfont.eot?" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/frontend/web/template/font-awesome-4.0.3/fonts/fontawesome-webfont.eot?v=4.0.3" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/frontend/web/template/font-awesome-4.0.3/fonts/fontawesome-webfont.svg?v=4.0.3" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/frontend/web/template/font-awesome-4.0.3/fonts/fontawesome-webfont.ttf?v=4.0.3" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/frontend/web/template/font-awesome-4.0.3/fonts/fontawesome-webfont.woff?v=4.0.3" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/frontend/web/template/fonts/glyphicons-halflings-regular.eot" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/frontend/web/template/fonts/glyphicons-halflings-regular.eot?" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/frontend/web/template/fonts/glyphicons-halflings-regular.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/frontend/web/template/fonts/glyphicons-halflings-regular.ttf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/frontend/web/template/fonts/glyphicons-halflings-regular.woff" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/frontend/web/template/images/avatar-blank.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/frontend/web/template/images/avatar.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/frontend/web/template/images/avatar2.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/frontend/web/template/images/avatar3.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/frontend/web/template/images/avatar4.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/frontend/web/template/images/icon1.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/frontend/web/template/images/icon2.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/frontend/web/template/images/icon3.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/frontend/web/template/images/icon4.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/frontend/web/template/images/icon5.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/frontend/web/template/images/icon6.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/frontend/web/template/images/logo.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/frontend/web/template/images/radio.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/frontend/web/template/images/slide.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/frontend/web/template/index.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/frontend/web/template/js/bootstrap.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/frontend/web/template/rs-plugin/assets/arrow_left.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/frontend/web/template/rs-plugin/assets/arrow_left2.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/frontend/web/template/rs-plugin/assets/arrow_right.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/frontend/web/template/rs-plugin/assets/arrow_right2.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/frontend/web/template/rs-plugin/assets/arrowleft.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/frontend/web/template/rs-plugin/assets/arrowright.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/frontend/web/template/rs-plugin/assets/boxed_bgtile.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/frontend/web/template/rs-plugin/assets/bullet.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/frontend/web/template/rs-plugin/assets/bullet_boxed.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/frontend/web/template/rs-plugin/assets/bullets.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/frontend/web/template/rs-plugin/assets/bullets2.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/frontend/web/template/rs-plugin/assets/coloredbg.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/frontend/web/template/rs-plugin/assets/large_left.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/frontend/web/template/rs-plugin/assets/large_right.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/frontend/web/template/rs-plugin/assets/loader.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/frontend/web/template/rs-plugin/assets/navigdots.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/frontend/web/template/rs-plugin/assets/navigdots_bgtile.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/frontend/web/template/rs-plugin/assets/shadow1.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/frontend/web/template/rs-plugin/assets/shadow2.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/frontend/web/template/rs-plugin/assets/shadow3.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/frontend/web/template/rs-plugin/assets/small_left.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/frontend/web/template/rs-plugin/assets/small_left_boxed.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/frontend/web/template/rs-plugin/assets/small_right.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/frontend/web/template/rs-plugin/assets/small_right_boxed.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/frontend/web/template/rs-plugin/assets/timer.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/frontend/web/template/rs-plugin/css/settings.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/frontend/web/template/rs-plugin/font/revicons.eot?5510888" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/frontend/web/template/rs-plugin/font/revicons.svg?5510888" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/frontend/web/template/rs-plugin/font/revicons.ttf?5510888" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/frontend/web/template/rs-plugin/font/revicons.woff?5510888" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/frontend/web/template/rs-plugin/images/gradient/g30.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/frontend/web/template/rs-plugin/images/gradient/g40.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/frontend/web/template/rs-plugin/js/jquery.themepunch.plugins.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/frontend/web/template/rs-plugin/js/jquery.themepunch.revolution.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/init" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/init.bat" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/requirements.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vagrant/config/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vagrant/config/vagrant-local.example.yml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vagrant/nginx/app.conf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vagrant/nginx/log/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vagrant/provision/always-as-root.sh" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vagrant/provision/common.sh" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vagrant/provision/once-as-root.sh" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vagrant/provision/once-as-vagrant.sh" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/common/models/Admin.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/common/models/AdminLoginForm.php" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/vendor/autoload.php" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/vendor/behat/gherkin/.gitignore" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/vendor/behat/gherkin/.travis.yml" afterDir="false" />
@@ -6773,11 +6482,11 @@
       <change afterPath="$PROJECT_DIR$/vendor/yiisoft/yii2/widgets/Spaceless.php" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/vendor/yiisoft/yii2/yii" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/vendor/yiisoft/yii2/yii.bat" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/yii" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/yii.bat" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/yii_test" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/yii_test.bat" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/config/main.php" beforeDir="false" afterPath="$PROJECT_DIR$/backend/config/main.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/controllers/SiteController.php" beforeDir="false" afterPath="$PROJECT_DIR$/backend/controllers/SiteController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/views/site/login.php" beforeDir="false" afterPath="$PROJECT_DIR$/backend/views/site/login.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/views/layouts/main.php" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/views/layouts/main.php" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -6791,63 +6500,34 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="main.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/frontend/config/main.php">
+      <file leaf-file-name="login.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/backend/views/site/login.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="345">
-              <caret line="19" column="33" selection-start-line="19" selection-start-column="12" selection-end-line="19" selection-end-column="33" />
+            <state relative-caret-position="435">
+              <caret line="23" column="59" selection-start-line="23" selection-start-column="59" selection-end-line="23" selection-end-column="59" />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name=".htaccess" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/.htaccess">
+      <file leaf-file-name="main.php" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/frontend/views/layouts/main.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="207">
-              <caret line="9" column="26" selection-start-line="9" selection-start-column="26" selection-end-line="9" selection-end-column="26" />
+            <state relative-caret-position="456">
+              <caret line="69" column="21" selection-start-line="69" selection-start-column="21" selection-end-line="69" selection-end-column="21" />
+              <folding>
+                <element signature="e#66#87#0#PHP" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name=".htaccess" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/frontend/web/.htaccess">
+      <file leaf-file-name="header.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/frontend/views/layouts/header.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="161">
-              <caret line="7" column="23" selection-end-line="7" selection-end-column="23" />
+            <state relative-caret-position="63">
+              <caret line="20" column="10" lean-forward="true" selection-start-line="20" selection-start-column="10" selection-end-line="20" selection-end-column="10" />
             </state>
           </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="main.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/backend/config/main.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="138">
-              <caret line="6" column="2" selection-start-line="6" selection-start-column="2" selection-end-line="6" selection-end-column="2" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name=".gitignore" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/backend/web/.gitignore">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="69">
-              <caret line="3" lean-forward="true" selection-start-line="3" selection-end-line="3" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name=".gitignore" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/.gitignore">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="467">
-              <caret line="32" column="24" selection-start-line="32" selection-start-column="24" selection-end-line="32" selection-end-column="24" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name=".htaccess" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/backend/web/.htaccess">
-          <provider selected="true" editor-type-id="text-editor" />
         </entry>
       </file>
     </leaf>
@@ -6870,12 +6550,17 @@
         <option value="$PROJECT_DIR$/forum/frontend/views/site/index.php" />
         <option value="$PROJECT_DIR$/forum/.gitignore" />
         <option value="$PROJECT_DIR$/frontend/web/index.php" />
-        <option value="$PROJECT_DIR$/frontend/views/layouts/main.php" />
         <option value="$PROJECT_DIR$/.htaccess" />
         <option value="$PROJECT_DIR$/frontend/config/main.php" />
         <option value="$PROJECT_DIR$/frontend/web/.htaccess" />
-        <option value="$PROJECT_DIR$/backend/config/main.php" />
         <option value="$PROJECT_DIR$/.gitignore" />
+        <option value="$PROJECT_DIR$/common/config/main-local.php" />
+        <option value="$PROJECT_DIR$/common/models/Admin.php" />
+        <option value="$PROJECT_DIR$/common/models/AdminLoginForm.php" />
+        <option value="$PROJECT_DIR$/backend/controllers/SiteController.php" />
+        <option value="$PROJECT_DIR$/backend/views/site/login.php" />
+        <option value="$PROJECT_DIR$/backend/config/main.php" />
+        <option value="$PROJECT_DIR$/frontend/views/layouts/main.php" />
       </list>
     </option>
   </component>
@@ -6967,9 +6652,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="AndroidView" />
-      <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -6977,10 +6660,41 @@
               <item name="yii2-forum-training" type="b2602c69:ProjectViewProjectNode" />
               <item name="yii2-forum-training" type="462c0819:PsiDirectoryNode" />
             </path>
+            <path>
+              <item name="yii2-forum-training" type="b2602c69:ProjectViewProjectNode" />
+              <item name="yii2-forum-training" type="462c0819:PsiDirectoryNode" />
+              <item name="common" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="yii2-forum-training" type="b2602c69:ProjectViewProjectNode" />
+              <item name="yii2-forum-training" type="462c0819:PsiDirectoryNode" />
+              <item name="common" type="462c0819:PsiDirectoryNode" />
+              <item name="models" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="yii2-forum-training" type="b2602c69:ProjectViewProjectNode" />
+              <item name="yii2-forum-training" type="462c0819:PsiDirectoryNode" />
+              <item name="frontend" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="yii2-forum-training" type="b2602c69:ProjectViewProjectNode" />
+              <item name="yii2-forum-training" type="462c0819:PsiDirectoryNode" />
+              <item name="frontend" type="462c0819:PsiDirectoryNode" />
+              <item name="views" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="yii2-forum-training" type="b2602c69:ProjectViewProjectNode" />
+              <item name="yii2-forum-training" type="462c0819:PsiDirectoryNode" />
+              <item name="frontend" type="462c0819:PsiDirectoryNode" />
+              <item name="views" type="462c0819:PsiDirectoryNode" />
+              <item name="layouts" type="462c0819:PsiDirectoryNode" />
+            </path>
           </expand>
           <select />
         </subPane>
       </pane>
+      <pane id="PackagesPane" />
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -6996,11 +6710,12 @@
     <property name="show.migrate.to.gradle.popup" value="false" />
   </component>
   <component name="RecentsManager">
-    <key name="MoveFile.RECENT_KEYS">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/common/models" />
+      <recent name="$PROJECT_DIR$/backend/web" />
       <recent name="$PROJECT_DIR$" />
     </key>
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/backend/web" />
+    <key name="MoveFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$" />
     </key>
   </component>
@@ -7070,7 +6785,8 @@
       <option name="presentableId" value="Default" />
       <updated>1539859545213</updated>
       <workItem from="1539859550797" duration="411000" />
-      <workItem from="1539860303388" duration="6275000" />
+      <workItem from="1539860303388" duration="6552000" />
+      <workItem from="1539945931741" duration="2470000" />
     </task>
     <task id="LOCAL-00001" summary="This is the first phase of basic changes">
       <created>1539864454073</created>
@@ -7093,11 +6809,18 @@
       <option name="project" value="LOCAL" />
       <updated>1539866479841</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="Project files accessible">
+      <created>1539867117061</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1539867117061</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="6686000" />
+    <option name="totallyTimeSpent" value="9433000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1440" height="900" extended-state="0" />
@@ -7112,20 +6835,20 @@
       <window_info anchor="bottom" id="Migrations" order="7" />
       <window_info anchor="right" id="Maven Projects" order="3" />
       <window_info anchor="bottom" id="Database Changes" order="7" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Version Control" order="7" visible="true" weight="0.32917705" />
       <window_info anchor="bottom" id="Run" order="2" />
+      <window_info anchor="bottom" id="Version Control" order="7" weight="0.32917705" />
       <window_info anchor="bottom" id="Terminal" order="7" weight="0.32917705" />
       <window_info anchor="right" id="Flutter Outline" order="3" />
       <window_info id="Capture Tool" order="2" />
       <window_info id="Designer" order="2" />
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.2532189" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.25679544" />
       <window_info anchor="right" id="Database" order="3" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info id="UI Designer" order="2" />
       <window_info anchor="right" id="Theme Preview" order="3" />
-      <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
+      <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="right" id="Flutter Inspector" order="3" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
@@ -7172,109 +6895,73 @@
     <MESSAGE value="This is the first phase of basic changes" />
     <MESSAGE value="Structuring advanced URL so that it will no longer display frontend/web or backend/web" />
     <MESSAGE value="Fix - Making backend accessible" />
-    <option name="LAST_COMMIT_MESSAGE" value="Fix - Making backend accessible" />
+    <MESSAGE value="Project files accessible" />
+    <option name="LAST_COMMIT_MESSAGE" value="Project files accessible" />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/frontend/config/main.php">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/forum/vendor/autoload.php">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/index.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="276">
-          <caret line="12" column="38" selection-start-line="12" selection-start-column="38" selection-end-line="12" selection-end-column="38" />
+        <state relative-caret-position="437">
+          <caret line="19" column="33" selection-start-line="19" selection-start-column="12" selection-end-line="19" selection-end-column="33" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/forum/frontend/controllers/AboutUsController.php">
+    <entry file="file://$PROJECT_DIR$/.htaccess">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="276">
-          <caret line="17" column="10" selection-start-line="17" selection-start-column="10" selection-end-line="17" selection-end-column="10" />
+        <state relative-caret-position="207">
+          <caret line="9" column="26" selection-start-line="9" selection-start-column="26" selection-end-line="9" selection-end-column="26" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/forum/vendor/yiisoft/yii2/base/Application.php">
+    <entry file="file://$PROJECT_DIR$/frontend/web/.htaccess">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="259">
-          <caret line="98" column="34" selection-start-line="98" selection-start-column="20" selection-end-line="98" selection-end-column="34" />
+        <state relative-caret-position="161">
+          <caret line="7" column="23" selection-end-line="7" selection-end-column="23" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/template/js/bootstrap.min.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="322">
-          <caret line="5" column="1219" selection-start-line="5" selection-start-column="1219" selection-end-line="5" selection-end-column="1219" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/css/style.css">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/forum/frontend/views/layouts/header.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="226">
-          <caret line="59" column="28" lean-forward="true" selection-start-line="59" selection-start-column="28" selection-end-line="59" selection-end-column="28" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/forum/frontend/views/layouts/footer.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="331">
-          <caret line="36" column="24" selection-start-line="36" selection-start-column="24" selection-end-line="36" selection-end-column="24" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/forum/frontend/config/main.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="663">
-          <caret line="57" column="10" selection-start-line="57" selection-start-column="10" selection-end-line="57" selection-end-column="10" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/forum/frontend/views/layouts/main.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="882">
-          <caret line="61" column="20" selection-start-line="61" selection-start-column="20" selection-end-line="61" selection-end-column="20" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/forum/frontend/assets/AppAsset.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="456">
-          <caret line="26" column="31" selection-start-line="24" selection-start-column="7" selection-end-line="26" selection-end-column="31" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/template/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="368">
-          <caret line="100" column="12" lean-forward="true" selection-start-line="100" selection-start-column="12" selection-end-line="505" selection-end-column="22" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/forum/frontend/views/site/about.php">
+    <entry file="file://$PROJECT_DIR$/backend/config/main.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="138">
-          <caret line="6" column="23" lean-forward="true" selection-start-line="6" selection-start-column="23" selection-end-line="6" selection-end-column="23" />
+          <caret line="6" column="2" selection-start-line="6" selection-start-column="2" selection-end-line="6" selection-end-column="2" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/forum/.gitignore">
+    <entry file="file://$PROJECT_DIR$/backend/web/.gitignore">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="375">
-          <caret line="42" column="23" selection-start-line="42" selection-start-column="23" selection-end-line="42" selection-end-column="23" />
+        <state relative-caret-position="69">
+          <caret line="3" selection-start-line="3" selection-end-line="3" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/forum/frontend/views/site/index.php">
+    <entry file="file://$PROJECT_DIR$/backend/web/.htaccess">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.gitignore">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="92">
-          <caret line="4" column="32" selection-start-line="4" selection-start-column="32" selection-end-line="4" selection-end-column="32" />
+        <state relative-caret-position="736">
+          <caret line="32" column="23" selection-start-line="32" selection-start-column="23" selection-end-line="32" selection-end-column="23" />
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/frontend/config/main.php">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/forum/vendor/autoload.php" />
+    <entry file="file://$PROJECT_DIR$/index.php" />
+    <entry file="file://$PROJECT_DIR$/forum/frontend/controllers/AboutUsController.php" />
+    <entry file="file://$PROJECT_DIR$/forum/vendor/yiisoft/yii2/base/Application.php" />
+    <entry file="file://$PROJECT_DIR$/template/js/bootstrap.min.js" />
+    <entry file="file://$PROJECT_DIR$/css/style.css" />
+    <entry file="file://$PROJECT_DIR$/forum/frontend/views/layouts/header.php" />
+    <entry file="file://$PROJECT_DIR$/forum/frontend/views/layouts/footer.php" />
+    <entry file="file://$PROJECT_DIR$/forum/frontend/config/main.php" />
+    <entry file="file://$PROJECT_DIR$/forum/frontend/views/layouts/main.php" />
+    <entry file="file://$PROJECT_DIR$/forum/frontend/assets/AppAsset.php" />
+    <entry file="file://$PROJECT_DIR$/template/index.html" />
+    <entry file="file://$PROJECT_DIR$/forum/frontend/views/site/about.php" />
+    <entry file="file://$PROJECT_DIR$/forum/.gitignore" />
+    <entry file="file://$PROJECT_DIR$/forum/frontend/views/site/index.php" />
     <entry file="file://$PROJECT_DIR$/frontend/web/index.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="276">
@@ -7282,16 +6969,9 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/frontend/views/layouts/main.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="214">
-          <caret line="57" column="13" selection-start-line="57" selection-start-column="13" selection-end-line="57" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/frontend/config/main.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="345">
+        <state relative-caret-position="437">
           <caret line="19" column="33" selection-start-line="19" selection-start-column="12" selection-end-line="19" selection-end-column="33" />
         </state>
       </provider>
@@ -7313,24 +6993,92 @@
     <entry file="file://$PROJECT_DIR$/backend/web/.htaccess">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/backend/config/main.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="138">
-          <caret line="6" column="2" selection-start-line="6" selection-start-column="2" selection-end-line="6" selection-end-column="2" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/backend/web/.gitignore">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="69">
-          <caret line="3" lean-forward="true" selection-start-line="3" selection-end-line="3" />
+          <caret line="3" selection-start-line="3" selection-end-line="3" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/.gitignore">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="467">
-          <caret line="32" column="24" selection-start-line="32" selection-start-column="24" selection-end-line="32" selection-end-column="24" />
+        <state relative-caret-position="639">
+          <caret line="32" column="23" selection-start-line="32" selection-start-column="23" selection-end-line="32" selection-end-column="23" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/frontend/views/layouts/footer.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-68" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/common/config/main-local.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="115">
+          <caret line="5" column="66" selection-start-line="5" selection-start-column="66" selection-end-line="5" selection-end-column="66" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/common/models/Admin.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-255">
+          <caret line="34" column="24" selection-start-line="34" selection-start-column="24" selection-end-line="34" selection-end-column="24" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/common/models/AdminLoginForm.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-1131">
+          <caret line="3" column="4" selection-start-line="3" selection-start-column="4" selection-end-line="3" selection-end-column="4" />
+          <folding>
+            <element signature="e#32#40#0#PHP" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/backend/controllers/SiteController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1656">
+          <caret line="72" column="38" selection-start-line="72" selection-start-column="38" selection-end-line="72" selection-end-column="38" />
+          <folding>
+            <element signature="e#38#46#0#PHP" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/backend/config/main.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="150">
+          <caret line="19" column="51" selection-start-line="19" selection-start-column="51" selection-end-line="19" selection-end-column="51" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/frontend/views/layouts/header.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="63">
+          <caret line="20" column="10" lean-forward="true" selection-start-line="20" selection-start-column="10" selection-end-line="20" selection-end-column="10" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/backend/views/layouts/main.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-363" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/backend/views/site/login.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="435">
+          <caret line="23" column="59" selection-start-line="23" selection-start-column="59" selection-end-line="23" selection-end-column="59" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/frontend/views/layouts/main.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="456">
+          <caret line="69" column="21" selection-start-line="69" selection-start-column="21" selection-end-line="69" selection-end-column="21" />
+          <folding>
+            <element signature="e#66#87#0#PHP" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
