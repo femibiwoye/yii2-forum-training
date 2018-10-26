@@ -10,15 +10,12 @@ use yii\widgets\ActiveForm;
 
 <div class="user-form">
 
-    <?php $form = ActiveForm::begin(); ?>
+    <?php $form = ActiveForm::begin(['options' => ['enctype'=>'multipart/form-data']]); ?>
+    <div class="col-lg-3 col-md-3 col-md-offset-1">
+        <?= $form->field($model, 'image')->fileInput() ?>    </div>
 
+    <div class="col-lg-8 col-md-8 ">
     <?= $form->field($model, 'username')->textInput(['maxlength' => true]) ?>
-
-    <?= $form->field($model, 'auth_key')->textInput(['maxlength' => true]) ?>
-
-    <?= $form->field($model, 'password_hash')->textInput(['maxlength' => true]) ?>
-
-    <?= $form->field($model, 'password_reset_token')->textInput(['maxlength' => true]) ?>
 
     <?= $form->field($model, 'email')->textInput(['maxlength' => true]) ?>
 
@@ -36,11 +33,12 @@ use yii\widgets\ActiveForm;
 
     <?= $form->field($model, 'referrer')->textInput(['maxlength' => true]) ?>
 
-    <?= $form->field($model, 'status')->textInput() ?>
-
-    <?= $form->field($model, 'created_at')->textInput() ?>
-
-    <?= $form->field($model, 'updated_at')->textInput() ?>
+    <?= $form->field($model->userDetails, 'country')->textInput(['maxlength' => true]) ?>
+    <?= $form->field($model->userDetails, 'state')->textInput(['maxlength' => true]) ?>
+    <?= $form->field($model->userDetails, 'lga')->textInput(['maxlength' => true]) ?>
+    <?= $form->field($model->userDetails, 'street_name')->textInput(['maxlength' => true]) ?>
+    <?= $form->field($model->userDetails, 'house_no')->textInput(['maxlength' => true]) ?>
+    </div>
 
     <div class="form-group">
         <?= Html::submitButton('Save', ['class' => 'btn btn-success']) ?>

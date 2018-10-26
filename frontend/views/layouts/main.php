@@ -30,7 +30,7 @@ AppAsset::register($this);
 <div class="container-fluid">
     <?php
     NavBar::begin([
-        'brandLabel' => '<img src="'.Url::to('@web').'/images/logo.jpg" width="30" alt="Our Forum" style="float:left;"  /> '.Yii::$app->name,
+        'brandLabel' => '<img src="'.Url::to('@web').'/images/logo.jpg" class="img-circle" width="30" alt="Our Forum" style="float:left;"  /> '.Yii::$app->name,
         'brandUrl' => Yii::$app->homeUrl,
         'options' => [
             'class' => 'navbar-inverse navbar-fixed-top',
@@ -45,6 +45,10 @@ AppAsset::register($this);
         $menuItems[] = ['label' => 'Signup', 'url' => ['/site/signup']];
         $menuItems[] = ['label' => 'Login', 'url' => ['/site/login']];
     } else {
+        $img = Yii::$app->user->identity->image;
+        $image  =  empty($img) ?'logo.jpg':$img;
+        $menuItems[] = ['label'=>' My Profile','url'=>['/profile']];
+        $menuItems[] = '<img src="'.Url::to("@web/images/$image").'" class="img-circle" width="30"  />';
         $menuItems[] = '<li>'
             . Html::beginForm(['/site/logout'], 'post')
             . Html::submitButton(
@@ -53,6 +57,7 @@ AppAsset::register($this);
             )
             . Html::endForm()
             . '</li>';
+
     }
     echo Nav::widget([
         'options' => ['class' => 'navbar-nav navbar-right'],

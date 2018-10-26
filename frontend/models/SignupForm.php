@@ -70,7 +70,14 @@ class SignupForm extends Model
         $user->email = $this->email;
         $user->setPassword($this->password);
         $user->generateAuthKey();
-        
-        return $user->save() ? $user : null;
+        if($user->save()){
+            $profile = new UserProfile();
+            $profile->user_id = $user->id;
+            $profile->save();
+            return $user;
+        }else{
+            return null;
+        }
+        //return $user->save() ? $user : null;
     }
 }

@@ -3,11 +3,14 @@
 namespace frontend\controllers;
 
 use Yii;
+use yii\helpers\Url;
 use frontend\models\User;
 use frontend\models\UserFind;
+use frontend\models\UserProfile;
 use yii\web\Controller;
 use yii\web\NotFoundHttpException;
 use yii\filters\VerbFilter;
+use yii\web\UploadedFile;
 
 /**
  * ProfileController implements the CRUD actions for User model.
@@ -35,8 +38,11 @@ class ProfileController extends Controller
      */
     public function actionIndex()
     {
+
+        $profile = UserProfile::findOne(['user_id'=>Yii::$app->user->id]);
         return $this->render('view', [
             'model' => $this->findModel(Yii::$app->user->id),
+            'profile' => $profile
         ]);
     }
 
@@ -67,12 +73,24 @@ class ProfileController extends Controller
      * @return mixed
      * @throws NotFoundHttpException if the model cannot be found
      */
-    public function actionUpdate($id)
+    public function actionUpdate()
     {
-        $model = $this->findModel($id);
+        $model = $this->findModel();
 
-        if ($model->load(Yii::$app->request->post()) && $model->save()) {
-            return $this->redirect(['view', 'id' => $model->id]);
+        if ($model->load(Yii::$app->request->post()) && $model->userDetails->load(Yii::$app->request->post())) {
+
+            $model->image = UploadedFile::getInstance($model,'image');
+            if($model->image->size > 0){
+                $imageName = $model->id.'.'.$model->image->extension;
+                $model->image->saveAs(Url::to('@frontend/web/images/'.$imageName));
+                $model->image = $imageName;
+            }
+
+            $model->save();
+            $model->userDetails->save();
+            //$profile = UserProfile::findOne(Yii::$app->user->id);
+            //$profile->lga = $model->userDetails->lga
+            return $this->redirect(['index']);
         }
 
         return $this->render('update', [
@@ -87,9 +105,9 @@ class ProfileController extends Controller
      * @return mixed
      * @throws NotFoundHttpException if the model cannot be found
      */
-    public function actionDelete($id)
+    public function actionDelete()
     {
-        $this->findModel($id)->delete();
+        $this->findModel()->delete();
 
         return $this->redirect(['index']);
     }
@@ -101,9 +119,9 @@ class ProfileController extends Controller
      * @return User the loaded model
      * @throws NotFoundHttpException if the model cannot be found
      */
-    protected function findModel($id)
+    protected function findModel()
     {
-        if (($model = User::findOne($id)) !== null) {
+        if (($model = User::findOne(Yii::$app->user->id)) !== null) {
             return $model;
         }
 

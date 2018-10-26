@@ -6,6 +6,7 @@
  * Time: 12:40 PM
  */
 
+use yii\helpers\Url;
 ?>
 <!-- Slider -->
 <div class="tp-banner-container">
@@ -48,7 +49,7 @@
             </div>
             <div class="col-lg-4 col-xs-12 col-sm-5 col-md-4 avt">
                 <div class="stnt pull-left">
-                    <form action="03_new_topic.html" method="post" class="form">
+                    <form action="<?=Url::to(['/posts/new-post'])?>" method="post" class="form">
                         <button class="btn btn-primary">Start New Topic</button>
                     </form>
                 </div>

@@ -41,6 +41,7 @@ class User extends \yii\db\ActiveRecord
     {
         return [
             [['username', 'auth_key', 'password_hash', 'email', 'firstname', 'lastname', 'see_profile', 'age', 'user_type', 'help_others', 'referrer', 'created_at', 'updated_at'], 'required'],
+            ['image','safe'],
             [['see_profile'], 'string'],
             [['age', 'status', 'created_at', 'updated_at'], 'integer'],
             [['username', 'password_hash', 'password_reset_token', 'email'], 'string', 'max' => 255],
@@ -77,4 +78,11 @@ class User extends \yii\db\ActiveRecord
             'updated_at' => 'Updated At',
         ];
     }
+
+    public function getUserDetails()
+    {
+        return $this->hasOne(UserProfile::className(),['user_id'=>'id']);
+    }
+
+
 }
