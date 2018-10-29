@@ -5,7 +5,7 @@
  * Date: 18/10/2018
  * Time: 12:40 PM
  */
-
+use yii\helpers\Url;
 ?>
 
 <footer>
@@ -31,10 +31,10 @@
 
 
 <!-- SLIDER REVOLUTION 4.x SCRIPTS  -->
-<script type="text/javascript" src="rs-plugin/js/jquery.themepunch.plugins.min.js"></script>
-<script type="text/javascript" src="rs-plugin/js/jquery.themepunch.revolution.min.js"></script>
+<script type="text/javascript" src="<?=Url::to('@web/')?>rs-plugin/js/jquery.themepunch.plugins.min.js"></script>
+<script type="text/javascript" src="<?=Url::to('@web/')?>rs-plugin/js/jquery.themepunch.revolution.min.js"></script>
 
-<script src="js/bootstrap.min.js"></script>
+<script src="<?=Url::to('@web/')?>js/bootstrap.min.js"></script>
 <script type="text/javascript">
 
     var revapi;

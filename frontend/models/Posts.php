@@ -3,6 +3,7 @@
 namespace frontend\models;
 
 use Yii;
+use yii\behaviors\SluggableBehavior;
 
 /**
  * This is the model class for table "posts".
@@ -27,6 +28,18 @@ class Posts extends \yii\db\ActiveRecord
         return 'posts';
     }
 
+    public function behaviors()
+    {
+        return [
+            [
+                'class'=>SluggableBehavior::className(),
+                'attribute' => 'topic',
+                'ensureUnique' => true,
+
+            ]
+        ];
+    }
+
     /**
      * @inheritdoc
      */
@@ -34,10 +47,11 @@ class Posts extends \yii\db\ActiveRecord
     {
         return [
             [['user_id', 'category', 'slug', 'topic', 'body'], 'required'],
-            [['user_id', 'category', 'likes', 'status'], 'integer'],
+            [['user_id', 'likes', 'status'], 'integer'],
             [['body'], 'string'],
             [['created_at'], 'safe'],
             [['slug', 'topic'], 'string', 'max' => 200],
+            [['category'], 'string', 'max' => 100],
         ];
     }
 
@@ -57,5 +71,15 @@ class Posts extends \yii\db\ActiveRecord
             'status' => 'Status',
             'created_at' => 'Created At',
         ];
+    }
+
+    public function getCategories()
+    {
+        return $this->hasOne(Category::className(),['slug'=>'category']);
+    }
+
+    public function getDislikesCount()
+    {
+        return $this->hasMany(Dislike::className(),['topic_id'=>'id'])->count();
     }
 }

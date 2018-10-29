@@ -7,6 +7,7 @@
  */
 
 use yii\helpers\Url;
+use yii\helpers\Html;
 ?>
 <!-- Slider -->
 <div class="tp-banner-container">
@@ -15,7 +16,7 @@ use yii\helpers\Url;
             <!-- SLIDE  -->
             <li data-transition="fade" data-slotamount="7" data-masterspeed="1500" >
                 <!-- MAIN IMAGE -->
-                <img src="images/slide.jpg"  alt="slidebg1"  data-bgfit="cover" data-bgposition="left top" data-bgrepeat="no-repeat">
+                <img src="<?=Url::to('@web/')?>images/slide.jpg"  alt="slidebg1"  data-bgfit="cover" data-bgposition="left top" data-bgrepeat="no-repeat">
                 <!-- LAYERS -->
             </li>
         </ul>
@@ -49,9 +50,7 @@ use yii\helpers\Url;
             </div>
             <div class="col-lg-4 col-xs-12 col-sm-5 col-md-4 avt">
                 <div class="stnt pull-left">
-                    <form action="<?=Url::to(['/posts/new-post'])?>" method="post" class="form">
-                        <button class="btn btn-primary">Start New Topic</button>
-                    </form>
+                    <?=Html::a( 'Start New Topic',['/posts/new-post'],['class'=>'btn btn-primary'])?>
                 </div>
                 <div class="env pull-left"><i class="fa fa-envelope"></i></div>
 
