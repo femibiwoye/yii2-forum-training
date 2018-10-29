@@ -1,9 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="e73b5725-8c76-4d87-965a-bfcc7ed83ab4" name="Default" comment="Improve user profile">
-      <change afterPath="$PROJECT_DIR$/frontend/views/posts/html.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/frontend/views/posts/view-post.php" afterDir="false" />
+    <list default="true" id="e73b5725-8c76-4d87-965a-bfcc7ed83ab4" name="Default" comment="- Created post form&#10;- Created view post&#10;- Created Categories for admin&#10;- Authenticate necessary controllers and actions&#10;- Create relationships between posts, categories, dislikes table&#10;- Make all posts and categories sluggable">
+      <change afterPath="$PROJECT_DIR$/frontend/web/images/1.png" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/vendor/autoload.php" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/vendor/behat/gherkin/.gitignore" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/vendor/behat/gherkin/.travis.yml" afterDir="false" />
@@ -6483,17 +6482,6 @@
       <change afterPath="$PROJECT_DIR$/vendor/yiisoft/yii2/yii" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/vendor/yiisoft/yii2/yii.bat" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/views/layouts/main.php" beforeDir="false" afterPath="$PROJECT_DIR$/backend/views/layouts/main.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/controllers/PostsController.php" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/controllers/PostsController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/models/Posts.php" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/models/Posts.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/views/layouts/footer.php" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/views/layouts/footer.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/views/layouts/header.php" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/views/layouts/header.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/views/posts/new-post.php" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/views/posts/new-post.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/web/font-awesome-4.0.3/css/font-awesome.min.css" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/web/font-awesome-4.0.3/css/font-awesome.min.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/web/font-awesome-4.0.3/fonts/fontawesome-webfont.eot?" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/web/font-awesome-4.0.3/fonts/fontawesome-webfont.eot" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/web/font-awesome-4.0.3/fonts/fontawesome-webfont.svg?v=4.0.3" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/web/font-awesome-4.0.3/fonts/fontawesome-webfont.svg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/web/font-awesome-4.0.3/fonts/fontawesome-webfont.ttf?v=4.0.3" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/web/font-awesome-4.0.3/fonts/fontawesome-webfont.ttf" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/web/font-awesome-4.0.3/fonts/fontawesome-webfont.woff?v=4.0.3" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/web/font-awesome-4.0.3/fonts/fontawesome-webfont.woff" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -6502,6 +6490,7 @@
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
+  <component name="ChangesViewManager" show_ignored="true" />
   <component name="ComposerSettings" doNotAsk="true" synchronizationState="SYNCHRONIZE">
     <pharConfigPath>$PROJECT_DIR$/composer.json</pharConfigPath>
   </component>
@@ -6519,7 +6508,7 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="view-post.php" pinned="false" current-in-tab="true">
+      <file leaf-file-name="view-post.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/frontend/views/posts/view-post.php">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="303">
@@ -6552,11 +6541,20 @@
       <file leaf-file-name="Posts.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/frontend/models/Posts.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="617">
+            <state relative-caret-position="238">
               <caret line="80" column="36" selection-start-line="80" selection-start-column="20" selection-end-line="80" selection-end-column="36" />
               <folding>
                 <element signature="e#35#43#0#PHP" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name=".gitignore" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/.gitignore">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="375">
+              <caret line="32" column="23" selection-start-line="32" selection-start-column="23" selection-end-line="32" selection-end-column="23" />
             </state>
           </provider>
         </entry>
@@ -6741,54 +6739,6 @@
               <item name="yii2-forum-training" type="b2602c69:ProjectViewProjectNode" />
               <item name="yii2-forum-training" type="462c0819:PsiDirectoryNode" />
             </path>
-            <path>
-              <item name="yii2-forum-training" type="b2602c69:ProjectViewProjectNode" />
-              <item name="yii2-forum-training" type="462c0819:PsiDirectoryNode" />
-              <item name="backend" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="yii2-forum-training" type="b2602c69:ProjectViewProjectNode" />
-              <item name="yii2-forum-training" type="462c0819:PsiDirectoryNode" />
-              <item name="backend" type="462c0819:PsiDirectoryNode" />
-              <item name="controllers" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="yii2-forum-training" type="b2602c69:ProjectViewProjectNode" />
-              <item name="yii2-forum-training" type="462c0819:PsiDirectoryNode" />
-              <item name="backend" type="462c0819:PsiDirectoryNode" />
-              <item name="models" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="yii2-forum-training" type="b2602c69:ProjectViewProjectNode" />
-              <item name="yii2-forum-training" type="462c0819:PsiDirectoryNode" />
-              <item name="frontend" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="yii2-forum-training" type="b2602c69:ProjectViewProjectNode" />
-              <item name="yii2-forum-training" type="462c0819:PsiDirectoryNode" />
-              <item name="frontend" type="462c0819:PsiDirectoryNode" />
-              <item name="controllers" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="yii2-forum-training" type="b2602c69:ProjectViewProjectNode" />
-              <item name="yii2-forum-training" type="462c0819:PsiDirectoryNode" />
-              <item name="frontend" type="462c0819:PsiDirectoryNode" />
-              <item name="views" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="yii2-forum-training" type="b2602c69:ProjectViewProjectNode" />
-              <item name="yii2-forum-training" type="462c0819:PsiDirectoryNode" />
-              <item name="frontend" type="462c0819:PsiDirectoryNode" />
-              <item name="views" type="462c0819:PsiDirectoryNode" />
-              <item name="layouts" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="yii2-forum-training" type="b2602c69:ProjectViewProjectNode" />
-              <item name="yii2-forum-training" type="462c0819:PsiDirectoryNode" />
-              <item name="frontend" type="462c0819:PsiDirectoryNode" />
-              <item name="views" type="462c0819:PsiDirectoryNode" />
-              <item name="posts" type="462c0819:PsiDirectoryNode" />
-            </path>
           </expand>
           <select />
         </subPane>
@@ -6891,7 +6841,7 @@
       <workItem from="1540213621582" duration="3319000" />
       <workItem from="1540460191361" duration="2028000" />
       <workItem from="1540546934387" duration="14628000" />
-      <workItem from="1540809188693" duration="4834000" />
+      <workItem from="1540809188693" duration="5731000" />
     </task>
     <task id="LOCAL-00001" summary="This is the first phase of basic changes">
       <created>1539864454073</created>
@@ -6942,26 +6892,32 @@
       <option name="project" value="LOCAL" />
       <updated>1540563581324</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="- Created post form&#10;- Created view post&#10;- Created Categories for admin&#10;- Authenticate necessary controllers and actions&#10;- Create relationships between posts, categories, dislikes table&#10;- Make all posts and categories sluggable">
+      <created>1540814590121</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1540814590121</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="34242000" />
+    <option name="totallyTimeSpent" value="35139000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1440" height="900" extended-state="0" />
-    <editor active="true" />
     <layout>
       <window_info anchor="right" id="Palette" order="3" />
       <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="right" id="Palette&#9;" order="3" />
       <window_info id="Image Layers" order="2" />
       <window_info anchor="right" id="Capture Analysis" order="3" />
-      <window_info anchor="bottom" id="Event Log" order="7" side_tool="true" />
+      <window_info anchor="bottom" id="Event Log" order="7" sideWeight="0.5007153" side_tool="true" weight="0.32917705" />
       <window_info anchor="bottom" id="Migrations" order="7" />
       <window_info anchor="right" id="Maven Projects" order="3" />
       <window_info anchor="bottom" id="Database Changes" order="7" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Version Control" order="7" weight="0.32917705" />
+      <window_info anchor="bottom" id="Version Control" order="7" sideWeight="0.49928468" visible="true" weight="0.32917705" />
       <window_info anchor="bottom" id="Run" order="2" />
       <window_info anchor="bottom" id="Terminal" order="7" weight="0.32917705" />
       <window_info anchor="right" id="Flutter Outline" order="3" />
@@ -7025,7 +6981,8 @@
     <MESSAGE value="- Updated the forum template&#10;- Setup user and admin login&#10;- Differentiate the user and admin login table and model" />
     <MESSAGE value="Improve user profile" />
     <MESSAGE value="- Create relationship between models&#10;- Detail explanation on HTML and URL Helpers&#10;- Create image upload on profile&#10;- Rendering of images in a layout." />
-    <option name="LAST_COMMIT_MESSAGE" value="- Create relationship between models&#10;- Detail explanation on HTML and URL Helpers&#10;- Create image upload on profile&#10;- Rendering of images in a layout." />
+    <MESSAGE value="- Created post form&#10;- Created view post&#10;- Created Categories for admin&#10;- Authenticate necessary controllers and actions&#10;- Create relationships between posts, categories, dislikes table&#10;- Make all posts and categories sluggable" />
+    <option name="LAST_COMMIT_MESSAGE" value="- Created post form&#10;- Created view post&#10;- Created Categories for admin&#10;- Authenticate necessary controllers and actions&#10;- Create relationships between posts, categories, dislikes table&#10;- Make all posts and categories sluggable" />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/forum/frontend/views/layouts/main.php" />
@@ -7069,13 +7026,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="69">
           <caret line="3" selection-start-line="3" selection-end-line="3" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/.gitignore">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="639">
-          <caret line="32" column="23" selection-start-line="32" selection-start-column="23" selection-end-line="32" selection-end-column="23" />
         </state>
       </provider>
     </entry>
@@ -7327,9 +7277,16 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/frontend/views/posts/view-post.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="303">
+          <caret line="45" column="107" selection-start-line="45" selection-start-column="107" selection-end-line="45" selection-end-column="107" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/frontend/models/Posts.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="617">
+        <state relative-caret-position="238">
           <caret line="80" column="36" selection-start-line="80" selection-start-column="20" selection-end-line="80" selection-end-column="36" />
           <folding>
             <element signature="e#35#43#0#PHP" expanded="true" />
@@ -7337,10 +7294,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/frontend/views/posts/view-post.php">
+    <entry file="file://$PROJECT_DIR$/.gitignore">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="303">
-          <caret line="45" column="107" selection-start-line="45" selection-start-column="107" selection-end-line="45" selection-end-column="107" />
+        <state relative-caret-position="375">
+          <caret line="32" column="23" selection-start-line="32" selection-start-column="23" selection-end-line="32" selection-end-column="23" />
         </state>
       </provider>
     </entry>
