@@ -3,7 +3,7 @@
 use yii\helpers\Url;
 
 $this->title = $model->topic;
-
+$web = Url::to('@web/');
 ?>
 
 <section class="content">
@@ -25,7 +25,7 @@ $this->title = $model->topic;
                     <div class="topwrap">
                         <div class="userinfo pull-left">
                             <div class="avatar">
-                                <img src="images/avatar.jpg" alt="" />
+                                <img width="50" src="<?=empty($model->poster->image)? $web.'images/avatar.jpg':$web.'images/'.$model->poster->image?>" alt="" />
                                 <div class="status green">&nbsp;</div>
                             </div>
 

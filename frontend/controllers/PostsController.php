@@ -38,17 +38,17 @@ class PostsController extends Controller
     {
         $model = new Posts();
         $categories = Category::find()->all();
-        if($model->load(Yii::$app->request->post())){
+        if ($model->load(Yii::$app->request->post())) {
             $model->user_id = Yii::$app->user->id;
-            if($model->save()){
-                return $this->redirect(['view-post','id'=>$model->slug]);
+            if ($model->save()) {
+                return $this->redirect(['view-post', 'id' => $model->slug]);
             }
         }
 
 
-        return $this->render('new-post',[
-            'model'=>$model,
-            'categories'=>$categories
+        return $this->render('new-post', [
+            'model' => $model,
+            'categories' => $categories
         ]);
     }
 
@@ -61,10 +61,12 @@ class PostsController extends Controller
         }*/
 
         //Option 2
-        $model = Posts::find()->where(['slug'=>$id]);
-        if($model->exists()){
+        $model = Posts::find()->where(['slug' => $id]);
+        if ($model->exists()) {
             $model = $model->one();
-            return $this->render('view-post',['model'=>$model]);
+            $model->views += 1;
+            $model->save();
+            return $this->render('view-post', ['model' => $model]);
         }
 
     }
@@ -75,3 +77,10 @@ class PostsController extends Controller
     }
 
 }
+
+/**
+ *  Original: $img = 2.png
+ *
+ * 20x20 "s".$img
+ * 50x50 "m".$img
+ */

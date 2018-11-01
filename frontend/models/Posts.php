@@ -47,7 +47,7 @@ class Posts extends \yii\db\ActiveRecord
     {
         return [
             [['user_id', 'category', 'slug', 'topic', 'body'], 'required'],
-            [['user_id', 'likes', 'status'], 'integer'],
+            [['user_id', 'likes', 'status','views'], 'integer'],
             [['body'], 'string'],
             [['created_at'], 'safe'],
             [['slug', 'topic'], 'string', 'max' => 200],
@@ -81,5 +81,15 @@ class Posts extends \yii\db\ActiveRecord
     public function getDislikesCount()
     {
         return $this->hasMany(Dislike::className(),['topic_id'=>'id'])->count();
+    }
+
+    public function getCommentsCount()
+    {
+        return $this->hasMany(Comments::className(),['post_id'=>'id'])->count();
+    }
+
+    public function getPoster()
+    {
+        return $this->hasOne(User::className(),['id'=>'user_id']);
     }
 }

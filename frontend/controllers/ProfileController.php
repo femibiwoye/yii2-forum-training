@@ -80,7 +80,8 @@ class ProfileController extends Controller
         if ($model->load(Yii::$app->request->post()) && $model->userDetails->load(Yii::$app->request->post())) {
 
             $model->image = UploadedFile::getInstance($model,'image');
-            if($model->image->size > 0){
+
+            if(!empty($model->image)){
                 $imageName = $model->id.'.'.$model->image->extension;
                 $model->image->saveAs(Url::to('@frontend/web/images/'.$imageName));
                 $model->image = $imageName;

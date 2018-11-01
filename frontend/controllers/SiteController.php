@@ -1,6 +1,7 @@
 <?php
 namespace frontend\controllers;
 
+use frontend\models\Posts;
 use Yii;
 use yii\base\InvalidParamException;
 use yii\web\BadRequestHttpException;
@@ -72,7 +73,17 @@ class SiteController extends Controller
      */
     public function actionIndex()
     {
-        return $this->render('index');
+        $posts = Posts::find()->where(['status'=>1])->orderBy('id DESC')->limit(20)->all();
+        //$posts = Posts::find()->select(['id','slug','topic','body'])->where(['status'=>1])->orderBy('id DESC')->limit(2)->asArray()->all();
+        //$posts = Posts::find()->select('slug,user_id,topic,body')->where(['status'=>1])->orderBy('id DESC')->limit(2)->all();
+
+        /** When you try to optimize the speed of data retrieval by using
+         * Select: To select only the required fields in a table
+         * AsArray: To convert required record from active-record objects to plain array
+         */
+//echo json_encode($posts[1]->categories->title);
+  //      die;
+        return $this->render('index',['posts'=>$posts]);
     }
 
     /**
