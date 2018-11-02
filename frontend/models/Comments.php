@@ -32,6 +32,7 @@ class Comments extends \yii\db\ActiveRecord
     {
         return [
             [['post_id', 'user_id', 'comment'], 'required'],
+            [['first'],'safe'],
             [['post_id', 'user_id', 'likes', 'dislikes'], 'integer'],
             [['comment'], 'string'],
             [['created_at'], 'safe'],

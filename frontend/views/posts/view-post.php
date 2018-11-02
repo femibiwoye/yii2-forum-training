@@ -42,8 +42,9 @@ $web = Url::to('@web/');
                     <div class="postinfobot">
 
                         <div class="likeblock pull-left">
-                            <a href="#" class="up"><i class="fa fa-thumbs-o-up"></i><?=$model->likes?></a>
-                            <a href="#" class="down"><i class="fa fa-thumbs-o-down"></i><?=$model->dislikesCount?></a>
+                            <a href="<?=Url::to(['like','id'=>$model->id])?>" class="up"><i class="fa fa-thumbs-o-up"></i><?=$model->likes?></a>
+
+                            <a href="<?=Url::to(['dislike','id'=>$model->id])?>" class="down <?=$model->dislikeStatus?'close':''?>"><i class="fa fa-thumbs-o-down"></i><?=$model->dislikesCount?></a>
                         </div>
 
                         <div class="prev pull-left">
@@ -86,46 +87,9 @@ $web = Url::to('@web/');
                     <div class="clearfix"></div>
                 </div>
 
-                <!-- POST -->
-                <div class="post">
-                    <div class="topwrap">
-                        <div class="userinfo pull-left">
-                            <div class="avatar">
-                                <img src="images/avatar2.jpg" alt="" />
-                                <div class="status red">&nbsp;</div>
-                            </div>
-
-                            <div class="icons">
-                                <img src="images/icon3.jpg" alt="" /><img src="images/icon4.jpg" alt="" /><img src="images/icon5.jpg" alt="" /><img src="images/icon6.jpg" alt="" />
-                            </div>
-                        </div>
-                        <div class="posttext pull-left">
-                            <p>Typography helps you engage your audience and establish a distinct, unique personality on your website. Knowing how to use fonts to build character in your design is a powerful skill, and exploring the history and use of typefaces, as well as typogra...</p>
-                        </div>
-                        <div class="clearfix"></div>
-                    </div>
-                    <div class="postinfobot">
-
-                        <div class="likeblock pull-left">
-                            <a href="#" class="up"><i class="fa fa-thumbs-o-up"></i>10</a>
-                            <a href="#" class="down"><i class="fa fa-thumbs-o-down"></i>1</a>
-                        </div>
-
-                        <div class="prev pull-left">
-                            <a href="#"><i class="fa fa-reply"></i></a>
-                        </div>
-
-                        <div class="posted pull-left"><i class="fa fa-clock-o"></i> Posted on : 20 Nov @ 9:45am</div>
-
-                        <div class="next pull-right">
-                            <a href="#"><i class="fa fa-share"></i></a>
-
-                            <a href="#"><i class="fa fa-flag"></i></a>
-                        </div>
-
-                        <div class="clearfix"></div>
-                    </div>
-                </div><!-- POST -->
+                <!-- COMMENTS -->
+                <?= $this->render('comments',['post'=>$model]);?>
+                <!-- COMMENTS -->
 
 
 
@@ -179,46 +143,7 @@ $web = Url::to('@web/');
 
                 <!-- POST -->
                 <div class="post">
-                    <form action="#" class="form" method="post">
-                        <div class="topwrap">
-                            <div class="userinfo pull-left">
-                                <div class="avatar">
-                                    <img src="images/avatar4.jpg" alt="" />
-                                    <div class="status red">&nbsp;</div>
-                                </div>
-
-                                <div class="icons">
-                                    <img src="images/icon3.jpg" alt="" /><img src="images/icon4.jpg" alt="" /><img src="images/icon5.jpg" alt="" /><img src="images/icon6.jpg" alt="" />
-                                </div>
-                            </div>
-                            <div class="posttext pull-left">
-                                <div class="textwraper">
-                                    <div class="postreply">Post a Reply</div>
-                                    <textarea name="reply" id="reply" placeholder="Type your message here"></textarea>
-                                </div>
-                            </div>
-                            <div class="clearfix"></div>
-                        </div>
-                        <div class="postinfobot">
-
-                            <div class="notechbox pull-left">
-                                <input type="checkbox" name="note" id="note" class="form-control" />
-                            </div>
-
-                            <div class="pull-left">
-                                <label for="note"> Email me when some one post a reply</label>
-                            </div>
-
-                            <div class="pull-right postreply">
-                                <div class="pull-left smile"><a href="#"><i class="fa fa-smile-o"></i></a></div>
-                                <div class="pull-left"><button type="submit" class="btn btn-primary">Post Reply</button></div>
-                                <div class="clearfix"></div>
-                            </div>
-
-
-                            <div class="clearfix"></div>
-                        </div>
-                    </form>
+                    <?=$this->render('comment-form',['comment'=>$comment,'model'=>$model])?>
                 </div><!-- POST -->
 
 

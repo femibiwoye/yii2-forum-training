@@ -9,10 +9,13 @@
 namespace frontend\controllers;
 
 use frontend\models\Category;
+use frontend\models\Comments;
+use frontend\models\Dislike;
 use Yii;
 use frontend\models\Posts;
 use yii\web\Controller;
 use yii\filters\AccessControl;
+use yii\web\NotFoundHttpException;
 
 class PostsController extends Controller
 {
@@ -22,13 +25,13 @@ class PostsController extends Controller
             'access' => [
                 'class' => AccessControl::className(),
                 'only' => ['new-post'],
-                'rules' => [
+                /*'rules' => [
                     [
                         'actions' => ['new-post'],
-                        'allow' => true,
+                        'allow' => empty(Yii::$app->user->identity->image) ?false:true,
                         'roles' => ['@'],
                     ],
-                ],
+                ],*/
             ],
 
         ];
@@ -62,12 +65,45 @@ class PostsController extends Controller
 
         //Option 2
         $model = Posts::find()->where(['slug' => $id]);
+        $comment = new Comments();
         if ($model->exists()) {
             $model = $model->one();
             $model->views += 1;
-            $model->save();
-            return $this->render('view-post', ['model' => $model]);
+            if($model->save()){
+                if($comment->load(Yii::$app->request->post())){
+                    $comment->post_id = $model->id;
+                    $comment->user_id = Yii::$app->user->id;
+                    if($comment->save()){
+                        Yii::$app->session->setFlash('success','Your comment was successful');
+                        return $this->refresh();
+                    }
+                }
+            }
+            return $this->render('view-post', ['model' => $model,'comment'=>$comment]);
         }
+
+        throw new NotFoundHttpException('The page might has been moved or does not exist');
+
+    }
+
+    public function actionLike($id){
+        $post = Posts::findOne(['id'=>$id]);
+        $post->likes +=1;
+        //$post->likes =$post->likes +1;
+        if($post->save()){
+            return $this->redirect(Yii::$app->request->referrer);
+        }
+
+    }
+
+    public function actionDislike($id){
+        if(!Dislike::find()->where(['user_id'=> Yii::$app->user->id,'topic_id'=>$id])->exists()) {
+            $dislike = new Dislike();
+            $dislike->topic_id = $id;
+            $dislike->user_id = Yii::$app->user->id;
+            $dislike->save();
+        }
+        return $this->redirect(Yii::$app->request->referrer);
 
     }
 

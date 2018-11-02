@@ -88,8 +88,18 @@ class Posts extends \yii\db\ActiveRecord
         return $this->hasMany(Comments::className(),['post_id'=>'id'])->count();
     }
 
+    public function getComments()
+    {
+        return $this->hasMany(Comments::className(),['post_id'=>'id']);
+    }
+
     public function getPoster()
     {
         return $this->hasOne(User::className(),['id'=>'user_id']);
+    }
+
+    public function getDislikeStatus()
+    {
+        return $this->hasOne(Dislike::className(),['topic_id'=>'id'])->andWhere(['user_id'=>Yii::$app->user->id])->exists();
     }
 }
