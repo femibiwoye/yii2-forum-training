@@ -54,4 +54,14 @@ class Comments extends \yii\db\ActiveRecord
             'created_at' => 'Created At',
         ];
     }
+
+    public function getReferr()
+    {
+        return $this->hasOne(Comments::className(),['id'=>'first']);
+    }
+
+    public function getUsername()
+    {
+        return $this->hasOne(User::className(), ['id'=>'user_id']);
+    }
 }

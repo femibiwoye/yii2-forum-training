@@ -51,7 +51,7 @@ class Posts extends \yii\db\ActiveRecord
             [['body'], 'string'],
             [['created_at'], 'safe'],
             [['slug', 'topic'], 'string', 'max' => 200],
-            [['category'], 'string', 'max' => 100],
+            //[['category'], 'string', 'max' => 100],
         ];
     }
 

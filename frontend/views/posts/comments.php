@@ -7,9 +7,9 @@
  */
 
 ?>
-<?php //foreach ($comments->comments as $Onecomment):?>
+<?php foreach ($post->comments as $comment):?>
 <?php //for($i=0; $i<count($comments->comments); $i++) :?>
-<?php for ($i = 0; $i < $post->commentsCount; $i++) : ?>
+<?php //for ($i = 0; $i < $post->commentsCount; $i++) : ?>
     <div class="post">
         <div class="topwrap">
             <div class="userinfo pull-left">
@@ -24,18 +24,19 @@
                             src="images/icon6.jpg" alt=""/>
                 </div>
             </div>
-            <?php if($post->comments[$i]->first > 0){ ?>
+            <?php if($comment->first > 0){ ?>
             <div class="posttext pull-left">
                 <blockquote>
-                    <span class="original">Original Posted by - theguy_21:</span>
-                    Did you see that Dove ad pop up in your Facebook feed this year? How about the Geico camel one?
+                    <span class="original">Original Posted by - <?= $comment->referr->username->username ?></span>
+                    <?=$comment->referr->comment?>
                 </blockquote>
-                <p><?= $post->comments[$i]->comment ?><?php //=$Onecomment->comment?></p>
+                <p><?= $comment->comment ?><?php //=$Onecomment->comment?> Posted by - <?= $comment->username->username ?></p>
             </div>
 <?php }else{ ?>
                 <div class="posttext pull-left">
-
-                    <p><?= $post->comments[$i]->comment ?><?php //=$Onecomment->comment?></p>
+                <p>
+                    <p><?= $comment->comment ?><?php //=$Onecomment->comment?></p> Posted by - <?= $comment->username->username ?>
+                    <?=$this->render('comment-form',['comment'=>$comment,'model'=>$post,'row'=>1,'cId'=>$comment->id, ])?>
                 </div>
         <?php } ?>
             <div class="clearfix"></div>
@@ -62,4 +63,4 @@
             <div class="clearfix"></div>
         </div>
     </div>
-<?php endfor; ?>
+<?php endforeach; ?>

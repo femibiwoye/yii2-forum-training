@@ -19,23 +19,23 @@ use yii\web\NotFoundHttpException;
 
 class PostsController extends Controller
 {
-    public function behaviors()
-    {
-        return [
-            'access' => [
-                'class' => AccessControl::className(),
-                'only' => ['new-post'],
-                /*'rules' => [
-                    [
-                        'actions' => ['new-post'],
-                        'allow' => empty(Yii::$app->user->identity->image) ?false:true,
-                        'roles' => ['@'],
-                    ],
-                ],*/
-            ],
+    // public function behaviors()
+    // {
+    //     return [
+    //         'access' => [
+    //             'class' => AccessControl::className(),
+    //             'only' => ['new-post'],
+    //             /*'rules' => [
+    //                 [
+    //                     'actions' => ['new-post'],
+    //                     'allow' => empty(Yii::$app->user->identity->image) ?false:true,
+    //                     'roles' => ['@'],
+    //                 ],
+    //             ],*/
+    //         ],
 
-        ];
-    }
+    //     ];
+    // }
 
     public function actionNewPost()
     {

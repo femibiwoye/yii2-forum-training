@@ -21,7 +21,9 @@ $web = Url::to('@web/');
     <div class="posttext pull-left">
         <div class="textwraper">
             <div class="postreply">Post a Reply</div>
-            <?=$form->field($comment,'comment')->textarea(['placeholder'=>'Type your message here'])->label(false)?>
+            <?php $comment->comment = ''; ?>
+            <?=$form->field($comment,'first')->textInput(['value'=>isset($cId)?$cId : 0])->label(false)?>
+            <?=$form->field($comment, 'comment')->textarea(['placeholder'=>'Type your message here','rows'=>isset($row) ? $row : 5])->label(false)?>
 
         </div>
     </div>

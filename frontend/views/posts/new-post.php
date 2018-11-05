@@ -4,6 +4,7 @@ use yii\helpers\Html;
 use yii\helpers\Url;
 use yii\bootstrap\ActiveForm;
 use yii\helpers\ArrayHelper;
+use kartik\select2\Select2;
 
 /* @var $this yii\web\View */
 /* @var $model frontend\models\User */
@@ -30,7 +31,23 @@ $categories = ArrayHelper::map($categories,'slug','title');
 
 <?php $form = ActiveForm::begin(); ?>
 
-<?= $form->field($model, 'category')->dropDownList($categories,['prompt'=>'Select']) ?>
+<?//= $form->field($model, 'category')->dropDownList($categories,['prompt'=>'Select']) ?>
+<?php
+
+     
+    // Tagging support Multiple
+    //$model->category =  ['sport', 'family-matters']; // initial value
+    echo $form->field($model, 'category')->widget(Select2::classname(), [
+        'data' => $categories,
+        'options' => ['placeholder' => 'Select a category ...', 'multiple' => true],
+        'pluginOptions' => [
+            'tags' => true,
+            'tokenSeparators' => [',', ' '],
+            'maximumInputLength' => 2
+        ],
+    ]);
+    
+?>
 <?= $form->field($model, 'topic')->textInput(['maxlength' => true]) ?>
 <?=$form->field($model,'body')->textarea(['rows'=>6])?>
 <?=Html::beginTag('div',['class'=>'form-group'])?>
