@@ -32,7 +32,7 @@ class Comments extends \yii\db\ActiveRecord
     {
         return [
             [['post_id', 'user_id', 'comment'], 'required'],
-            [['first'],'safe'],
+            [['first','second'],'safe'],
             [['post_id', 'user_id', 'likes', 'dislikes'], 'integer'],
             [['comment'], 'string'],
             [['created_at'], 'safe'],
@@ -60,8 +60,33 @@ class Comments extends \yii\db\ActiveRecord
         return $this->hasOne(Comments::className(),['id'=>'first']);
     }
 
+    public function getReferrFirst()
+    {
+        return $this->hasOne(Comments::className(),['id'=>'second','first'=>'first']);
+    }
+
     public function getUsername()
     {
         return $this->hasOne(User::className(), ['id'=>'user_id']);
+    }
+
+    public function getFirstCommentsCount()
+    {
+        return $this->hasMany(Comments::className(),['first'=>'id'])->andFilterWhere(['second'=>0])->count();
+    }
+
+    public function getFirstComments()
+    {
+        return $this->hasMany(Comments::className(),['first'=>'id'])->andFilterWhere(['second'=>0]);
+    }
+
+    public function getSecondCommentsCount()
+    {
+        return $this->hasMany(Comments::className(),['second'=>'id'])->count();
+    }
+
+    public function getSecondComments()
+    {
+        return $this->hasMany(Comments::className(),['second'=>'id']);
     }
 }

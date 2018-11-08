@@ -24,21 +24,33 @@
                             src="images/icon6.jpg" alt=""/>
                 </div>
             </div>
-            <?php if($comment->first > 0){ ?>
-            <div class="posttext pull-left">
-                <blockquote>
-                    <span class="original">Original Posted by - <?= $comment->referr->username->username ?></span>
-                    <?=$comment->referr->comment?>
-                </blockquote>
-                <p><?= $comment->comment ?><?php //=$Onecomment->comment?> Posted by - <?= $comment->username->username ?></p>
-            </div>
-<?php }else{ ?>
-                <div class="posttext pull-left">
-                <p>
-                    <p><?= $comment->comment ?><?php //=$Onecomment->comment?></p> Posted by - <?= $comment->username->username ?>
-                    <?=$this->render('comment-form',['comment'=>$comment,'model'=>$post,'row'=>1,'cId'=>$comment->id, ])?>
-                </div>
-        <?php } ?>
+
+                    <div class="posttext pull-left">
+                        <p><?= $comment->comment ?><?php //=$Onecomment->comment?></p> Posted by - <?= $comment->username->username ?>
+                        <?=$this->render('comment-form',['comment'=>$comment,'model'=>$post,'row'=>1,'cId'=>$comment->id, ])?>
+
+                        <?php if($comment->firstCommentsCount > 0){ ?>
+                            <?php foreach($comment->firstComments as $first){?>
+                                <blockquote>
+                                    <span class="original">First Posted by - <?= $first->username->username ?></span>
+                                    <?=$first->comment?>
+
+                                    <p>
+                                        <?php
+                                        if($first->secondCommentsCount > 0){ ?>
+                                        <?php foreach($first->secondComments as $second){?>
+                                    <blockquote>
+                                        <span class="original">Second Posted by - <?= $second->username->username ?></span>
+                                        <?=$second->comment?>
+                                    </blockquote>
+                                <?php }} ?>
+                                    </p>
+
+                                </blockquote>
+                            <?php }} ?>
+
+                    </div>
+
             <div class="clearfix"></div>
         </div>
         <div class="postinfobot">

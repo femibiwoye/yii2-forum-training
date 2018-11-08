@@ -46,4 +46,9 @@ class Category extends \yii\db\ActiveRecord
             'created_at' => 'Created At',
         ];
     }
+
+    public function getPostCount()
+    {
+        return $this->hasMany(Posts::className(),['category'=>'slug'])->count();
+    }
 }
