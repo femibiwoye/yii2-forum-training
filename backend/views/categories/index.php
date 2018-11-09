@@ -30,7 +30,18 @@ $this->params['breadcrumbs'][] = $this->title;
             'title',
             'created_at',
 
-            ['class' => 'yii\grid\ActionColumn'],
+            [
+                    'class' => 'yii\grid\ActionColumn',
+                'template'=>'{view} {update} {create} {food}',
+                'buttons' => [
+                        'create'=>function($model,$index){
+        return '<a href="'.$index->id.'"><i class="glyphicon glyphicon-apple"></i>'.$index->id.'</a>';
+                        },
+                    'food'=>function(){
+                        return '<a href=""><i class="glyphicon glyphicon-alert"></i></a>';
+                    }
+                ]
+            ],
         ],
     ]); ?>
 </div>

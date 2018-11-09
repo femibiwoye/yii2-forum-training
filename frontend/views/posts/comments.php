@@ -34,7 +34,6 @@
                                 <blockquote>
                                     <span class="original">First Posted by - <?= $first->username->username ?></span>
                                     <?=$first->comment?>
-
                                     <p>
                                         <?php
                                         if($first->secondCommentsCount > 0){ ?>

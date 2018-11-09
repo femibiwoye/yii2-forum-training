@@ -1,0 +1,1 @@
+<h1>Welcome to settings on forum</h1>
