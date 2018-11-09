@@ -29,7 +29,6 @@ $this->params['breadcrumbs'][] = $this->title;
             'slug',
             'title',
             'created_at',
-
             [
                     'class' => 'yii\grid\ActionColumn',
                 'template'=>'{view} {update} {create} {food}',

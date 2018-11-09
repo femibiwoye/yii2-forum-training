@@ -1,0 +1,122 @@
+A. Introduction
+1- Introduction
+2- Requirements
+3- Install composer 1
+4- Install composer 2
+5- Using Archive file to setup Yii2
+6- Install Yii2 with composer
+7- Yii2 structures and directories
+8- When to use basic or advance +
+
+B. MVC
+1- Introduction to MVC
+2- Model
+3- View
+4- Controller
+5- Passing data to view from controller
+6- Partial view
+
+C. Templating
+1- Understanding Layout
+2- Passing data to layout with params
+3- Passing data to layout with session
+4- Passing data to partial view
+5- Changing advanced website template 1
+6- Changing advanced website template 2
+7- Changing advanced website template 3
+8- Changing basic website template (bootstrap) 1
+9- Changing basic website template (bootstrap) 2
+10- Changing basic website template (bootstrap) 3
+11- Replicating basic template on advanced
+
+D. Routing
+1- Enable pretty URL
+2- Setup .htaccess file
+3- Passing parameters to URL
+4- Retrieving parameters from URL
+5- Remove parameter title from URL to look pretty
+
+E. Helpers
+1- HTML Helpers - Tags
+2- HTML Helpers - ActiveForm
+3- HTML Helpers - Img, Link
+4- HTML Helpers - Ul, Ol
+5- HTML Helpers - Form 1
+6- HTML Helpers - Form 2
+7- URL Helpers 1
+8- URL Helpers 2
+9- Array Helpers - Intro, getValue
+10- Array Helpers - Validate Array
+11- Array Helpers - getColumn, Index, map
+12- Array Helpers - multiSort, isIn, merges
+
+F. Database
+1- Connecting to database
+2- Migration
+3- Multiple database connections
+
+G. Authentication
+1- Signup
+2- Login
+3- Check authentication in views
+4- Logout
+5- Add more fields to signup
+6- Controller authentication
+6- Separate frontend and backend login table
+
+
+H. ActiveRecord
+1- Insert record
+2- Read all record from table
+3- Read one record from table
+4- Update record
+5- Delete record
+6- Authenticate active record actions
+7- faker
+
+J. Database - Working with data
+1- Read all data in a table
+2- Filter columns and set conditions of data
+3- Order post, count and limit posts to be fetched at a time
+2- View post
+3- Sluggable id
+4- Connect model to another database
+
+K. Widgets
+1- creating Widgets
+2- Gridview
+3- GridView - Format column
+4- GridView - ActionColumn
+5- Listview
+6- Detailview
+7- Pagination
+8- PJax - Inserting record
+
+L. Gii
+1- Generating model (ensure models folder have the privilege to read and write)
+2- generating Controller (ensure controllers folder have the privilege to read and write)
+3- generating form (ensure views folder have the privilege to read and write)
+4- Generating CRUD (reduce the volume because of the baby crying, put mean of CRUD on the screen)
+5- Generating module
+6- Generate CRUD to module
+6- Generating model from second database
+
+M. Relations
+1- HasOne relations
+2- HasMany relations
+
+N. Forms and Validation(going off)
+1- Basic forms
+2- HTML validation
+3- Yii validation
+2- Skip ActiveRecord validation
+
+O. Uploads
+1- File upload
+3- Upload multiple files
+4- Display post image
+
+R. Extensions
+1- Installing FileInput extension using composer
+2- Installing TinyMCE with composer.json
+
