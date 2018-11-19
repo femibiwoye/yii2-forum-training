@@ -2,52 +2,54 @@
 
 /* @var $this yii\web\View */
 
-$this->title = 'My Yii Application';
+$this->title = 'Yii2 Forum Backend';
+
+
+//echo Yii::$app->security->generatePasswordHash("femi");
+
+$p1 = '$2y$13$y9C5FJ.xC0H.C7kHqrSi5uIMBTVMjtRwkBUcZIMecpmRZjUJoibwK';
+$p2 = 'femi';
+
+if(Yii::$app->security->validatePassword($p2,$p1)){
+//if(1 == 1.0){
+    echo 'true';
+}else{
+    echo 'false';
+}
+
+$security = Yii::$app->security;
+
+echo '<br>';
+
+echo time().mt_rand(10,99);
+echo '<br>';
+echo Yii::$app->security->generateRandomString(20);
+echo '<br>';
+echo $e1 = Yii::$app->security->encryptByPassword('password','femi');
+echo '<br>';
+echo $e3 = $security->decryptByPassword( $e1,'femi');
+echo '<br>';
+$key1 = $security->generateRandomKey();
+echo $enc1 = $security->encryptByKey('mypassword',$key1);
+echo '<br>';
+echo 'decrypt: '.$security->decryptByKey($enc1,$key1);
+echo '<br>';
+print_r($security->allowedCiphers[ 'AES-256-CBC']);
+echo '<br>';
+echo md5('hello');
+echo '<br>';
+echo sha1('hi');
+echo '<br>';
+ if($security->compareString('He','He')){
+echo 'String true';
+}else{
+     echo 'String false';
+ }
+echo '<br>';
+
+
+
+
+
 ?>
-<div class="site-index">
 
-    <div class="jumbotron">
-        <h1>Congratulations!</h1>
-
-        <p class="lead">You have successfully created your Yii-powered application.</p>
-
-        <p><a class="btn btn-lg btn-success" href="http://www.yiiframework.com">Get started with Yii</a></p>
-    </div>
-
-    <div class="body-content">
-
-        <div class="row">
-            <div class="col-lg-4">
-                <h2>Heading</h2>
-
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et
-                    dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip
-                    ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu
-                    fugiat nulla pariatur.</p>
-
-                <p><a class="btn btn-default" href="http://www.yiiframework.com/doc/">Yii Documentation &raquo;</a></p>
-            </div>
-            <div class="col-lg-4">
-                <h2>Heading</h2>
-
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et
-                    dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip
-                    ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu
-                    fugiat nulla pariatur.</p>
-
-                <p><a class="btn btn-default" href="http://www.yiiframework.com/forum/">Yii Forum &raquo;</a></p>
-            </div>
-            <div class="col-lg-4">
-                <h2>Heading</h2>
-
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et
-                    dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip
-                    ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu
-                    fugiat nulla pariatur.</p>
-
-                <p><a class="btn btn-default" href="http://www.yiiframework.com/extensions/">Yii Extensions &raquo;</a></p>
-            </div>
-        </div>
-
-    </div>
-</div>
