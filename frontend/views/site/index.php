@@ -6,6 +6,7 @@ use frontend\components\BodyShorter;
 use frontend\components\TimeReader;
 $this->title = 'Welcome to Forum';
 $web = Url::to('@web/');
+
 ?>
 <section class="content">
     <div class="container">
@@ -41,41 +42,15 @@ $web = Url::to('@web/');
         <div class="row">
             <div class="col-lg-8 col-md-8">
 
-                <?php foreach($posts as $post){?>
-                <!-- POST -->
-                <div class="post">
-                    <div class="wrap-ut pull-left">
-                        <div class="userinfo pull-left">
-                            <div class="avatar">
-                                <img src="<?=empty($post->poster->image)? $web.'images/avatar.jpg':$web.'images/'.$post->poster->image?>" width="50" alt="" />
-                                <div class="status green">&nbsp;</div>
-                            </div>
-
-                            <div class="icons">
-                                <img src="images/icon1.jpg" alt="" /><img src="images/icon4.jpg" alt="" />
-                            </div>
-                        </div>
-                        <div class="posttext pull-left">
-                            <h2><a href="<?=Url::to(['/posts/view-post','id'=>$post->slug])?>"><?=$post->topic?></a></h2>
-                            <p><?=BodyShorter::widget(['body' => $post->body,'id' => $post->slug])?></p>
-                        </div>
-                        <div class="clearfix"></div>
-                    </div>
-                    <div class="postinfo pull-left">
-                        <div class="comments">
-                            <div class="commentbg">
-                                <?=$post->commentsCount?>
-                                <div class="mark"></div>
-                            </div>
-
-                        </div>
-                        <div class="views"><i class="fa fa-eye"></i> <?=$post->views?></div>
-                        <div class="time"><i class="fa fa-clock-o"></i> <?=TimeReader::widget(['time'=>$post->created_at])?></div>
-                    </div>
-                    <div class="clearfix"></div>
-                </div><!-- POST -->
-                <?php } ?>
-
+                <?php
+                echo \yii\widgets\ListView::widget([
+                    'dataProvider' => $dataProvider,
+                    'itemView' => '_post',
+                    'viewParams' => [
+                        'web' => $web
+                    ],
+                ]);
+                ?>
 
 
 

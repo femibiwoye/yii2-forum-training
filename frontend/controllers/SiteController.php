@@ -1,9 +1,11 @@
 <?php
 namespace frontend\controllers;
 
+use backend\models\PostsSearch;
 use frontend\models\Posts;
 use Yii;
 use yii\base\InvalidParamException;
+use yii\data\ActiveDataProvider;
 use yii\web\BadRequestHttpException;
 use yii\web\Controller;
 use yii\filters\VerbFilter;
@@ -73,7 +75,10 @@ class SiteController extends Controller
      */
     public function actionIndex()
     {
-        $posts = Posts::find()->where(['status'=>1])->orderBy('id DESC')->limit(20)->all();
+        /*$posts = Posts::find()->where(['status'=>1])
+            ->orderBy('id DESC')
+            //->limit(20)
+            ->all();*/
         //$posts = Posts::find()->select(['id','slug','topic','body'])->where(['status'=>1])->orderBy('id DESC')->limit(2)->asArray()->all();
         //$posts = Posts::find()->select('slug,user_id,topic,body')->where(['status'=>1])->orderBy('id DESC')->limit(2)->all();
 
@@ -83,7 +88,19 @@ class SiteController extends Controller
          */
 //echo json_encode($posts[1]->categories->title);
   //      die;
-        return $this->render('index',['posts'=>$posts]);
+        //return $this->render('index',['posts'=>$posts]);
+
+
+        $dataProvider = new ActiveDataProvider([
+            'query' => Posts::find()->where(['status'=>1]),
+            'pagination' => [
+                'pageSize' => 10,
+            ],
+        ]);
+
+        return $this->render('index', [
+            'dataProvider' => $dataProvider,
+        ]);
     }
 
     /**

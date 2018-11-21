@@ -8,11 +8,14 @@
 
 namespace frontend\controllers;
 
+use Faker\Factory;
 use frontend\models\Category;
 use frontend\models\Comments;
 use frontend\models\Dislike;
 use Yii;
 use frontend\models\Posts;
+use yii\data\ActiveDataProvider;
+use yii\helpers\Html;
 use yii\web\Controller;
 use yii\filters\AccessControl;
 use yii\web\NotFoundHttpException;
@@ -36,6 +39,20 @@ class PostsController extends Controller
 
     //     ];
     // }
+
+    public function actionIndex()
+    {
+        $dataProvider = new ActiveDataProvider([
+            'query' => Posts::find()->where(['status'=>1]),
+            'pagination' => [
+                'pageSize' => 10,
+            ],
+        ]);
+
+        return $this->render('index', [
+            'dataProvider' => $dataProvider,
+        ]);
+    }
 
     public function actionNewPost()
     {
@@ -69,35 +86,37 @@ class PostsController extends Controller
         if ($model->exists()) {
             $model = $model->one();
             $model->views += 1;
-            if($model->save()){
-                if($comment->load(Yii::$app->request->post())){
+            if ($model->save()) {
+                if ($comment->load(Yii::$app->request->post())) {
                     $comment->post_id = $model->id;
                     $comment->user_id = Yii::$app->user->id;
-                    if($comment->save()){
-                        Yii::$app->session->setFlash('success','Your comment was successful');
+                    if ($comment->save()) {
+                        Yii::$app->session->setFlash('success', 'Your comment was successful');
                         return $this->refresh();
                     }
                 }
             }
-            return $this->render('view-post', ['model' => $model,'comment'=>$comment]);
+            return $this->render('view-post', ['model' => $model, 'comment' => $comment]);
         }
 
         throw new NotFoundHttpException('The page might has been moved or does not exist');
 
     }
 
-    public function actionLike($id){
-        $post = Posts::findOne(['id'=>$id]);
-        $post->likes +=1;
+    public function actionLike($id)
+    {
+        $post = Posts::findOne(['id' => $id]);
+        $post->likes += 1;
         //$post->likes =$post->likes +1;
-        if($post->save()){
+        if ($post->save()) {
             return $this->redirect(Yii::$app->request->referrer);
         }
 
     }
 
-    public function actionDislike($id){
-        if(!Dislike::find()->where(['user_id'=> Yii::$app->user->id,'topic_id'=>$id])->exists()) {
+    public function actionDislike($id)
+    {
+        if (!Dislike::find()->where(['user_id' => Yii::$app->user->id, 'topic_id' => $id])->exists()) {
             $dislike = new Dislike();
             $dislike->topic_id = $id;
             $dislike->user_id = Yii::$app->user->id;
@@ -110,6 +129,67 @@ class PostsController extends Controller
     public function actionUrl()
     {
         return $this->render('url');
+    }
+
+    public function actionFake()
+    {
+        $faker = \Faker\Factory::create();
+
+        /*echo $faker->title;
+        echo '<br>';
+        echo Html::encode($faker->paragraph(9));
+        echo '<br>';
+        echo $faker->address;
+        echo '<br>';
+        echo $faker->bankAccountNumber;
+        echo '<br>';
+        echo $faker->boolean ? 'true':'false';
+        echo '<br>';
+        echo $faker->city;
+        echo '<br>';
+        echo $faker->citySuffix;
+        echo '<br>';
+        echo $faker->company;
+        echo '<br>';
+        echo $faker->companyEmail;
+        echo '<br>';
+        echo $faker->creditCardNumber;
+        echo '<br>';
+        print_r($faker->dateTime);
+        echo '<br>';
+        echo $faker->domainName;
+        echo '<br>';
+        echo $faker->firstNameMale;
+        echo '<br>';
+        echo $faker->firstNameFemale;
+        echo '<br>';
+        echo $faker->name;
+        echo '<br>';
+        echo $faker->phoneNumber;
+        echo '<br>';
+        echo $faker->password;
+        echo '<br>';
+        echo $faker->sentence;
+        echo '<br>';
+        echo $faker->word;
+        echo '<br>';
+        print_r($faker->words);
+        echo '<br>';
+        echo $faker->url;
+        echo '<br>';*/
+        echo ($faker->paragraph(20));
+        die;
+        $cats = ['sport', 'sports', 'sports-2', 'family-matters'];
+        for($i = 1; $i <51; $i++) {
+            $post = new Posts();
+            $post->category = $cats[rand(0, 3)];
+            echo $i.': ';
+            echo $post->topic = $faker->sentence;
+            echo '<br>';
+            $post->user_id = Yii::$app->user->id;
+            $post->body = $faker->paragraph(20);
+            $post->save();
+        }
     }
 
 }
