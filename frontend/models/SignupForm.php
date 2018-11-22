@@ -74,6 +74,19 @@ class SignupForm extends Model
             $profile = new UserProfile();
             $profile->user_id = $user->id;
             $profile->save();
+
+
+
+
+            \Yii::$app->mailer->compose()
+                ->setTo($user->email)
+                ->setFrom(['yiiforum@gmail.com' => 'Yii application'])
+                ->setSubject('Welcome to Yii Forum')
+                //->setTextBody($this->body)
+                    ->setHtmlBody('<h1>jgduygduy</h1>')
+                ->send();
+
+
             return $user;
         }else{
             return null;

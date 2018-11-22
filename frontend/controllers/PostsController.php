@@ -40,10 +40,27 @@ class PostsController extends Controller
     //     ];
     // }
 
-    public function actionIndex()
+    public function actionIndex($s = null)
     {
+        $query = Posts::find()->where(['status' => 1]);
+        if (isset($s)) {
+            $s = trim($s);
+            $query->andWhere(['Like','topic',$s]);
+            $query->orWhere(['Like','body',$s]);
+        }
+
+        /**
+         * if (isset($s)) {
+        $query = Posts::find()->where(['status' => 1])
+        ->andWhere(['Like','topic',$s]);
+        } else {
+        $query = Posts::find()->where(['status' => 1]);
+        }
+         */
+
+
         $dataProvider = new ActiveDataProvider([
-            'query' => Posts::find()->where(['status'=>1]),
+            'query' => $query,
             'pagination' => [
                 'pageSize' => 10,
             ],
@@ -177,13 +194,13 @@ class PostsController extends Controller
         echo '<br>';
         echo $faker->url;
         echo '<br>';*/
-        echo ($faker->paragraph(20));
+        echo($faker->paragraph(20));
         die;
         $cats = ['sport', 'sports', 'sports-2', 'family-matters'];
-        for($i = 1; $i <51; $i++) {
+        for ($i = 1; $i < 51; $i++) {
             $post = new Posts();
             $post->category = $cats[rand(0, 3)];
-            echo $i.': ';
+            echo $i . ': ';
             echo $post->topic = $faker->sentence;
             echo '<br>';
             $post->user_id = Yii::$app->user->id;

@@ -40,13 +40,7 @@ use yii\helpers\Html;
                 </div>
             </div>
             <div class="col-lg-4 search hidden-xs hidden-sm col-md-3">
-                <div class="wrap">
-                    <form action="#" method="post" class="form">
-                        <div class="pull-left txt"><input type="text" class="form-control" placeholder="Search Topics"></div>
-                        <div class="pull-right"><button class="btn btn-default" type="button"><i class="fa fa-search"></i></button></div>
-                        <div class="clearfix"></div>
-                    </form>
-                </div>
+                <?=$this->render('search')?>
             </div>
             <div class="col-lg-4 col-xs-12 col-sm-5 col-md-4 avt">
                 <div class="stnt pull-left">
