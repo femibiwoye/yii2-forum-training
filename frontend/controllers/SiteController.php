@@ -3,6 +3,7 @@ namespace frontend\controllers;
 
 use backend\models\PostsSearch;
 use frontend\models\Posts;
+use frontend\models\User;
 use Yii;
 use yii\base\InvalidParamException;
 use yii\data\ActiveDataProvider;
@@ -239,5 +240,19 @@ class SiteController extends Controller
         return $this->render('resetPassword', [
             'model' => $model,
         ]);
+    }
+
+    public function actionVerify($token)
+    {
+        $user = User::findOne(['auth_key'=>$token]);
+        if($user && $user->verify_email == 0){
+            $user->verify_email = 1;
+            if($user->save(false)){
+                Yii::$app->session->setFlash('success','Your email has been verified');
+                return $this->goHome();
+            }
+        }
+        Yii::$app->session->setFlash('danger','Invalid token');
+        return $this->goHome();
     }
 }

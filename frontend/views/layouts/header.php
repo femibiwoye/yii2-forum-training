@@ -64,3 +64,9 @@ use yii\helpers\Html;
         </div>
     </div>
 </div>
+
+<?php if(!Yii::$app->user->isGuest && Yii::$app->user->identity->verify_email == 0){?>
+<div class="alert alert-danger">
+    Your email has not been verified
+</div>
+<?php } ?>

@@ -1,4 +1,5 @@
 <?php
+
 namespace frontend\models;
 
 use yii\base\Model;
@@ -16,17 +17,15 @@ class SignupForm extends Model
     public $lastname;
 
 
-
     /**
      * {@inheritdoc}
      */
     public function rules()
     {
         return [
-            [['firstname','lastname'],'required'],
-            [['firstname','lastname'],'trim'],
-            [['firstname','lastname'],'string','max'=>100],
-
+            [['firstname', 'lastname'], 'required'],
+            [['firstname', 'lastname'], 'trim'],
+            [['firstname', 'lastname'], 'string', 'max' => 100],
 
 
             ['username', 'trim'],
@@ -48,7 +47,7 @@ class SignupForm extends Model
     public function attributeLabels()
     {
         return [
-          'username'=>'My username'
+            'username' => 'My username'
         ];
     }
 
@@ -62,7 +61,7 @@ class SignupForm extends Model
         if (!$this->validate()) {
             return null;
         }
-        
+
         $user = new User();
         $user->username = $this->username;
         $user->firstname = $this->firstname;
@@ -70,25 +69,30 @@ class SignupForm extends Model
         $user->email = $this->email;
         $user->setPassword($this->password);
         $user->generateAuthKey();
-        if($user->save()){
+        if ($user->save()) {
             $profile = new UserProfile();
             $profile->user_id = $user->id;
             $profile->save();
 
+            $url = \Yii::$app->urlManager->createAbsoluteUrl(['/site/verify', 'token' => $user->auth_key]);
+            /*$body = '
+            <h1>Welcome to Yii2 Application forum</h1>
+            <p>There are lots of discussion going on here</p>
+            <p>To verify your email click on the link below</p>
+            <a href="'.$url.'">'.$url.'</a>
+            ';*/
 
-
-
-            \Yii::$app->mailer->compose()
+            \Yii::$app->mailer->compose(['html'=>'welcome'],['user'=>$user,'url'=>$url])
                 ->setTo($user->email)
-                ->setFrom(['yiiforum@gmail.com' => 'Yii application'])
+               ->setFrom(['passng.recovery@gmail.com' => 'Welcome Yii application'])
                 ->setSubject('Welcome to Yii Forum')
                 //->setTextBody($this->body)
-                    ->setHtmlBody('<h1>jgduygduy</h1>')
+                //->setHtmlBody($body)
                 ->send();
 
 
             return $user;
-        }else{
+        } else {
             return null;
         }
         //return $user->save() ? $user : null;
