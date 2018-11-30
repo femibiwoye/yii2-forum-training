@@ -14,11 +14,15 @@ use frontend\models\Comments;
 use frontend\models\Dislike;
 use Yii;
 use frontend\models\Posts;
+use yii\base\ErrorException;
+use yii\base\Exception;
 use yii\data\ActiveDataProvider;
 use yii\helpers\Html;
+use yii\web\BadRequestHttpException;
 use yii\web\Controller;
 use yii\filters\AccessControl;
 use yii\web\NotFoundHttpException;
+use yii\web\UnauthorizedHttpException;
 
 class PostsController extends Controller
 {
@@ -39,6 +43,13 @@ class PostsController extends Controller
 
     //     ];
     // }
+
+    /**public function beforeAction($action)
+    {
+        echo '<script type="application/javascript"> alert("Hello");</script>';
+
+        return true;
+    }*/
 
     public function actionIndex($s = null)
     {
@@ -70,6 +81,8 @@ class PostsController extends Controller
             'dataProvider' => $dataProvider,
         ]);
     }
+
+
 
     public function actionNewPost()
     {
@@ -206,6 +219,25 @@ class PostsController extends Controller
             $post->user_id = Yii::$app->user->id;
             $post->body = $faker->paragraph(20);
             $post->save();
+        }
+    }
+
+    public function actionView($id)
+    {
+        try {
+
+            $model = Posts::find()->where(['id' => $id])->asArray()->one();
+            if (!$model) {
+                //throw new NotFoundHttpException('The post you are looking for has either been moved or deleted');
+
+                 throw new BadRequestHttpException();
+                //throw new UnauthorizedHttpException();
+            }
+            echo json_encode($model);
+        }
+        catch (Exception $e) {
+            //display custom message
+            echo json_encode($e);
         }
     }
 

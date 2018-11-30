@@ -91,7 +91,6 @@ class SiteController extends Controller
   //      die;
         //return $this->render('index',['posts'=>$posts]);
 
-
         $dataProvider = new ActiveDataProvider([
             'query' => Posts::find()->where(['status'=>1]),
             'pagination' => [
