@@ -1,0 +1,965 @@
+2018-11-12 15:51:14 [::1][1][d6e4b1e7a95313f20442072e57212a85][error][yii\base\InvalidArgumentException] yii\base\InvalidArgumentException: Hash is invalid. in /Applications/XAMPP/xamppfiles/htdocs/yii2-forum-training/vendor/yiisoft/yii2/base/Security.php:651
+Stack trace:
+#0 /Applications/XAMPP/xamppfiles/htdocs/yii2-forum-training/backend/views/site/index.php(13): yii\base\Security->validatePassword('$2y$13$y9C5FJ.x...', 'fem')
+#1 /Applications/XAMPP/xamppfiles/htdocs/yii2-forum-training/vendor/yiisoft/yii2/base/View.php(336): require('/Applications/X...')
+#2 /Applications/XAMPP/xamppfiles/htdocs/yii2-forum-training/vendor/yiisoft/yii2/base/View.php(254): yii\base\View->renderPhpFile('/Applications/X...', Array)
+#3 /Applications/XAMPP/xamppfiles/htdocs/yii2-forum-training/vendor/yiisoft/yii2/base/View.php(156): yii\base\View->renderFile('/Applications/X...', Array, Object(backend\controllers\SiteController))
+#4 /Applications/XAMPP/xamppfiles/htdocs/yii2-forum-training/vendor/yiisoft/yii2/base/Controller.php(384): yii\base\View->render('index', Array, Object(backend\controllers\SiteController))
+#5 /Applications/XAMPP/xamppfiles/htdocs/yii2-forum-training/backend/controllers/SiteController.php(63): yii\base\Controller->render('index')
+#6 [internal function]: backend\controllers\SiteController->actionIndex()
+#7 /Applications/XAMPP/xamppfiles/htdocs/yii2-forum-training/vendor/yiisoft/yii2/base/InlineAction.php(57): call_user_func_array(Array, Array)
+#8 /Applications/XAMPP/xamppfiles/htdocs/yii2-forum-training/vendor/yiisoft/yii2/base/Controller.php(157): yii\base\InlineAction->runWithParams(Array)
+#9 /Applications/XAMPP/xamppfiles/htdocs/yii2-forum-training/vendor/yiisoft/yii2/base/Module.php(528): yii\base\Controller->runAction('index', Array)
+#10 /Applications/XAMPP/xamppfiles/htdocs/yii2-forum-training/vendor/yiisoft/yii2/web/Application.php(103): yii\base\Module->runAction('site/index', Array)
+#11 /Applications/XAMPP/xamppfiles/htdocs/yii2-forum-training/vendor/yiisoft/yii2/base/Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#12 /Applications/XAMPP/xamppfiles/htdocs/yii2-forum-training/backend/web/index.php(17): yii\base\Application->run()
+#13 {main}
+2018-11-12 15:51:14 [::1][1][d6e4b1e7a95313f20442072e57212a85][info][application] $_GET = []
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    'PHPBASICSESSID' => 'c84dabf2330a9a536b578e9cac5675f9'
+    '_basicCSRF' => 'baeb0a0b4ed783fa9e500919635d771443709a2b10b4abab4dd297b977cc7a65a:2:{i:0;s:10:\"_basicCSRF\";i:1;s:32:\"dQiP7uVxh-ffQl34Pn6X_Qe8qMWnjYcM\";}'
+    'tailorshub-frontend' => 'a94b4efe20b59cf9340a3e2d1ade4016'
+    'INOERP123123' => 'ba10d81fb5999b0cf34b264f0c07f91d'
+    'FAff4f990e9b17767d77209e972b22d618' => '8a4929afed366eb0f347dff488f7e13a'
+    '_csrf-seftonfross' => 'f8d9e3c1e338bb12bdb3648e31fc8ae973307f8737cbf24ed71f16109e642989a:2:{i:0;s:17:\"_csrf-seftonfross\";i:1;s:32:\"8zVfaAptBfOGDO4UtTYuSTmMxRVUQkcQ\";}'
+    'Idea-edd8db2d' => '2f6f5e5b-192e-4305-baeb-571107513b05'
+    '_ga' => 'GA1.1.568245260.1537000047'
+    'ckCsrfToken' => '3ZFDOtem9DJ9cbhFkV05V9R2cNUyK2zU9EvLkjA7'
+    'KCFINDER_showname' => 'on'
+    'KCFINDER_showsize' => 'off'
+    'KCFINDER_showtime' => 'off'
+    'KCFINDER_order' => 'name'
+    'KCFINDER_orderDesc' => 'off'
+    'KCFINDER_view' => 'thumbs'
+    'KCFINDER_displaySettings' => 'off'
+    '_frontendLawyer' => '3e7584ec09968df4637431820667553c423035b45936154cfd2968554e35a407a:2:{i:0;s:15:\"_frontendLawyer\";i:1;s:47:\"[10,\"$2y$13$pb9YcxiTdK2ERv95RKVN7.7LJ\",2592000]\";}'
+    '_frontendCSRF' => '39b12ca78484e70cb43321ef5477932b99ddd9335ac128114d5a7db83440498aa:2:{i:0;s:13:\"_frontendCSRF\";i:1;s:32:\"hvYEq9cHsa7ENLgqCQYb6nMZ-nuvmx8G\";}'
+    '_identity-user' => '146c6fa6860dac60709df9c1e9a0f1d2b8358586c34e73abe48586e81bca5d50a:2:{i:0;s:14:\"_identity-user\";i:1;s:46:\"[4,\"vxdOdWx4qvdC5xoCDuyD5mQTITnsX7yy\",2592000]\";}'
+    'advanced-frontend' => 'b0b13f4d6eddfb8a5822262f73390a18'
+    '_identity-frontend' => '037f84ba9be060846021ebb26fcac04ffedf3080d83a37c62a8e7c90dc1fd0bba:2:{i:0;s:18:\"_identity-frontend\";i:1;s:46:\"[1,\"mBn4AGuu6K_JJ5hvm8jy37JIpZYbkeAH\",2592000]\";}'
+    'jsilinks-frontend' => '7ceb04212174308deac6873ee36d0e17'
+    '_identity' => '007d3182f256cf3221a9a372cde436e98ee98ee6cad3d0a979b691fb4b56fa31a:2:{i:0;s:9:\"_identity\";i:1;s:46:\"[1,\"L_mppZfd98Mr-I8QBY_EBQ-7Lpm2_Bo7\",2592000]\";}'
+    'PHPBACKSESSID' => 'cdd81702f386dde9763c51a45420dc7f'
+    '_backendPASSUser' => 'f534598f569fa1321928d15b05ecf3306e5454e2ed2a3ecab166022d560a4a17a:2:{i:0;s:16:\"_backendPASSUser\";i:1;s:46:\"[1,\"uPyzYNidl_M561fYurQjst0oMuQEin0w\",2592000]\";}'
+    '_backendCSRF' => '13370b7a25cea7760d474a8aeedaf983d87dafe27366d10d877a4f0a742f729ba:2:{i:0;s:12:\"_backendCSRF\";i:1;s:32:\"Y2xBmAIrZsV2d770_1Ct6R9Yxqwr-iJq\";}'
+    '_csrf-frontend' => 'bb57da817caee0478f187641286825aae42c6b5f0d0934698caa9b66046e20f2a:2:{i:0;s:14:\"_csrf-frontend\";i:1;s:32:\"CC_FE6wt8u8eNRSYF_tytODZGSTVaWB1\";}'
+    'PHPFRONTSESSID' => 'a106bcf4b6018108f32b3dc63a30ea8d'
+    'advanced-backend' => 'd6e4b1e7a95313f20442072e57212a85'
+    '_identity-backend' => 'c97d207e4dfd974780a68ba8802c7fc6dedd0c0e29e30b827ed89570cee863f3a:2:{i:0;s:17:\"_identity-backend\";i:1;s:14:\"[1,\"\",2592000]\";}'
+    '_csrf-backend' => 'f9653cb413ff81a55b77ccdcae2a9f5404feead7299077a657b834e5a1c823c0a:2:{i:0;s:13:\"_csrf-backend\";i:1;s:32:\"puuJha9VOLhC2BGVvWbRRzvF1ACoDJdU\";}'
+    '_gid' => 'GA1.1.566027150.1542016452'
+    '__tawkuuid' => 'e::localhost::CYdJaUXL45RbChkPnw/aEGBm5tusnvzU9cOYofYEoHG2ttLzHD yGzzhfVrQo2AF::2'
+    'PHPSESSID' => '8fc789f7ed04134e2b8119eb7f128849'
+    '_frontendPassUser' => '7c4563df39522da9e926e7e985974c83a86ad81b6390157ffb57d5765a25592ea:2:{i:0;s:17:\"_frontendPassUser\";i:1;s:46:\"[1,\"moybQBnSY244xkJxAL73W-HfG3JQTvFp\",2592000]\";}'
+    '_csrf' => '12ba43d5989929164af541a5d6fff8832ceb266d52281979b8b9d88c8f35c081a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"l_LhuQBYWK0erlZ6ETuID83ZxWeIPxYy\";}'
+    'TawkConnectionTime' => '0'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__returnUrl' => '/yii2-forum-training/backend/web/'
+    '__id' => 1
+]
+
+$_SERVER = [
+    'REDIRECT_UNIQUE_ID' => 'W@mTYn8AAAEAAAV0hGMAAAAF'
+    'REDIRECT_STATUS' => '200'
+    'UNIQUE_ID' => 'W@mTYn8AAAEAAAV0hGMAAAAF'
+    'HTTP_HOST' => 'localhost'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_13_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/70.0.3538.77 Safari/537.36'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8'
+    'HTTP_REFERER' => 'http://localhost/yii2-forum-training/backend/web/categories'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, br'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.9'
+    'HTTP_COOKIE' => 'PHPBASICSESSID=c84dabf2330a9a536b578e9cac5675f9; _basicCSRF=baeb0a0b4ed783fa9e500919635d771443709a2b10b4abab4dd297b977cc7a65a%3A2%3A%7Bi%3A0%3Bs%3A10%3A%22_basicCSRF%22%3Bi%3A1%3Bs%3A32%3A%22dQiP7uVxh-ffQl34Pn6X_Qe8qMWnjYcM%22%3B%7D; tailorshub-frontend=a94b4efe20b59cf9340a3e2d1ade4016; INOERP123123=ba10d81fb5999b0cf34b264f0c07f91d; FAff4f990e9b17767d77209e972b22d618=8a4929afed366eb0f347dff488f7e13a; _csrf-seftonfross=f8d9e3c1e338bb12bdb3648e31fc8ae973307f8737cbf24ed71f16109e642989a%3A2%3A%7Bi%3A0%3Bs%3A17%3A%22_csrf-seftonfross%22%3Bi%3A1%3Bs%3A32%3A%228zVfaAptBfOGDO4UtTYuSTmMxRVUQkcQ%22%3B%7D; Idea-edd8db2d=2f6f5e5b-192e-4305-baeb-571107513b05; _ga=GA1.1.568245260.1537000047; ckCsrfToken=3ZFDOtem9DJ9cbhFkV05V9R2cNUyK2zU9EvLkjA7; KCFINDER_showname=on; KCFINDER_showsize=off; KCFINDER_showtime=off; KCFINDER_order=name; KCFINDER_orderDesc=off; KCFINDER_view=thumbs; KCFINDER_displaySettings=off; _frontendLawyer=3e7584ec09968df4637431820667553c423035b45936154cfd2968554e35a407a%3A2%3A%7Bi%3A0%3Bs%3A15%3A%22_frontendLawyer%22%3Bi%3A1%3Bs%3A47%3A%22%5B10%2C%22%242y%2413%24pb9YcxiTdK2ERv95RKVN7.7LJ%22%2C2592000%5D%22%3B%7D; _frontendCSRF=39b12ca78484e70cb43321ef5477932b99ddd9335ac128114d5a7db83440498aa%3A2%3A%7Bi%3A0%3Bs%3A13%3A%22_frontendCSRF%22%3Bi%3A1%3Bs%3A32%3A%22hvYEq9cHsa7ENLgqCQYb6nMZ-nuvmx8G%22%3B%7D; _identity-user=146c6fa6860dac60709df9c1e9a0f1d2b8358586c34e73abe48586e81bca5d50a%3A2%3A%7Bi%3A0%3Bs%3A14%3A%22_identity-user%22%3Bi%3A1%3Bs%3A46%3A%22%5B4%2C%22vxdOdWx4qvdC5xoCDuyD5mQTITnsX7yy%22%2C2592000%5D%22%3B%7D; advanced-frontend=b0b13f4d6eddfb8a5822262f73390a18; _identity-frontend=037f84ba9be060846021ebb26fcac04ffedf3080d83a37c62a8e7c90dc1fd0bba%3A2%3A%7Bi%3A0%3Bs%3A18%3A%22_identity-frontend%22%3Bi%3A1%3Bs%3A46%3A%22%5B1%2C%22mBn4AGuu6K_JJ5hvm8jy37JIpZYbkeAH%22%2C2592000%5D%22%3B%7D; jsilinks-frontend=7ceb04212174308deac6873ee36d0e17; _identity=007d3182f256cf3221a9a372cde436e98ee98ee6cad3d0a979b691fb4b56fa31a%3A2%3A%7Bi%3A0%3Bs%3A9%3A%22_identity%22%3Bi%3A1%3Bs%3A46%3A%22%5B1%2C%22L_mppZfd98Mr-I8QBY_EBQ-7Lpm2_Bo7%22%2C2592000%5D%22%3B%7D; PHPBACKSESSID=cdd81702f386dde9763c51a45420dc7f; _backendPASSUser=f534598f569fa1321928d15b05ecf3306e5454e2ed2a3ecab166022d560a4a17a%3A2%3A%7Bi%3A0%3Bs%3A16%3A%22_backendPASSUser%22%3Bi%3A1%3Bs%3A46%3A%22%5B1%2C%22uPyzYNidl_M561fYurQjst0oMuQEin0w%22%2C2592000%5D%22%3B%7D; _backendCSRF=13370b7a25cea7760d474a8aeedaf983d87dafe27366d10d877a4f0a742f729ba%3A2%3A%7Bi%3A0%3Bs%3A12%3A%22_backendCSRF%22%3Bi%3A1%3Bs%3A32%3A%22Y2xBmAIrZsV2d770_1Ct6R9Yxqwr-iJq%22%3B%7D; _csrf-frontend=bb57da817caee0478f187641286825aae42c6b5f0d0934698caa9b66046e20f2a%3A2%3A%7Bi%3A0%3Bs%3A14%3A%22_csrf-frontend%22%3Bi%3A1%3Bs%3A32%3A%22CC_FE6wt8u8eNRSYF_tytODZGSTVaWB1%22%3B%7D; PHPFRONTSESSID=a106bcf4b6018108f32b3dc63a30ea8d; advanced-backend=d6e4b1e7a95313f20442072e57212a85; _identity-backend=c97d207e4dfd974780a68ba8802c7fc6dedd0c0e29e30b827ed89570cee863f3a%3A2%3A%7Bi%3A0%3Bs%3A17%3A%22_identity-backend%22%3Bi%3A1%3Bs%3A14%3A%22%5B1%2C%22%22%2C2592000%5D%22%3B%7D; _csrf-backend=f9653cb413ff81a55b77ccdcae2a9f5404feead7299077a657b834e5a1c823c0a%3A2%3A%7Bi%3A0%3Bs%3A13%3A%22_csrf-backend%22%3Bi%3A1%3Bs%3A32%3A%22puuJha9VOLhC2BGVvWbRRzvF1ACoDJdU%22%3B%7D; _gid=GA1.1.566027150.1542016452; __tawkuuid=e::localhost::CYdJaUXL45RbChkPnw/aEGBm5tusnvzU9cOYofYEoHG2ttLzHD+yGzzhfVrQo2AF::2; PHPSESSID=8fc789f7ed04134e2b8119eb7f128849; _frontendPassUser=7c4563df39522da9e926e7e985974c83a86ad81b6390157ffb57d5765a25592ea%3A2%3A%7Bi%3A0%3Bs%3A17%3A%22_frontendPassUser%22%3Bi%3A1%3Bs%3A46%3A%22%5B1%2C%22moybQBnSY244xkJxAL73W-HfG3JQTvFp%22%2C2592000%5D%22%3B%7D; _csrf=12ba43d5989929164af541a5d6fff8832ceb266d52281979b8b9d88c8f35c081a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22l_LhuQBYWK0erlZ6ETuID83ZxWeIPxYy%22%3B%7D; TawkConnectionTime=0'
+    'PATH' => '/usr/bin:/bin:/usr/sbin:/sbin'
+    'DYLD_LIBRARY_PATH' => '/Applications/XAMPP/xamppfiles/lib'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache/2.4.25 (Unix) OpenSSL/1.0.2j PHP/7.1.1 mod_perl/2.0.8-dev Perl/v5.16.3'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => '/Applications/XAMPP/xamppfiles/htdocs'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/Applications/XAMPP/xamppfiles/htdocs'
+    'SERVER_ADMIN' => 'you@example.com'
+    'SCRIPT_FILENAME' => '/Applications/XAMPP/xamppfiles/htdocs/yii2-forum-training/backend/web/index.php'
+    'REMOTE_PORT' => '59265'
+    'REDIRECT_URL' => '/yii2-forum-training/backend/web/site/index'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/yii2-forum-training/backend/web/site/index'
+    'SCRIPT_NAME' => '/yii2-forum-training/backend/web/index.php'
+    'PHP_SELF' => '/yii2-forum-training/backend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1542034274.298
+    'REQUEST_TIME' => 1542034274
+]
+2018-11-12 16:00:30 [::1][1][d6e4b1e7a95313f20442072e57212a85][error][ParseError] ParseError: syntax error, unexpected 'echo' (T_ECHO), expecting ',' or ';' in /Applications/XAMPP/xamppfiles/htdocs/yii2-forum-training/backend/views/site/index.php:31
+Stack trace:
+#0 /Applications/XAMPP/xamppfiles/htdocs/yii2-forum-training/vendor/yiisoft/yii2/base/View.php(254): yii\base\View->renderPhpFile('/Applications/X...', Array)
+#1 /Applications/XAMPP/xamppfiles/htdocs/yii2-forum-training/vendor/yiisoft/yii2/base/View.php(156): yii\base\View->renderFile('/Applications/X...', Array, Object(backend\controllers\SiteController))
+#2 /Applications/XAMPP/xamppfiles/htdocs/yii2-forum-training/vendor/yiisoft/yii2/base/Controller.php(384): yii\base\View->render('index', Array, Object(backend\controllers\SiteController))
+#3 /Applications/XAMPP/xamppfiles/htdocs/yii2-forum-training/backend/controllers/SiteController.php(63): yii\base\Controller->render('index')
+#4 [internal function]: backend\controllers\SiteController->actionIndex()
+#5 /Applications/XAMPP/xamppfiles/htdocs/yii2-forum-training/vendor/yiisoft/yii2/base/InlineAction.php(57): call_user_func_array(Array, Array)
+#6 /Applications/XAMPP/xamppfiles/htdocs/yii2-forum-training/vendor/yiisoft/yii2/base/Controller.php(157): yii\base\InlineAction->runWithParams(Array)
+#7 /Applications/XAMPP/xamppfiles/htdocs/yii2-forum-training/vendor/yiisoft/yii2/base/Module.php(528): yii\base\Controller->runAction('index', Array)
+#8 /Applications/XAMPP/xamppfiles/htdocs/yii2-forum-training/vendor/yiisoft/yii2/web/Application.php(103): yii\base\Module->runAction('site/index', Array)
+#9 /Applications/XAMPP/xamppfiles/htdocs/yii2-forum-training/vendor/yiisoft/yii2/base/Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#10 /Applications/XAMPP/xamppfiles/htdocs/yii2-forum-training/backend/web/index.php(17): yii\base\Application->run()
+#11 {main}
+2018-11-12 16:00:30 [::1][1][d6e4b1e7a95313f20442072e57212a85][info][application] $_GET = []
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    'PHPBASICSESSID' => 'c84dabf2330a9a536b578e9cac5675f9'
+    '_basicCSRF' => 'baeb0a0b4ed783fa9e500919635d771443709a2b10b4abab4dd297b977cc7a65a:2:{i:0;s:10:\"_basicCSRF\";i:1;s:32:\"dQiP7uVxh-ffQl34Pn6X_Qe8qMWnjYcM\";}'
+    'tailorshub-frontend' => 'a94b4efe20b59cf9340a3e2d1ade4016'
+    'INOERP123123' => 'ba10d81fb5999b0cf34b264f0c07f91d'
+    'FAff4f990e9b17767d77209e972b22d618' => '8a4929afed366eb0f347dff488f7e13a'
+    '_csrf-seftonfross' => 'f8d9e3c1e338bb12bdb3648e31fc8ae973307f8737cbf24ed71f16109e642989a:2:{i:0;s:17:\"_csrf-seftonfross\";i:1;s:32:\"8zVfaAptBfOGDO4UtTYuSTmMxRVUQkcQ\";}'
+    'Idea-edd8db2d' => '2f6f5e5b-192e-4305-baeb-571107513b05'
+    '_ga' => 'GA1.1.568245260.1537000047'
+    'ckCsrfToken' => '3ZFDOtem9DJ9cbhFkV05V9R2cNUyK2zU9EvLkjA7'
+    'KCFINDER_showname' => 'on'
+    'KCFINDER_showsize' => 'off'
+    'KCFINDER_showtime' => 'off'
+    'KCFINDER_order' => 'name'
+    'KCFINDER_orderDesc' => 'off'
+    'KCFINDER_view' => 'thumbs'
+    'KCFINDER_displaySettings' => 'off'
+    '_frontendLawyer' => '3e7584ec09968df4637431820667553c423035b45936154cfd2968554e35a407a:2:{i:0;s:15:\"_frontendLawyer\";i:1;s:47:\"[10,\"$2y$13$pb9YcxiTdK2ERv95RKVN7.7LJ\",2592000]\";}'
+    '_frontendCSRF' => '39b12ca78484e70cb43321ef5477932b99ddd9335ac128114d5a7db83440498aa:2:{i:0;s:13:\"_frontendCSRF\";i:1;s:32:\"hvYEq9cHsa7ENLgqCQYb6nMZ-nuvmx8G\";}'
+    '_identity-user' => '146c6fa6860dac60709df9c1e9a0f1d2b8358586c34e73abe48586e81bca5d50a:2:{i:0;s:14:\"_identity-user\";i:1;s:46:\"[4,\"vxdOdWx4qvdC5xoCDuyD5mQTITnsX7yy\",2592000]\";}'
+    'advanced-frontend' => 'b0b13f4d6eddfb8a5822262f73390a18'
+    '_identity-frontend' => '037f84ba9be060846021ebb26fcac04ffedf3080d83a37c62a8e7c90dc1fd0bba:2:{i:0;s:18:\"_identity-frontend\";i:1;s:46:\"[1,\"mBn4AGuu6K_JJ5hvm8jy37JIpZYbkeAH\",2592000]\";}'
+    'jsilinks-frontend' => '7ceb04212174308deac6873ee36d0e17'
+    '_identity' => '007d3182f256cf3221a9a372cde436e98ee98ee6cad3d0a979b691fb4b56fa31a:2:{i:0;s:9:\"_identity\";i:1;s:46:\"[1,\"L_mppZfd98Mr-I8QBY_EBQ-7Lpm2_Bo7\",2592000]\";}'
+    'PHPBACKSESSID' => 'cdd81702f386dde9763c51a45420dc7f'
+    '_backendPASSUser' => 'f534598f569fa1321928d15b05ecf3306e5454e2ed2a3ecab166022d560a4a17a:2:{i:0;s:16:\"_backendPASSUser\";i:1;s:46:\"[1,\"uPyzYNidl_M561fYurQjst0oMuQEin0w\",2592000]\";}'
+    '_backendCSRF' => '13370b7a25cea7760d474a8aeedaf983d87dafe27366d10d877a4f0a742f729ba:2:{i:0;s:12:\"_backendCSRF\";i:1;s:32:\"Y2xBmAIrZsV2d770_1Ct6R9Yxqwr-iJq\";}'
+    '_csrf-frontend' => 'bb57da817caee0478f187641286825aae42c6b5f0d0934698caa9b66046e20f2a:2:{i:0;s:14:\"_csrf-frontend\";i:1;s:32:\"CC_FE6wt8u8eNRSYF_tytODZGSTVaWB1\";}'
+    'PHPFRONTSESSID' => 'a106bcf4b6018108f32b3dc63a30ea8d'
+    'advanced-backend' => 'd6e4b1e7a95313f20442072e57212a85'
+    '_identity-backend' => 'c97d207e4dfd974780a68ba8802c7fc6dedd0c0e29e30b827ed89570cee863f3a:2:{i:0;s:17:\"_identity-backend\";i:1;s:14:\"[1,\"\",2592000]\";}'
+    '_csrf-backend' => 'f9653cb413ff81a55b77ccdcae2a9f5404feead7299077a657b834e5a1c823c0a:2:{i:0;s:13:\"_csrf-backend\";i:1;s:32:\"puuJha9VOLhC2BGVvWbRRzvF1ACoDJdU\";}'
+    '_gid' => 'GA1.1.566027150.1542016452'
+    '__tawkuuid' => 'e::localhost::CYdJaUXL45RbChkPnw/aEGBm5tusnvzU9cOYofYEoHG2ttLzHD yGzzhfVrQo2AF::2'
+    'PHPSESSID' => '8fc789f7ed04134e2b8119eb7f128849'
+    '_frontendPassUser' => '7c4563df39522da9e926e7e985974c83a86ad81b6390157ffb57d5765a25592ea:2:{i:0;s:17:\"_frontendPassUser\";i:1;s:46:\"[1,\"moybQBnSY244xkJxAL73W-HfG3JQTvFp\",2592000]\";}'
+    '_csrf' => '12ba43d5989929164af541a5d6fff8832ceb266d52281979b8b9d88c8f35c081a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"l_LhuQBYWK0erlZ6ETuID83ZxWeIPxYy\";}'
+    'TawkConnectionTime' => '0'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__returnUrl' => '/yii2-forum-training/backend/web/'
+    '__id' => 1
+]
+
+$_SERVER = [
+    'REDIRECT_UNIQUE_ID' => 'W@mVjn8AAAEAAAV3BqYAAAAG'
+    'REDIRECT_STATUS' => '200'
+    'UNIQUE_ID' => 'W@mVjn8AAAEAAAV3BqYAAAAG'
+    'HTTP_HOST' => 'localhost'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_13_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/70.0.3538.77 Safari/537.36'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8'
+    'HTTP_REFERER' => 'http://localhost/yii2-forum-training/backend/web/categories'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, br'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.9'
+    'HTTP_COOKIE' => 'PHPBASICSESSID=c84dabf2330a9a536b578e9cac5675f9; _basicCSRF=baeb0a0b4ed783fa9e500919635d771443709a2b10b4abab4dd297b977cc7a65a%3A2%3A%7Bi%3A0%3Bs%3A10%3A%22_basicCSRF%22%3Bi%3A1%3Bs%3A32%3A%22dQiP7uVxh-ffQl34Pn6X_Qe8qMWnjYcM%22%3B%7D; tailorshub-frontend=a94b4efe20b59cf9340a3e2d1ade4016; INOERP123123=ba10d81fb5999b0cf34b264f0c07f91d; FAff4f990e9b17767d77209e972b22d618=8a4929afed366eb0f347dff488f7e13a; _csrf-seftonfross=f8d9e3c1e338bb12bdb3648e31fc8ae973307f8737cbf24ed71f16109e642989a%3A2%3A%7Bi%3A0%3Bs%3A17%3A%22_csrf-seftonfross%22%3Bi%3A1%3Bs%3A32%3A%228zVfaAptBfOGDO4UtTYuSTmMxRVUQkcQ%22%3B%7D; Idea-edd8db2d=2f6f5e5b-192e-4305-baeb-571107513b05; _ga=GA1.1.568245260.1537000047; ckCsrfToken=3ZFDOtem9DJ9cbhFkV05V9R2cNUyK2zU9EvLkjA7; KCFINDER_showname=on; KCFINDER_showsize=off; KCFINDER_showtime=off; KCFINDER_order=name; KCFINDER_orderDesc=off; KCFINDER_view=thumbs; KCFINDER_displaySettings=off; _frontendLawyer=3e7584ec09968df4637431820667553c423035b45936154cfd2968554e35a407a%3A2%3A%7Bi%3A0%3Bs%3A15%3A%22_frontendLawyer%22%3Bi%3A1%3Bs%3A47%3A%22%5B10%2C%22%242y%2413%24pb9YcxiTdK2ERv95RKVN7.7LJ%22%2C2592000%5D%22%3B%7D; _frontendCSRF=39b12ca78484e70cb43321ef5477932b99ddd9335ac128114d5a7db83440498aa%3A2%3A%7Bi%3A0%3Bs%3A13%3A%22_frontendCSRF%22%3Bi%3A1%3Bs%3A32%3A%22hvYEq9cHsa7ENLgqCQYb6nMZ-nuvmx8G%22%3B%7D; _identity-user=146c6fa6860dac60709df9c1e9a0f1d2b8358586c34e73abe48586e81bca5d50a%3A2%3A%7Bi%3A0%3Bs%3A14%3A%22_identity-user%22%3Bi%3A1%3Bs%3A46%3A%22%5B4%2C%22vxdOdWx4qvdC5xoCDuyD5mQTITnsX7yy%22%2C2592000%5D%22%3B%7D; advanced-frontend=b0b13f4d6eddfb8a5822262f73390a18; _identity-frontend=037f84ba9be060846021ebb26fcac04ffedf3080d83a37c62a8e7c90dc1fd0bba%3A2%3A%7Bi%3A0%3Bs%3A18%3A%22_identity-frontend%22%3Bi%3A1%3Bs%3A46%3A%22%5B1%2C%22mBn4AGuu6K_JJ5hvm8jy37JIpZYbkeAH%22%2C2592000%5D%22%3B%7D; jsilinks-frontend=7ceb04212174308deac6873ee36d0e17; _identity=007d3182f256cf3221a9a372cde436e98ee98ee6cad3d0a979b691fb4b56fa31a%3A2%3A%7Bi%3A0%3Bs%3A9%3A%22_identity%22%3Bi%3A1%3Bs%3A46%3A%22%5B1%2C%22L_mppZfd98Mr-I8QBY_EBQ-7Lpm2_Bo7%22%2C2592000%5D%22%3B%7D; PHPBACKSESSID=cdd81702f386dde9763c51a45420dc7f; _backendPASSUser=f534598f569fa1321928d15b05ecf3306e5454e2ed2a3ecab166022d560a4a17a%3A2%3A%7Bi%3A0%3Bs%3A16%3A%22_backendPASSUser%22%3Bi%3A1%3Bs%3A46%3A%22%5B1%2C%22uPyzYNidl_M561fYurQjst0oMuQEin0w%22%2C2592000%5D%22%3B%7D; _backendCSRF=13370b7a25cea7760d474a8aeedaf983d87dafe27366d10d877a4f0a742f729ba%3A2%3A%7Bi%3A0%3Bs%3A12%3A%22_backendCSRF%22%3Bi%3A1%3Bs%3A32%3A%22Y2xBmAIrZsV2d770_1Ct6R9Yxqwr-iJq%22%3B%7D; _csrf-frontend=bb57da817caee0478f187641286825aae42c6b5f0d0934698caa9b66046e20f2a%3A2%3A%7Bi%3A0%3Bs%3A14%3A%22_csrf-frontend%22%3Bi%3A1%3Bs%3A32%3A%22CC_FE6wt8u8eNRSYF_tytODZGSTVaWB1%22%3B%7D; PHPFRONTSESSID=a106bcf4b6018108f32b3dc63a30ea8d; advanced-backend=d6e4b1e7a95313f20442072e57212a85; _identity-backend=c97d207e4dfd974780a68ba8802c7fc6dedd0c0e29e30b827ed89570cee863f3a%3A2%3A%7Bi%3A0%3Bs%3A17%3A%22_identity-backend%22%3Bi%3A1%3Bs%3A14%3A%22%5B1%2C%22%22%2C2592000%5D%22%3B%7D; _csrf-backend=f9653cb413ff81a55b77ccdcae2a9f5404feead7299077a657b834e5a1c823c0a%3A2%3A%7Bi%3A0%3Bs%3A13%3A%22_csrf-backend%22%3Bi%3A1%3Bs%3A32%3A%22puuJha9VOLhC2BGVvWbRRzvF1ACoDJdU%22%3B%7D; _gid=GA1.1.566027150.1542016452; __tawkuuid=e::localhost::CYdJaUXL45RbChkPnw/aEGBm5tusnvzU9cOYofYEoHG2ttLzHD+yGzzhfVrQo2AF::2; PHPSESSID=8fc789f7ed04134e2b8119eb7f128849; _frontendPassUser=7c4563df39522da9e926e7e985974c83a86ad81b6390157ffb57d5765a25592ea%3A2%3A%7Bi%3A0%3Bs%3A17%3A%22_frontendPassUser%22%3Bi%3A1%3Bs%3A46%3A%22%5B1%2C%22moybQBnSY244xkJxAL73W-HfG3JQTvFp%22%2C2592000%5D%22%3B%7D; _csrf=12ba43d5989929164af541a5d6fff8832ceb266d52281979b8b9d88c8f35c081a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22l_LhuQBYWK0erlZ6ETuID83ZxWeIPxYy%22%3B%7D; TawkConnectionTime=0'
+    'PATH' => '/usr/bin:/bin:/usr/sbin:/sbin'
+    'DYLD_LIBRARY_PATH' => '/Applications/XAMPP/xamppfiles/lib'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache/2.4.25 (Unix) OpenSSL/1.0.2j PHP/7.1.1 mod_perl/2.0.8-dev Perl/v5.16.3'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => '/Applications/XAMPP/xamppfiles/htdocs'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/Applications/XAMPP/xamppfiles/htdocs'
+    'SERVER_ADMIN' => 'you@example.com'
+    'SCRIPT_FILENAME' => '/Applications/XAMPP/xamppfiles/htdocs/yii2-forum-training/backend/web/index.php'
+    'REMOTE_PORT' => '59995'
+    'REDIRECT_URL' => '/yii2-forum-training/backend/web/site/index'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/yii2-forum-training/backend/web/site/index'
+    'SCRIPT_NAME' => '/yii2-forum-training/backend/web/index.php'
+    'PHP_SELF' => '/yii2-forum-training/backend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1542034830.005
+    'REQUEST_TIME' => 1542034830
+]
+2018-11-12 16:05:49 [::1][1][d6e4b1e7a95313f20442072e57212a85][error][yii\base\ErrorException:8] yii\base\ErrorException: Use of undefined constant md5 - assumed 'md5' in /Applications/XAMPP/xamppfiles/htdocs/yii2-forum-training/backend/views/site/index.php:38
+Stack trace:
+#0 /Applications/XAMPP/xamppfiles/htdocs/yii2-forum-training/backend/views/site/index.php(38): yii\base\ErrorHandler->handleError(8, 'Use of undefine...', '/Applications/X...', 38, Array)
+#1 /Applications/XAMPP/xamppfiles/htdocs/yii2-forum-training/vendor/yiisoft/yii2/base/View.php(336): require('/Applications/X...')
+#2 /Applications/XAMPP/xamppfiles/htdocs/yii2-forum-training/vendor/yiisoft/yii2/base/View.php(254): yii\base\View->renderPhpFile('/Applications/X...', Array)
+#3 /Applications/XAMPP/xamppfiles/htdocs/yii2-forum-training/vendor/yiisoft/yii2/base/View.php(156): yii\base\View->renderFile('/Applications/X...', Array, Object(backend\controllers\SiteController))
+#4 /Applications/XAMPP/xamppfiles/htdocs/yii2-forum-training/vendor/yiisoft/yii2/base/Controller.php(384): yii\base\View->render('index', Array, Object(backend\controllers\SiteController))
+#5 /Applications/XAMPP/xamppfiles/htdocs/yii2-forum-training/backend/controllers/SiteController.php(63): yii\base\Controller->render('index')
+#6 [internal function]: backend\controllers\SiteController->actionIndex()
+#7 /Applications/XAMPP/xamppfiles/htdocs/yii2-forum-training/vendor/yiisoft/yii2/base/InlineAction.php(57): call_user_func_array(Array, Array)
+#8 /Applications/XAMPP/xamppfiles/htdocs/yii2-forum-training/vendor/yiisoft/yii2/base/Controller.php(157): yii\base\InlineAction->runWithParams(Array)
+#9 /Applications/XAMPP/xamppfiles/htdocs/yii2-forum-training/vendor/yiisoft/yii2/base/Module.php(528): yii\base\Controller->runAction('index', Array)
+#10 /Applications/XAMPP/xamppfiles/htdocs/yii2-forum-training/vendor/yiisoft/yii2/web/Application.php(103): yii\base\Module->runAction('site/index', Array)
+#11 /Applications/XAMPP/xamppfiles/htdocs/yii2-forum-training/vendor/yiisoft/yii2/base/Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#12 /Applications/XAMPP/xamppfiles/htdocs/yii2-forum-training/backend/web/index.php(17): yii\base\Application->run()
+#13 {main}
+2018-11-12 16:05:47 [::1][1][d6e4b1e7a95313f20442072e57212a85][info][application] $_GET = []
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    'PHPBASICSESSID' => 'c84dabf2330a9a536b578e9cac5675f9'
+    '_basicCSRF' => 'baeb0a0b4ed783fa9e500919635d771443709a2b10b4abab4dd297b977cc7a65a:2:{i:0;s:10:\"_basicCSRF\";i:1;s:32:\"dQiP7uVxh-ffQl34Pn6X_Qe8qMWnjYcM\";}'
+    'tailorshub-frontend' => 'a94b4efe20b59cf9340a3e2d1ade4016'
+    'INOERP123123' => 'ba10d81fb5999b0cf34b264f0c07f91d'
+    'FAff4f990e9b17767d77209e972b22d618' => '8a4929afed366eb0f347dff488f7e13a'
+    '_csrf-seftonfross' => 'f8d9e3c1e338bb12bdb3648e31fc8ae973307f8737cbf24ed71f16109e642989a:2:{i:0;s:17:\"_csrf-seftonfross\";i:1;s:32:\"8zVfaAptBfOGDO4UtTYuSTmMxRVUQkcQ\";}'
+    'Idea-edd8db2d' => '2f6f5e5b-192e-4305-baeb-571107513b05'
+    '_ga' => 'GA1.1.568245260.1537000047'
+    'ckCsrfToken' => '3ZFDOtem9DJ9cbhFkV05V9R2cNUyK2zU9EvLkjA7'
+    'KCFINDER_showname' => 'on'
+    'KCFINDER_showsize' => 'off'
+    'KCFINDER_showtime' => 'off'
+    'KCFINDER_order' => 'name'
+    'KCFINDER_orderDesc' => 'off'
+    'KCFINDER_view' => 'thumbs'
+    'KCFINDER_displaySettings' => 'off'
+    '_frontendLawyer' => '3e7584ec09968df4637431820667553c423035b45936154cfd2968554e35a407a:2:{i:0;s:15:\"_frontendLawyer\";i:1;s:47:\"[10,\"$2y$13$pb9YcxiTdK2ERv95RKVN7.7LJ\",2592000]\";}'
+    '_frontendCSRF' => '39b12ca78484e70cb43321ef5477932b99ddd9335ac128114d5a7db83440498aa:2:{i:0;s:13:\"_frontendCSRF\";i:1;s:32:\"hvYEq9cHsa7ENLgqCQYb6nMZ-nuvmx8G\";}'
+    '_identity-user' => '146c6fa6860dac60709df9c1e9a0f1d2b8358586c34e73abe48586e81bca5d50a:2:{i:0;s:14:\"_identity-user\";i:1;s:46:\"[4,\"vxdOdWx4qvdC5xoCDuyD5mQTITnsX7yy\",2592000]\";}'
+    'advanced-frontend' => 'b0b13f4d6eddfb8a5822262f73390a18'
+    '_identity-frontend' => '037f84ba9be060846021ebb26fcac04ffedf3080d83a37c62a8e7c90dc1fd0bba:2:{i:0;s:18:\"_identity-frontend\";i:1;s:46:\"[1,\"mBn4AGuu6K_JJ5hvm8jy37JIpZYbkeAH\",2592000]\";}'
+    'jsilinks-frontend' => '7ceb04212174308deac6873ee36d0e17'
+    '_identity' => '007d3182f256cf3221a9a372cde436e98ee98ee6cad3d0a979b691fb4b56fa31a:2:{i:0;s:9:\"_identity\";i:1;s:46:\"[1,\"L_mppZfd98Mr-I8QBY_EBQ-7Lpm2_Bo7\",2592000]\";}'
+    'PHPBACKSESSID' => 'cdd81702f386dde9763c51a45420dc7f'
+    '_backendPASSUser' => 'f534598f569fa1321928d15b05ecf3306e5454e2ed2a3ecab166022d560a4a17a:2:{i:0;s:16:\"_backendPASSUser\";i:1;s:46:\"[1,\"uPyzYNidl_M561fYurQjst0oMuQEin0w\",2592000]\";}'
+    '_backendCSRF' => '13370b7a25cea7760d474a8aeedaf983d87dafe27366d10d877a4f0a742f729ba:2:{i:0;s:12:\"_backendCSRF\";i:1;s:32:\"Y2xBmAIrZsV2d770_1Ct6R9Yxqwr-iJq\";}'
+    '_csrf-frontend' => 'bb57da817caee0478f187641286825aae42c6b5f0d0934698caa9b66046e20f2a:2:{i:0;s:14:\"_csrf-frontend\";i:1;s:32:\"CC_FE6wt8u8eNRSYF_tytODZGSTVaWB1\";}'
+    'PHPFRONTSESSID' => 'a106bcf4b6018108f32b3dc63a30ea8d'
+    'advanced-backend' => 'd6e4b1e7a95313f20442072e57212a85'
+    '_identity-backend' => 'c97d207e4dfd974780a68ba8802c7fc6dedd0c0e29e30b827ed89570cee863f3a:2:{i:0;s:17:\"_identity-backend\";i:1;s:14:\"[1,\"\",2592000]\";}'
+    '_csrf-backend' => 'f9653cb413ff81a55b77ccdcae2a9f5404feead7299077a657b834e5a1c823c0a:2:{i:0;s:13:\"_csrf-backend\";i:1;s:32:\"puuJha9VOLhC2BGVvWbRRzvF1ACoDJdU\";}'
+    '_gid' => 'GA1.1.566027150.1542016452'
+    '__tawkuuid' => 'e::localhost::CYdJaUXL45RbChkPnw/aEGBm5tusnvzU9cOYofYEoHG2ttLzHD yGzzhfVrQo2AF::2'
+    'PHPSESSID' => '8fc789f7ed04134e2b8119eb7f128849'
+    '_frontendPassUser' => '7c4563df39522da9e926e7e985974c83a86ad81b6390157ffb57d5765a25592ea:2:{i:0;s:17:\"_frontendPassUser\";i:1;s:46:\"[1,\"moybQBnSY244xkJxAL73W-HfG3JQTvFp\",2592000]\";}'
+    '_csrf' => '12ba43d5989929164af541a5d6fff8832ceb266d52281979b8b9d88c8f35c081a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"l_LhuQBYWK0erlZ6ETuID83ZxWeIPxYy\";}'
+    'TawkConnectionTime' => '0'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__returnUrl' => '/yii2-forum-training/backend/web/'
+    '__id' => 1
+]
+
+$_SERVER = [
+    'REDIRECT_UNIQUE_ID' => 'W@mWy38AAAEAAAV4uyMAAAAH'
+    'REDIRECT_STATUS' => '200'
+    'UNIQUE_ID' => 'W@mWy38AAAEAAAV4uyMAAAAH'
+    'HTTP_HOST' => 'localhost'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_13_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/70.0.3538.77 Safari/537.36'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8'
+    'HTTP_REFERER' => 'http://localhost/yii2-forum-training/backend/web/categories'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, br'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.9'
+    'HTTP_COOKIE' => 'PHPBASICSESSID=c84dabf2330a9a536b578e9cac5675f9; _basicCSRF=baeb0a0b4ed783fa9e500919635d771443709a2b10b4abab4dd297b977cc7a65a%3A2%3A%7Bi%3A0%3Bs%3A10%3A%22_basicCSRF%22%3Bi%3A1%3Bs%3A32%3A%22dQiP7uVxh-ffQl34Pn6X_Qe8qMWnjYcM%22%3B%7D; tailorshub-frontend=a94b4efe20b59cf9340a3e2d1ade4016; INOERP123123=ba10d81fb5999b0cf34b264f0c07f91d; FAff4f990e9b17767d77209e972b22d618=8a4929afed366eb0f347dff488f7e13a; _csrf-seftonfross=f8d9e3c1e338bb12bdb3648e31fc8ae973307f8737cbf24ed71f16109e642989a%3A2%3A%7Bi%3A0%3Bs%3A17%3A%22_csrf-seftonfross%22%3Bi%3A1%3Bs%3A32%3A%228zVfaAptBfOGDO4UtTYuSTmMxRVUQkcQ%22%3B%7D; Idea-edd8db2d=2f6f5e5b-192e-4305-baeb-571107513b05; _ga=GA1.1.568245260.1537000047; ckCsrfToken=3ZFDOtem9DJ9cbhFkV05V9R2cNUyK2zU9EvLkjA7; KCFINDER_showname=on; KCFINDER_showsize=off; KCFINDER_showtime=off; KCFINDER_order=name; KCFINDER_orderDesc=off; KCFINDER_view=thumbs; KCFINDER_displaySettings=off; _frontendLawyer=3e7584ec09968df4637431820667553c423035b45936154cfd2968554e35a407a%3A2%3A%7Bi%3A0%3Bs%3A15%3A%22_frontendLawyer%22%3Bi%3A1%3Bs%3A47%3A%22%5B10%2C%22%242y%2413%24pb9YcxiTdK2ERv95RKVN7.7LJ%22%2C2592000%5D%22%3B%7D; _frontendCSRF=39b12ca78484e70cb43321ef5477932b99ddd9335ac128114d5a7db83440498aa%3A2%3A%7Bi%3A0%3Bs%3A13%3A%22_frontendCSRF%22%3Bi%3A1%3Bs%3A32%3A%22hvYEq9cHsa7ENLgqCQYb6nMZ-nuvmx8G%22%3B%7D; _identity-user=146c6fa6860dac60709df9c1e9a0f1d2b8358586c34e73abe48586e81bca5d50a%3A2%3A%7Bi%3A0%3Bs%3A14%3A%22_identity-user%22%3Bi%3A1%3Bs%3A46%3A%22%5B4%2C%22vxdOdWx4qvdC5xoCDuyD5mQTITnsX7yy%22%2C2592000%5D%22%3B%7D; advanced-frontend=b0b13f4d6eddfb8a5822262f73390a18; _identity-frontend=037f84ba9be060846021ebb26fcac04ffedf3080d83a37c62a8e7c90dc1fd0bba%3A2%3A%7Bi%3A0%3Bs%3A18%3A%22_identity-frontend%22%3Bi%3A1%3Bs%3A46%3A%22%5B1%2C%22mBn4AGuu6K_JJ5hvm8jy37JIpZYbkeAH%22%2C2592000%5D%22%3B%7D; jsilinks-frontend=7ceb04212174308deac6873ee36d0e17; _identity=007d3182f256cf3221a9a372cde436e98ee98ee6cad3d0a979b691fb4b56fa31a%3A2%3A%7Bi%3A0%3Bs%3A9%3A%22_identity%22%3Bi%3A1%3Bs%3A46%3A%22%5B1%2C%22L_mppZfd98Mr-I8QBY_EBQ-7Lpm2_Bo7%22%2C2592000%5D%22%3B%7D; PHPBACKSESSID=cdd81702f386dde9763c51a45420dc7f; _backendPASSUser=f534598f569fa1321928d15b05ecf3306e5454e2ed2a3ecab166022d560a4a17a%3A2%3A%7Bi%3A0%3Bs%3A16%3A%22_backendPASSUser%22%3Bi%3A1%3Bs%3A46%3A%22%5B1%2C%22uPyzYNidl_M561fYurQjst0oMuQEin0w%22%2C2592000%5D%22%3B%7D; _backendCSRF=13370b7a25cea7760d474a8aeedaf983d87dafe27366d10d877a4f0a742f729ba%3A2%3A%7Bi%3A0%3Bs%3A12%3A%22_backendCSRF%22%3Bi%3A1%3Bs%3A32%3A%22Y2xBmAIrZsV2d770_1Ct6R9Yxqwr-iJq%22%3B%7D; _csrf-frontend=bb57da817caee0478f187641286825aae42c6b5f0d0934698caa9b66046e20f2a%3A2%3A%7Bi%3A0%3Bs%3A14%3A%22_csrf-frontend%22%3Bi%3A1%3Bs%3A32%3A%22CC_FE6wt8u8eNRSYF_tytODZGSTVaWB1%22%3B%7D; PHPFRONTSESSID=a106bcf4b6018108f32b3dc63a30ea8d; advanced-backend=d6e4b1e7a95313f20442072e57212a85; _identity-backend=c97d207e4dfd974780a68ba8802c7fc6dedd0c0e29e30b827ed89570cee863f3a%3A2%3A%7Bi%3A0%3Bs%3A17%3A%22_identity-backend%22%3Bi%3A1%3Bs%3A14%3A%22%5B1%2C%22%22%2C2592000%5D%22%3B%7D; _csrf-backend=f9653cb413ff81a55b77ccdcae2a9f5404feead7299077a657b834e5a1c823c0a%3A2%3A%7Bi%3A0%3Bs%3A13%3A%22_csrf-backend%22%3Bi%3A1%3Bs%3A32%3A%22puuJha9VOLhC2BGVvWbRRzvF1ACoDJdU%22%3B%7D; _gid=GA1.1.566027150.1542016452; __tawkuuid=e::localhost::CYdJaUXL45RbChkPnw/aEGBm5tusnvzU9cOYofYEoHG2ttLzHD+yGzzhfVrQo2AF::2; PHPSESSID=8fc789f7ed04134e2b8119eb7f128849; _frontendPassUser=7c4563df39522da9e926e7e985974c83a86ad81b6390157ffb57d5765a25592ea%3A2%3A%7Bi%3A0%3Bs%3A17%3A%22_frontendPassUser%22%3Bi%3A1%3Bs%3A46%3A%22%5B1%2C%22moybQBnSY244xkJxAL73W-HfG3JQTvFp%22%2C2592000%5D%22%3B%7D; _csrf=12ba43d5989929164af541a5d6fff8832ceb266d52281979b8b9d88c8f35c081a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22l_LhuQBYWK0erlZ6ETuID83ZxWeIPxYy%22%3B%7D; TawkConnectionTime=0'
+    'PATH' => '/usr/bin:/bin:/usr/sbin:/sbin'
+    'DYLD_LIBRARY_PATH' => '/Applications/XAMPP/xamppfiles/lib'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache/2.4.25 (Unix) OpenSSL/1.0.2j PHP/7.1.1 mod_perl/2.0.8-dev Perl/v5.16.3'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => '/Applications/XAMPP/xamppfiles/htdocs'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/Applications/XAMPP/xamppfiles/htdocs'
+    'SERVER_ADMIN' => 'you@example.com'
+    'SCRIPT_FILENAME' => '/Applications/XAMPP/xamppfiles/htdocs/yii2-forum-training/backend/web/index.php'
+    'REMOTE_PORT' => '60396'
+    'REDIRECT_URL' => '/yii2-forum-training/backend/web/site/index'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/yii2-forum-training/backend/web/site/index'
+    'SCRIPT_NAME' => '/yii2-forum-training/backend/web/index.php'
+    'PHP_SELF' => '/yii2-forum-training/backend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1542035147.701
+    'REQUEST_TIME' => 1542035147
+]
+2018-11-12 16:06:02 [::1][1][d6e4b1e7a95313f20442072e57212a85][error][yii\base\ErrorException:2] yii\base\ErrorException: md5() expects at least 1 parameter, 0 given in /Applications/XAMPP/xamppfiles/htdocs/yii2-forum-training/backend/views/site/index.php:38
+Stack trace:
+#0 [internal function]: yii\base\ErrorHandler->handleError(2, 'md5() expects a...', '/Applications/X...', 38, Array)
+#1 /Applications/XAMPP/xamppfiles/htdocs/yii2-forum-training/backend/views/site/index.php(38): md5()
+#2 /Applications/XAMPP/xamppfiles/htdocs/yii2-forum-training/vendor/yiisoft/yii2/base/View.php(336): require('/Applications/X...')
+#3 /Applications/XAMPP/xamppfiles/htdocs/yii2-forum-training/vendor/yiisoft/yii2/base/View.php(254): yii\base\View->renderPhpFile('/Applications/X...', Array)
+#4 /Applications/XAMPP/xamppfiles/htdocs/yii2-forum-training/vendor/yiisoft/yii2/base/View.php(156): yii\base\View->renderFile('/Applications/X...', Array, Object(backend\controllers\SiteController))
+#5 /Applications/XAMPP/xamppfiles/htdocs/yii2-forum-training/vendor/yiisoft/yii2/base/Controller.php(384): yii\base\View->render('index', Array, Object(backend\controllers\SiteController))
+#6 /Applications/XAMPP/xamppfiles/htdocs/yii2-forum-training/backend/controllers/SiteController.php(63): yii\base\Controller->render('index')
+#7 [internal function]: backend\controllers\SiteController->actionIndex()
+#8 /Applications/XAMPP/xamppfiles/htdocs/yii2-forum-training/vendor/yiisoft/yii2/base/InlineAction.php(57): call_user_func_array(Array, Array)
+#9 /Applications/XAMPP/xamppfiles/htdocs/yii2-forum-training/vendor/yiisoft/yii2/base/Controller.php(157): yii\base\InlineAction->runWithParams(Array)
+#10 /Applications/XAMPP/xamppfiles/htdocs/yii2-forum-training/vendor/yiisoft/yii2/base/Module.php(528): yii\base\Controller->runAction('index', Array)
+#11 /Applications/XAMPP/xamppfiles/htdocs/yii2-forum-training/vendor/yiisoft/yii2/web/Application.php(103): yii\base\Module->runAction('site/index', Array)
+#12 /Applications/XAMPP/xamppfiles/htdocs/yii2-forum-training/vendor/yiisoft/yii2/base/Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#13 /Applications/XAMPP/xamppfiles/htdocs/yii2-forum-training/backend/web/index.php(17): yii\base\Application->run()
+#14 {main}
+2018-11-12 16:06:01 [::1][1][d6e4b1e7a95313f20442072e57212a85][info][application] $_GET = []
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    'PHPBASICSESSID' => 'c84dabf2330a9a536b578e9cac5675f9'
+    '_basicCSRF' => 'baeb0a0b4ed783fa9e500919635d771443709a2b10b4abab4dd297b977cc7a65a:2:{i:0;s:10:\"_basicCSRF\";i:1;s:32:\"dQiP7uVxh-ffQl34Pn6X_Qe8qMWnjYcM\";}'
+    'tailorshub-frontend' => 'a94b4efe20b59cf9340a3e2d1ade4016'
+    'INOERP123123' => 'ba10d81fb5999b0cf34b264f0c07f91d'
+    'FAff4f990e9b17767d77209e972b22d618' => '8a4929afed366eb0f347dff488f7e13a'
+    '_csrf-seftonfross' => 'f8d9e3c1e338bb12bdb3648e31fc8ae973307f8737cbf24ed71f16109e642989a:2:{i:0;s:17:\"_csrf-seftonfross\";i:1;s:32:\"8zVfaAptBfOGDO4UtTYuSTmMxRVUQkcQ\";}'
+    'Idea-edd8db2d' => '2f6f5e5b-192e-4305-baeb-571107513b05'
+    '_ga' => 'GA1.1.568245260.1537000047'
+    'ckCsrfToken' => '3ZFDOtem9DJ9cbhFkV05V9R2cNUyK2zU9EvLkjA7'
+    'KCFINDER_showname' => 'on'
+    'KCFINDER_showsize' => 'off'
+    'KCFINDER_showtime' => 'off'
+    'KCFINDER_order' => 'name'
+    'KCFINDER_orderDesc' => 'off'
+    'KCFINDER_view' => 'thumbs'
+    'KCFINDER_displaySettings' => 'off'
+    '_frontendLawyer' => '3e7584ec09968df4637431820667553c423035b45936154cfd2968554e35a407a:2:{i:0;s:15:\"_frontendLawyer\";i:1;s:47:\"[10,\"$2y$13$pb9YcxiTdK2ERv95RKVN7.7LJ\",2592000]\";}'
+    '_frontendCSRF' => '39b12ca78484e70cb43321ef5477932b99ddd9335ac128114d5a7db83440498aa:2:{i:0;s:13:\"_frontendCSRF\";i:1;s:32:\"hvYEq9cHsa7ENLgqCQYb6nMZ-nuvmx8G\";}'
+    '_identity-user' => '146c6fa6860dac60709df9c1e9a0f1d2b8358586c34e73abe48586e81bca5d50a:2:{i:0;s:14:\"_identity-user\";i:1;s:46:\"[4,\"vxdOdWx4qvdC5xoCDuyD5mQTITnsX7yy\",2592000]\";}'
+    'advanced-frontend' => 'b0b13f4d6eddfb8a5822262f73390a18'
+    '_identity-frontend' => '037f84ba9be060846021ebb26fcac04ffedf3080d83a37c62a8e7c90dc1fd0bba:2:{i:0;s:18:\"_identity-frontend\";i:1;s:46:\"[1,\"mBn4AGuu6K_JJ5hvm8jy37JIpZYbkeAH\",2592000]\";}'
+    'jsilinks-frontend' => '7ceb04212174308deac6873ee36d0e17'
+    '_identity' => '007d3182f256cf3221a9a372cde436e98ee98ee6cad3d0a979b691fb4b56fa31a:2:{i:0;s:9:\"_identity\";i:1;s:46:\"[1,\"L_mppZfd98Mr-I8QBY_EBQ-7Lpm2_Bo7\",2592000]\";}'
+    'PHPBACKSESSID' => 'cdd81702f386dde9763c51a45420dc7f'
+    '_backendPASSUser' => 'f534598f569fa1321928d15b05ecf3306e5454e2ed2a3ecab166022d560a4a17a:2:{i:0;s:16:\"_backendPASSUser\";i:1;s:46:\"[1,\"uPyzYNidl_M561fYurQjst0oMuQEin0w\",2592000]\";}'
+    '_backendCSRF' => '13370b7a25cea7760d474a8aeedaf983d87dafe27366d10d877a4f0a742f729ba:2:{i:0;s:12:\"_backendCSRF\";i:1;s:32:\"Y2xBmAIrZsV2d770_1Ct6R9Yxqwr-iJq\";}'
+    '_csrf-frontend' => 'bb57da817caee0478f187641286825aae42c6b5f0d0934698caa9b66046e20f2a:2:{i:0;s:14:\"_csrf-frontend\";i:1;s:32:\"CC_FE6wt8u8eNRSYF_tytODZGSTVaWB1\";}'
+    'PHPFRONTSESSID' => 'a106bcf4b6018108f32b3dc63a30ea8d'
+    'advanced-backend' => 'd6e4b1e7a95313f20442072e57212a85'
+    '_identity-backend' => 'c97d207e4dfd974780a68ba8802c7fc6dedd0c0e29e30b827ed89570cee863f3a:2:{i:0;s:17:\"_identity-backend\";i:1;s:14:\"[1,\"\",2592000]\";}'
+    '_csrf-backend' => 'f9653cb413ff81a55b77ccdcae2a9f5404feead7299077a657b834e5a1c823c0a:2:{i:0;s:13:\"_csrf-backend\";i:1;s:32:\"puuJha9VOLhC2BGVvWbRRzvF1ACoDJdU\";}'
+    '_gid' => 'GA1.1.566027150.1542016452'
+    '__tawkuuid' => 'e::localhost::CYdJaUXL45RbChkPnw/aEGBm5tusnvzU9cOYofYEoHG2ttLzHD yGzzhfVrQo2AF::2'
+    'PHPSESSID' => '8fc789f7ed04134e2b8119eb7f128849'
+    '_frontendPassUser' => '7c4563df39522da9e926e7e985974c83a86ad81b6390157ffb57d5765a25592ea:2:{i:0;s:17:\"_frontendPassUser\";i:1;s:46:\"[1,\"moybQBnSY244xkJxAL73W-HfG3JQTvFp\",2592000]\";}'
+    '_csrf' => '12ba43d5989929164af541a5d6fff8832ceb266d52281979b8b9d88c8f35c081a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"l_LhuQBYWK0erlZ6ETuID83ZxWeIPxYy\";}'
+    'TawkConnectionTime' => '0'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__returnUrl' => '/yii2-forum-training/backend/web/'
+    '__id' => 1
+]
+
+$_SERVER = [
+    'REDIRECT_UNIQUE_ID' => 'W@mW2X8AAAEAAAK9EKkAAAAC'
+    'REDIRECT_STATUS' => '200'
+    'UNIQUE_ID' => 'W@mW2X8AAAEAAAK9EKkAAAAC'
+    'HTTP_HOST' => 'localhost'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_13_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/70.0.3538.77 Safari/537.36'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8'
+    'HTTP_REFERER' => 'http://localhost/yii2-forum-training/backend/web/categories'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, br'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.9'
+    'HTTP_COOKIE' => 'PHPBASICSESSID=c84dabf2330a9a536b578e9cac5675f9; _basicCSRF=baeb0a0b4ed783fa9e500919635d771443709a2b10b4abab4dd297b977cc7a65a%3A2%3A%7Bi%3A0%3Bs%3A10%3A%22_basicCSRF%22%3Bi%3A1%3Bs%3A32%3A%22dQiP7uVxh-ffQl34Pn6X_Qe8qMWnjYcM%22%3B%7D; tailorshub-frontend=a94b4efe20b59cf9340a3e2d1ade4016; INOERP123123=ba10d81fb5999b0cf34b264f0c07f91d; FAff4f990e9b17767d77209e972b22d618=8a4929afed366eb0f347dff488f7e13a; _csrf-seftonfross=f8d9e3c1e338bb12bdb3648e31fc8ae973307f8737cbf24ed71f16109e642989a%3A2%3A%7Bi%3A0%3Bs%3A17%3A%22_csrf-seftonfross%22%3Bi%3A1%3Bs%3A32%3A%228zVfaAptBfOGDO4UtTYuSTmMxRVUQkcQ%22%3B%7D; Idea-edd8db2d=2f6f5e5b-192e-4305-baeb-571107513b05; _ga=GA1.1.568245260.1537000047; ckCsrfToken=3ZFDOtem9DJ9cbhFkV05V9R2cNUyK2zU9EvLkjA7; KCFINDER_showname=on; KCFINDER_showsize=off; KCFINDER_showtime=off; KCFINDER_order=name; KCFINDER_orderDesc=off; KCFINDER_view=thumbs; KCFINDER_displaySettings=off; _frontendLawyer=3e7584ec09968df4637431820667553c423035b45936154cfd2968554e35a407a%3A2%3A%7Bi%3A0%3Bs%3A15%3A%22_frontendLawyer%22%3Bi%3A1%3Bs%3A47%3A%22%5B10%2C%22%242y%2413%24pb9YcxiTdK2ERv95RKVN7.7LJ%22%2C2592000%5D%22%3B%7D; _frontendCSRF=39b12ca78484e70cb43321ef5477932b99ddd9335ac128114d5a7db83440498aa%3A2%3A%7Bi%3A0%3Bs%3A13%3A%22_frontendCSRF%22%3Bi%3A1%3Bs%3A32%3A%22hvYEq9cHsa7ENLgqCQYb6nMZ-nuvmx8G%22%3B%7D; _identity-user=146c6fa6860dac60709df9c1e9a0f1d2b8358586c34e73abe48586e81bca5d50a%3A2%3A%7Bi%3A0%3Bs%3A14%3A%22_identity-user%22%3Bi%3A1%3Bs%3A46%3A%22%5B4%2C%22vxdOdWx4qvdC5xoCDuyD5mQTITnsX7yy%22%2C2592000%5D%22%3B%7D; advanced-frontend=b0b13f4d6eddfb8a5822262f73390a18; _identity-frontend=037f84ba9be060846021ebb26fcac04ffedf3080d83a37c62a8e7c90dc1fd0bba%3A2%3A%7Bi%3A0%3Bs%3A18%3A%22_identity-frontend%22%3Bi%3A1%3Bs%3A46%3A%22%5B1%2C%22mBn4AGuu6K_JJ5hvm8jy37JIpZYbkeAH%22%2C2592000%5D%22%3B%7D; jsilinks-frontend=7ceb04212174308deac6873ee36d0e17; _identity=007d3182f256cf3221a9a372cde436e98ee98ee6cad3d0a979b691fb4b56fa31a%3A2%3A%7Bi%3A0%3Bs%3A9%3A%22_identity%22%3Bi%3A1%3Bs%3A46%3A%22%5B1%2C%22L_mppZfd98Mr-I8QBY_EBQ-7Lpm2_Bo7%22%2C2592000%5D%22%3B%7D; PHPBACKSESSID=cdd81702f386dde9763c51a45420dc7f; _backendPASSUser=f534598f569fa1321928d15b05ecf3306e5454e2ed2a3ecab166022d560a4a17a%3A2%3A%7Bi%3A0%3Bs%3A16%3A%22_backendPASSUser%22%3Bi%3A1%3Bs%3A46%3A%22%5B1%2C%22uPyzYNidl_M561fYurQjst0oMuQEin0w%22%2C2592000%5D%22%3B%7D; _backendCSRF=13370b7a25cea7760d474a8aeedaf983d87dafe27366d10d877a4f0a742f729ba%3A2%3A%7Bi%3A0%3Bs%3A12%3A%22_backendCSRF%22%3Bi%3A1%3Bs%3A32%3A%22Y2xBmAIrZsV2d770_1Ct6R9Yxqwr-iJq%22%3B%7D; _csrf-frontend=bb57da817caee0478f187641286825aae42c6b5f0d0934698caa9b66046e20f2a%3A2%3A%7Bi%3A0%3Bs%3A14%3A%22_csrf-frontend%22%3Bi%3A1%3Bs%3A32%3A%22CC_FE6wt8u8eNRSYF_tytODZGSTVaWB1%22%3B%7D; PHPFRONTSESSID=a106bcf4b6018108f32b3dc63a30ea8d; advanced-backend=d6e4b1e7a95313f20442072e57212a85; _identity-backend=c97d207e4dfd974780a68ba8802c7fc6dedd0c0e29e30b827ed89570cee863f3a%3A2%3A%7Bi%3A0%3Bs%3A17%3A%22_identity-backend%22%3Bi%3A1%3Bs%3A14%3A%22%5B1%2C%22%22%2C2592000%5D%22%3B%7D; _csrf-backend=f9653cb413ff81a55b77ccdcae2a9f5404feead7299077a657b834e5a1c823c0a%3A2%3A%7Bi%3A0%3Bs%3A13%3A%22_csrf-backend%22%3Bi%3A1%3Bs%3A32%3A%22puuJha9VOLhC2BGVvWbRRzvF1ACoDJdU%22%3B%7D; _gid=GA1.1.566027150.1542016452; __tawkuuid=e::localhost::CYdJaUXL45RbChkPnw/aEGBm5tusnvzU9cOYofYEoHG2ttLzHD+yGzzhfVrQo2AF::2; PHPSESSID=8fc789f7ed04134e2b8119eb7f128849; _frontendPassUser=7c4563df39522da9e926e7e985974c83a86ad81b6390157ffb57d5765a25592ea%3A2%3A%7Bi%3A0%3Bs%3A17%3A%22_frontendPassUser%22%3Bi%3A1%3Bs%3A46%3A%22%5B1%2C%22moybQBnSY244xkJxAL73W-HfG3JQTvFp%22%2C2592000%5D%22%3B%7D; _csrf=12ba43d5989929164af541a5d6fff8832ceb266d52281979b8b9d88c8f35c081a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22l_LhuQBYWK0erlZ6ETuID83ZxWeIPxYy%22%3B%7D; TawkConnectionTime=0'
+    'PATH' => '/usr/bin:/bin:/usr/sbin:/sbin'
+    'DYLD_LIBRARY_PATH' => '/Applications/XAMPP/xamppfiles/lib'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache/2.4.25 (Unix) OpenSSL/1.0.2j PHP/7.1.1 mod_perl/2.0.8-dev Perl/v5.16.3'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => '/Applications/XAMPP/xamppfiles/htdocs'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/Applications/XAMPP/xamppfiles/htdocs'
+    'SERVER_ADMIN' => 'you@example.com'
+    'SCRIPT_FILENAME' => '/Applications/XAMPP/xamppfiles/htdocs/yii2-forum-training/backend/web/index.php'
+    'REMOTE_PORT' => '60411'
+    'REDIRECT_URL' => '/yii2-forum-training/backend/web/site/index'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/yii2-forum-training/backend/web/site/index'
+    'SCRIPT_NAME' => '/yii2-forum-training/backend/web/index.php'
+    'PHP_SELF' => '/yii2-forum-training/backend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1542035161.119
+    'REQUEST_TIME' => 1542035161
+]
+2018-11-12 16:06:22 [::1][1][d6e4b1e7a95313f20442072e57212a85][error][yii\base\ErrorException:8] yii\base\ErrorException: Use of undefined constant sha1 - assumed 'sha1' in /Applications/XAMPP/xamppfiles/htdocs/yii2-forum-training/backend/views/site/index.php:39
+Stack trace:
+#0 /Applications/XAMPP/xamppfiles/htdocs/yii2-forum-training/backend/views/site/index.php(39): yii\base\ErrorHandler->handleError(8, 'Use of undefine...', '/Applications/X...', 39, Array)
+#1 /Applications/XAMPP/xamppfiles/htdocs/yii2-forum-training/vendor/yiisoft/yii2/base/View.php(336): require('/Applications/X...')
+#2 /Applications/XAMPP/xamppfiles/htdocs/yii2-forum-training/vendor/yiisoft/yii2/base/View.php(254): yii\base\View->renderPhpFile('/Applications/X...', Array)
+#3 /Applications/XAMPP/xamppfiles/htdocs/yii2-forum-training/vendor/yiisoft/yii2/base/View.php(156): yii\base\View->renderFile('/Applications/X...', Array, Object(backend\controllers\SiteController))
+#4 /Applications/XAMPP/xamppfiles/htdocs/yii2-forum-training/vendor/yiisoft/yii2/base/Controller.php(384): yii\base\View->render('index', Array, Object(backend\controllers\SiteController))
+#5 /Applications/XAMPP/xamppfiles/htdocs/yii2-forum-training/backend/controllers/SiteController.php(63): yii\base\Controller->render('index')
+#6 [internal function]: backend\controllers\SiteController->actionIndex()
+#7 /Applications/XAMPP/xamppfiles/htdocs/yii2-forum-training/vendor/yiisoft/yii2/base/InlineAction.php(57): call_user_func_array(Array, Array)
+#8 /Applications/XAMPP/xamppfiles/htdocs/yii2-forum-training/vendor/yiisoft/yii2/base/Controller.php(157): yii\base\InlineAction->runWithParams(Array)
+#9 /Applications/XAMPP/xamppfiles/htdocs/yii2-forum-training/vendor/yiisoft/yii2/base/Module.php(528): yii\base\Controller->runAction('index', Array)
+#10 /Applications/XAMPP/xamppfiles/htdocs/yii2-forum-training/vendor/yiisoft/yii2/web/Application.php(103): yii\base\Module->runAction('site/index', Array)
+#11 /Applications/XAMPP/xamppfiles/htdocs/yii2-forum-training/vendor/yiisoft/yii2/base/Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#12 /Applications/XAMPP/xamppfiles/htdocs/yii2-forum-training/backend/web/index.php(17): yii\base\Application->run()
+#13 {main}
+2018-11-12 16:06:20 [::1][1][d6e4b1e7a95313f20442072e57212a85][info][application] $_GET = []
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    'PHPBASICSESSID' => 'c84dabf2330a9a536b578e9cac5675f9'
+    '_basicCSRF' => 'baeb0a0b4ed783fa9e500919635d771443709a2b10b4abab4dd297b977cc7a65a:2:{i:0;s:10:\"_basicCSRF\";i:1;s:32:\"dQiP7uVxh-ffQl34Pn6X_Qe8qMWnjYcM\";}'
+    'tailorshub-frontend' => 'a94b4efe20b59cf9340a3e2d1ade4016'
+    'INOERP123123' => 'ba10d81fb5999b0cf34b264f0c07f91d'
+    'FAff4f990e9b17767d77209e972b22d618' => '8a4929afed366eb0f347dff488f7e13a'
+    '_csrf-seftonfross' => 'f8d9e3c1e338bb12bdb3648e31fc8ae973307f8737cbf24ed71f16109e642989a:2:{i:0;s:17:\"_csrf-seftonfross\";i:1;s:32:\"8zVfaAptBfOGDO4UtTYuSTmMxRVUQkcQ\";}'
+    'Idea-edd8db2d' => '2f6f5e5b-192e-4305-baeb-571107513b05'
+    '_ga' => 'GA1.1.568245260.1537000047'
+    'ckCsrfToken' => '3ZFDOtem9DJ9cbhFkV05V9R2cNUyK2zU9EvLkjA7'
+    'KCFINDER_showname' => 'on'
+    'KCFINDER_showsize' => 'off'
+    'KCFINDER_showtime' => 'off'
+    'KCFINDER_order' => 'name'
+    'KCFINDER_orderDesc' => 'off'
+    'KCFINDER_view' => 'thumbs'
+    'KCFINDER_displaySettings' => 'off'
+    '_frontendLawyer' => '3e7584ec09968df4637431820667553c423035b45936154cfd2968554e35a407a:2:{i:0;s:15:\"_frontendLawyer\";i:1;s:47:\"[10,\"$2y$13$pb9YcxiTdK2ERv95RKVN7.7LJ\",2592000]\";}'
+    '_frontendCSRF' => '39b12ca78484e70cb43321ef5477932b99ddd9335ac128114d5a7db83440498aa:2:{i:0;s:13:\"_frontendCSRF\";i:1;s:32:\"hvYEq9cHsa7ENLgqCQYb6nMZ-nuvmx8G\";}'
+    '_identity-user' => '146c6fa6860dac60709df9c1e9a0f1d2b8358586c34e73abe48586e81bca5d50a:2:{i:0;s:14:\"_identity-user\";i:1;s:46:\"[4,\"vxdOdWx4qvdC5xoCDuyD5mQTITnsX7yy\",2592000]\";}'
+    'advanced-frontend' => 'b0b13f4d6eddfb8a5822262f73390a18'
+    '_identity-frontend' => '037f84ba9be060846021ebb26fcac04ffedf3080d83a37c62a8e7c90dc1fd0bba:2:{i:0;s:18:\"_identity-frontend\";i:1;s:46:\"[1,\"mBn4AGuu6K_JJ5hvm8jy37JIpZYbkeAH\",2592000]\";}'
+    'jsilinks-frontend' => '7ceb04212174308deac6873ee36d0e17'
+    '_identity' => '007d3182f256cf3221a9a372cde436e98ee98ee6cad3d0a979b691fb4b56fa31a:2:{i:0;s:9:\"_identity\";i:1;s:46:\"[1,\"L_mppZfd98Mr-I8QBY_EBQ-7Lpm2_Bo7\",2592000]\";}'
+    'PHPBACKSESSID' => 'cdd81702f386dde9763c51a45420dc7f'
+    '_backendPASSUser' => 'f534598f569fa1321928d15b05ecf3306e5454e2ed2a3ecab166022d560a4a17a:2:{i:0;s:16:\"_backendPASSUser\";i:1;s:46:\"[1,\"uPyzYNidl_M561fYurQjst0oMuQEin0w\",2592000]\";}'
+    '_backendCSRF' => '13370b7a25cea7760d474a8aeedaf983d87dafe27366d10d877a4f0a742f729ba:2:{i:0;s:12:\"_backendCSRF\";i:1;s:32:\"Y2xBmAIrZsV2d770_1Ct6R9Yxqwr-iJq\";}'
+    '_csrf-frontend' => 'bb57da817caee0478f187641286825aae42c6b5f0d0934698caa9b66046e20f2a:2:{i:0;s:14:\"_csrf-frontend\";i:1;s:32:\"CC_FE6wt8u8eNRSYF_tytODZGSTVaWB1\";}'
+    'PHPFRONTSESSID' => 'a106bcf4b6018108f32b3dc63a30ea8d'
+    'advanced-backend' => 'd6e4b1e7a95313f20442072e57212a85'
+    '_identity-backend' => 'c97d207e4dfd974780a68ba8802c7fc6dedd0c0e29e30b827ed89570cee863f3a:2:{i:0;s:17:\"_identity-backend\";i:1;s:14:\"[1,\"\",2592000]\";}'
+    '_csrf-backend' => 'f9653cb413ff81a55b77ccdcae2a9f5404feead7299077a657b834e5a1c823c0a:2:{i:0;s:13:\"_csrf-backend\";i:1;s:32:\"puuJha9VOLhC2BGVvWbRRzvF1ACoDJdU\";}'
+    '_gid' => 'GA1.1.566027150.1542016452'
+    '__tawkuuid' => 'e::localhost::CYdJaUXL45RbChkPnw/aEGBm5tusnvzU9cOYofYEoHG2ttLzHD yGzzhfVrQo2AF::2'
+    'PHPSESSID' => '8fc789f7ed04134e2b8119eb7f128849'
+    '_frontendPassUser' => '7c4563df39522da9e926e7e985974c83a86ad81b6390157ffb57d5765a25592ea:2:{i:0;s:17:\"_frontendPassUser\";i:1;s:46:\"[1,\"moybQBnSY244xkJxAL73W-HfG3JQTvFp\",2592000]\";}'
+    '_csrf' => '12ba43d5989929164af541a5d6fff8832ceb266d52281979b8b9d88c8f35c081a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"l_LhuQBYWK0erlZ6ETuID83ZxWeIPxYy\";}'
+    'TawkConnectionTime' => '0'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__returnUrl' => '/yii2-forum-training/backend/web/'
+    '__id' => 1
+]
+
+$_SERVER = [
+    'REDIRECT_UNIQUE_ID' => 'W@mW7H8AAAEAAAK-aS4AAAAE'
+    'REDIRECT_STATUS' => '200'
+    'UNIQUE_ID' => 'W@mW7H8AAAEAAAK-aS4AAAAE'
+    'HTTP_HOST' => 'localhost'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_13_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/70.0.3538.77 Safari/537.36'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8'
+    'HTTP_REFERER' => 'http://localhost/yii2-forum-training/backend/web/categories'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, br'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.9'
+    'HTTP_COOKIE' => 'PHPBASICSESSID=c84dabf2330a9a536b578e9cac5675f9; _basicCSRF=baeb0a0b4ed783fa9e500919635d771443709a2b10b4abab4dd297b977cc7a65a%3A2%3A%7Bi%3A0%3Bs%3A10%3A%22_basicCSRF%22%3Bi%3A1%3Bs%3A32%3A%22dQiP7uVxh-ffQl34Pn6X_Qe8qMWnjYcM%22%3B%7D; tailorshub-frontend=a94b4efe20b59cf9340a3e2d1ade4016; INOERP123123=ba10d81fb5999b0cf34b264f0c07f91d; FAff4f990e9b17767d77209e972b22d618=8a4929afed366eb0f347dff488f7e13a; _csrf-seftonfross=f8d9e3c1e338bb12bdb3648e31fc8ae973307f8737cbf24ed71f16109e642989a%3A2%3A%7Bi%3A0%3Bs%3A17%3A%22_csrf-seftonfross%22%3Bi%3A1%3Bs%3A32%3A%228zVfaAptBfOGDO4UtTYuSTmMxRVUQkcQ%22%3B%7D; Idea-edd8db2d=2f6f5e5b-192e-4305-baeb-571107513b05; _ga=GA1.1.568245260.1537000047; ckCsrfToken=3ZFDOtem9DJ9cbhFkV05V9R2cNUyK2zU9EvLkjA7; KCFINDER_showname=on; KCFINDER_showsize=off; KCFINDER_showtime=off; KCFINDER_order=name; KCFINDER_orderDesc=off; KCFINDER_view=thumbs; KCFINDER_displaySettings=off; _frontendLawyer=3e7584ec09968df4637431820667553c423035b45936154cfd2968554e35a407a%3A2%3A%7Bi%3A0%3Bs%3A15%3A%22_frontendLawyer%22%3Bi%3A1%3Bs%3A47%3A%22%5B10%2C%22%242y%2413%24pb9YcxiTdK2ERv95RKVN7.7LJ%22%2C2592000%5D%22%3B%7D; _frontendCSRF=39b12ca78484e70cb43321ef5477932b99ddd9335ac128114d5a7db83440498aa%3A2%3A%7Bi%3A0%3Bs%3A13%3A%22_frontendCSRF%22%3Bi%3A1%3Bs%3A32%3A%22hvYEq9cHsa7ENLgqCQYb6nMZ-nuvmx8G%22%3B%7D; _identity-user=146c6fa6860dac60709df9c1e9a0f1d2b8358586c34e73abe48586e81bca5d50a%3A2%3A%7Bi%3A0%3Bs%3A14%3A%22_identity-user%22%3Bi%3A1%3Bs%3A46%3A%22%5B4%2C%22vxdOdWx4qvdC5xoCDuyD5mQTITnsX7yy%22%2C2592000%5D%22%3B%7D; advanced-frontend=b0b13f4d6eddfb8a5822262f73390a18; _identity-frontend=037f84ba9be060846021ebb26fcac04ffedf3080d83a37c62a8e7c90dc1fd0bba%3A2%3A%7Bi%3A0%3Bs%3A18%3A%22_identity-frontend%22%3Bi%3A1%3Bs%3A46%3A%22%5B1%2C%22mBn4AGuu6K_JJ5hvm8jy37JIpZYbkeAH%22%2C2592000%5D%22%3B%7D; jsilinks-frontend=7ceb04212174308deac6873ee36d0e17; _identity=007d3182f256cf3221a9a372cde436e98ee98ee6cad3d0a979b691fb4b56fa31a%3A2%3A%7Bi%3A0%3Bs%3A9%3A%22_identity%22%3Bi%3A1%3Bs%3A46%3A%22%5B1%2C%22L_mppZfd98Mr-I8QBY_EBQ-7Lpm2_Bo7%22%2C2592000%5D%22%3B%7D; PHPBACKSESSID=cdd81702f386dde9763c51a45420dc7f; _backendPASSUser=f534598f569fa1321928d15b05ecf3306e5454e2ed2a3ecab166022d560a4a17a%3A2%3A%7Bi%3A0%3Bs%3A16%3A%22_backendPASSUser%22%3Bi%3A1%3Bs%3A46%3A%22%5B1%2C%22uPyzYNidl_M561fYurQjst0oMuQEin0w%22%2C2592000%5D%22%3B%7D; _backendCSRF=13370b7a25cea7760d474a8aeedaf983d87dafe27366d10d877a4f0a742f729ba%3A2%3A%7Bi%3A0%3Bs%3A12%3A%22_backendCSRF%22%3Bi%3A1%3Bs%3A32%3A%22Y2xBmAIrZsV2d770_1Ct6R9Yxqwr-iJq%22%3B%7D; _csrf-frontend=bb57da817caee0478f187641286825aae42c6b5f0d0934698caa9b66046e20f2a%3A2%3A%7Bi%3A0%3Bs%3A14%3A%22_csrf-frontend%22%3Bi%3A1%3Bs%3A32%3A%22CC_FE6wt8u8eNRSYF_tytODZGSTVaWB1%22%3B%7D; PHPFRONTSESSID=a106bcf4b6018108f32b3dc63a30ea8d; advanced-backend=d6e4b1e7a95313f20442072e57212a85; _identity-backend=c97d207e4dfd974780a68ba8802c7fc6dedd0c0e29e30b827ed89570cee863f3a%3A2%3A%7Bi%3A0%3Bs%3A17%3A%22_identity-backend%22%3Bi%3A1%3Bs%3A14%3A%22%5B1%2C%22%22%2C2592000%5D%22%3B%7D; _csrf-backend=f9653cb413ff81a55b77ccdcae2a9f5404feead7299077a657b834e5a1c823c0a%3A2%3A%7Bi%3A0%3Bs%3A13%3A%22_csrf-backend%22%3Bi%3A1%3Bs%3A32%3A%22puuJha9VOLhC2BGVvWbRRzvF1ACoDJdU%22%3B%7D; _gid=GA1.1.566027150.1542016452; __tawkuuid=e::localhost::CYdJaUXL45RbChkPnw/aEGBm5tusnvzU9cOYofYEoHG2ttLzHD+yGzzhfVrQo2AF::2; PHPSESSID=8fc789f7ed04134e2b8119eb7f128849; _frontendPassUser=7c4563df39522da9e926e7e985974c83a86ad81b6390157ffb57d5765a25592ea%3A2%3A%7Bi%3A0%3Bs%3A17%3A%22_frontendPassUser%22%3Bi%3A1%3Bs%3A46%3A%22%5B1%2C%22moybQBnSY244xkJxAL73W-HfG3JQTvFp%22%2C2592000%5D%22%3B%7D; _csrf=12ba43d5989929164af541a5d6fff8832ceb266d52281979b8b9d88c8f35c081a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22l_LhuQBYWK0erlZ6ETuID83ZxWeIPxYy%22%3B%7D; TawkConnectionTime=0'
+    'PATH' => '/usr/bin:/bin:/usr/sbin:/sbin'
+    'DYLD_LIBRARY_PATH' => '/Applications/XAMPP/xamppfiles/lib'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache/2.4.25 (Unix) OpenSSL/1.0.2j PHP/7.1.1 mod_perl/2.0.8-dev Perl/v5.16.3'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => '/Applications/XAMPP/xamppfiles/htdocs'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/Applications/XAMPP/xamppfiles/htdocs'
+    'SERVER_ADMIN' => 'you@example.com'
+    'SCRIPT_FILENAME' => '/Applications/XAMPP/xamppfiles/htdocs/yii2-forum-training/backend/web/index.php'
+    'REMOTE_PORT' => '60435'
+    'REDIRECT_URL' => '/yii2-forum-training/backend/web/site/index'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/yii2-forum-training/backend/web/site/index'
+    'SCRIPT_NAME' => '/yii2-forum-training/backend/web/index.php'
+    'PHP_SELF' => '/yii2-forum-training/backend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1542035180.157
+    'REQUEST_TIME' => 1542035180
+]
+2018-11-12 16:07:37 [::1][1][d6e4b1e7a95313f20442072e57212a85][error][yii\base\UnknownMethodException] yii\base\UnknownMethodException: Calling unknown method: yii\base\Security::authKeyInfo() in /Applications/XAMPP/xamppfiles/htdocs/yii2-forum-training/vendor/yiisoft/yii2/base/Component.php:300
+Stack trace:
+#0 /Applications/XAMPP/xamppfiles/htdocs/yii2-forum-training/backend/views/site/index.php(43): yii\base\Component->__call('authKeyInfo', Array)
+#1 /Applications/XAMPP/xamppfiles/htdocs/yii2-forum-training/vendor/yiisoft/yii2/base/View.php(336): require('/Applications/X...')
+#2 /Applications/XAMPP/xamppfiles/htdocs/yii2-forum-training/vendor/yiisoft/yii2/base/View.php(254): yii\base\View->renderPhpFile('/Applications/X...', Array)
+#3 /Applications/XAMPP/xamppfiles/htdocs/yii2-forum-training/vendor/yiisoft/yii2/base/View.php(156): yii\base\View->renderFile('/Applications/X...', Array, Object(backend\controllers\SiteController))
+#4 /Applications/XAMPP/xamppfiles/htdocs/yii2-forum-training/vendor/yiisoft/yii2/base/Controller.php(384): yii\base\View->render('index', Array, Object(backend\controllers\SiteController))
+#5 /Applications/XAMPP/xamppfiles/htdocs/yii2-forum-training/backend/controllers/SiteController.php(63): yii\base\Controller->render('index')
+#6 [internal function]: backend\controllers\SiteController->actionIndex()
+#7 /Applications/XAMPP/xamppfiles/htdocs/yii2-forum-training/vendor/yiisoft/yii2/base/InlineAction.php(57): call_user_func_array(Array, Array)
+#8 /Applications/XAMPP/xamppfiles/htdocs/yii2-forum-training/vendor/yiisoft/yii2/base/Controller.php(157): yii\base\InlineAction->runWithParams(Array)
+#9 /Applications/XAMPP/xamppfiles/htdocs/yii2-forum-training/vendor/yiisoft/yii2/base/Module.php(528): yii\base\Controller->runAction('index', Array)
+#10 /Applications/XAMPP/xamppfiles/htdocs/yii2-forum-training/vendor/yiisoft/yii2/web/Application.php(103): yii\base\Module->runAction('site/index', Array)
+#11 /Applications/XAMPP/xamppfiles/htdocs/yii2-forum-training/vendor/yiisoft/yii2/base/Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#12 /Applications/XAMPP/xamppfiles/htdocs/yii2-forum-training/backend/web/index.php(17): yii\base\Application->run()
+#13 {main}
+2018-11-12 16:07:35 [::1][1][d6e4b1e7a95313f20442072e57212a85][info][application] $_GET = []
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    'PHPBASICSESSID' => 'c84dabf2330a9a536b578e9cac5675f9'
+    '_basicCSRF' => 'baeb0a0b4ed783fa9e500919635d771443709a2b10b4abab4dd297b977cc7a65a:2:{i:0;s:10:\"_basicCSRF\";i:1;s:32:\"dQiP7uVxh-ffQl34Pn6X_Qe8qMWnjYcM\";}'
+    'tailorshub-frontend' => 'a94b4efe20b59cf9340a3e2d1ade4016'
+    'INOERP123123' => 'ba10d81fb5999b0cf34b264f0c07f91d'
+    'FAff4f990e9b17767d77209e972b22d618' => '8a4929afed366eb0f347dff488f7e13a'
+    '_csrf-seftonfross' => 'f8d9e3c1e338bb12bdb3648e31fc8ae973307f8737cbf24ed71f16109e642989a:2:{i:0;s:17:\"_csrf-seftonfross\";i:1;s:32:\"8zVfaAptBfOGDO4UtTYuSTmMxRVUQkcQ\";}'
+    'Idea-edd8db2d' => '2f6f5e5b-192e-4305-baeb-571107513b05'
+    '_ga' => 'GA1.1.568245260.1537000047'
+    'ckCsrfToken' => '3ZFDOtem9DJ9cbhFkV05V9R2cNUyK2zU9EvLkjA7'
+    'KCFINDER_showname' => 'on'
+    'KCFINDER_showsize' => 'off'
+    'KCFINDER_showtime' => 'off'
+    'KCFINDER_order' => 'name'
+    'KCFINDER_orderDesc' => 'off'
+    'KCFINDER_view' => 'thumbs'
+    'KCFINDER_displaySettings' => 'off'
+    '_frontendLawyer' => '3e7584ec09968df4637431820667553c423035b45936154cfd2968554e35a407a:2:{i:0;s:15:\"_frontendLawyer\";i:1;s:47:\"[10,\"$2y$13$pb9YcxiTdK2ERv95RKVN7.7LJ\",2592000]\";}'
+    '_frontendCSRF' => '39b12ca78484e70cb43321ef5477932b99ddd9335ac128114d5a7db83440498aa:2:{i:0;s:13:\"_frontendCSRF\";i:1;s:32:\"hvYEq9cHsa7ENLgqCQYb6nMZ-nuvmx8G\";}'
+    '_identity-user' => '146c6fa6860dac60709df9c1e9a0f1d2b8358586c34e73abe48586e81bca5d50a:2:{i:0;s:14:\"_identity-user\";i:1;s:46:\"[4,\"vxdOdWx4qvdC5xoCDuyD5mQTITnsX7yy\",2592000]\";}'
+    'advanced-frontend' => 'b0b13f4d6eddfb8a5822262f73390a18'
+    '_identity-frontend' => '037f84ba9be060846021ebb26fcac04ffedf3080d83a37c62a8e7c90dc1fd0bba:2:{i:0;s:18:\"_identity-frontend\";i:1;s:46:\"[1,\"mBn4AGuu6K_JJ5hvm8jy37JIpZYbkeAH\",2592000]\";}'
+    'jsilinks-frontend' => '7ceb04212174308deac6873ee36d0e17'
+    '_identity' => '007d3182f256cf3221a9a372cde436e98ee98ee6cad3d0a979b691fb4b56fa31a:2:{i:0;s:9:\"_identity\";i:1;s:46:\"[1,\"L_mppZfd98Mr-I8QBY_EBQ-7Lpm2_Bo7\",2592000]\";}'
+    'PHPBACKSESSID' => 'cdd81702f386dde9763c51a45420dc7f'
+    '_backendPASSUser' => 'f534598f569fa1321928d15b05ecf3306e5454e2ed2a3ecab166022d560a4a17a:2:{i:0;s:16:\"_backendPASSUser\";i:1;s:46:\"[1,\"uPyzYNidl_M561fYurQjst0oMuQEin0w\",2592000]\";}'
+    '_backendCSRF' => '13370b7a25cea7760d474a8aeedaf983d87dafe27366d10d877a4f0a742f729ba:2:{i:0;s:12:\"_backendCSRF\";i:1;s:32:\"Y2xBmAIrZsV2d770_1Ct6R9Yxqwr-iJq\";}'
+    '_csrf-frontend' => 'bb57da817caee0478f187641286825aae42c6b5f0d0934698caa9b66046e20f2a:2:{i:0;s:14:\"_csrf-frontend\";i:1;s:32:\"CC_FE6wt8u8eNRSYF_tytODZGSTVaWB1\";}'
+    'PHPFRONTSESSID' => 'a106bcf4b6018108f32b3dc63a30ea8d'
+    'advanced-backend' => 'd6e4b1e7a95313f20442072e57212a85'
+    '_identity-backend' => 'c97d207e4dfd974780a68ba8802c7fc6dedd0c0e29e30b827ed89570cee863f3a:2:{i:0;s:17:\"_identity-backend\";i:1;s:14:\"[1,\"\",2592000]\";}'
+    '_csrf-backend' => 'f9653cb413ff81a55b77ccdcae2a9f5404feead7299077a657b834e5a1c823c0a:2:{i:0;s:13:\"_csrf-backend\";i:1;s:32:\"puuJha9VOLhC2BGVvWbRRzvF1ACoDJdU\";}'
+    '_gid' => 'GA1.1.566027150.1542016452'
+    '__tawkuuid' => 'e::localhost::CYdJaUXL45RbChkPnw/aEGBm5tusnvzU9cOYofYEoHG2ttLzHD yGzzhfVrQo2AF::2'
+    'PHPSESSID' => '8fc789f7ed04134e2b8119eb7f128849'
+    '_frontendPassUser' => '7c4563df39522da9e926e7e985974c83a86ad81b6390157ffb57d5765a25592ea:2:{i:0;s:17:\"_frontendPassUser\";i:1;s:46:\"[1,\"moybQBnSY244xkJxAL73W-HfG3JQTvFp\",2592000]\";}'
+    '_csrf' => '12ba43d5989929164af541a5d6fff8832ceb266d52281979b8b9d88c8f35c081a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"l_LhuQBYWK0erlZ6ETuID83ZxWeIPxYy\";}'
+    'TawkConnectionTime' => '0'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__returnUrl' => '/yii2-forum-training/backend/web/'
+    '__id' => 1
+]
+
+$_SERVER = [
+    'REDIRECT_UNIQUE_ID' => 'W@mXN38AAAEAAAV4uyQAAAAH'
+    'REDIRECT_STATUS' => '200'
+    'UNIQUE_ID' => 'W@mXN38AAAEAAAV4uyQAAAAH'
+    'HTTP_HOST' => 'localhost'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_13_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/70.0.3538.77 Safari/537.36'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8'
+    'HTTP_REFERER' => 'http://localhost/yii2-forum-training/backend/web/categories'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, br'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.9'
+    'HTTP_COOKIE' => 'PHPBASICSESSID=c84dabf2330a9a536b578e9cac5675f9; _basicCSRF=baeb0a0b4ed783fa9e500919635d771443709a2b10b4abab4dd297b977cc7a65a%3A2%3A%7Bi%3A0%3Bs%3A10%3A%22_basicCSRF%22%3Bi%3A1%3Bs%3A32%3A%22dQiP7uVxh-ffQl34Pn6X_Qe8qMWnjYcM%22%3B%7D; tailorshub-frontend=a94b4efe20b59cf9340a3e2d1ade4016; INOERP123123=ba10d81fb5999b0cf34b264f0c07f91d; FAff4f990e9b17767d77209e972b22d618=8a4929afed366eb0f347dff488f7e13a; _csrf-seftonfross=f8d9e3c1e338bb12bdb3648e31fc8ae973307f8737cbf24ed71f16109e642989a%3A2%3A%7Bi%3A0%3Bs%3A17%3A%22_csrf-seftonfross%22%3Bi%3A1%3Bs%3A32%3A%228zVfaAptBfOGDO4UtTYuSTmMxRVUQkcQ%22%3B%7D; Idea-edd8db2d=2f6f5e5b-192e-4305-baeb-571107513b05; _ga=GA1.1.568245260.1537000047; ckCsrfToken=3ZFDOtem9DJ9cbhFkV05V9R2cNUyK2zU9EvLkjA7; KCFINDER_showname=on; KCFINDER_showsize=off; KCFINDER_showtime=off; KCFINDER_order=name; KCFINDER_orderDesc=off; KCFINDER_view=thumbs; KCFINDER_displaySettings=off; _frontendLawyer=3e7584ec09968df4637431820667553c423035b45936154cfd2968554e35a407a%3A2%3A%7Bi%3A0%3Bs%3A15%3A%22_frontendLawyer%22%3Bi%3A1%3Bs%3A47%3A%22%5B10%2C%22%242y%2413%24pb9YcxiTdK2ERv95RKVN7.7LJ%22%2C2592000%5D%22%3B%7D; _frontendCSRF=39b12ca78484e70cb43321ef5477932b99ddd9335ac128114d5a7db83440498aa%3A2%3A%7Bi%3A0%3Bs%3A13%3A%22_frontendCSRF%22%3Bi%3A1%3Bs%3A32%3A%22hvYEq9cHsa7ENLgqCQYb6nMZ-nuvmx8G%22%3B%7D; _identity-user=146c6fa6860dac60709df9c1e9a0f1d2b8358586c34e73abe48586e81bca5d50a%3A2%3A%7Bi%3A0%3Bs%3A14%3A%22_identity-user%22%3Bi%3A1%3Bs%3A46%3A%22%5B4%2C%22vxdOdWx4qvdC5xoCDuyD5mQTITnsX7yy%22%2C2592000%5D%22%3B%7D; advanced-frontend=b0b13f4d6eddfb8a5822262f73390a18; _identity-frontend=037f84ba9be060846021ebb26fcac04ffedf3080d83a37c62a8e7c90dc1fd0bba%3A2%3A%7Bi%3A0%3Bs%3A18%3A%22_identity-frontend%22%3Bi%3A1%3Bs%3A46%3A%22%5B1%2C%22mBn4AGuu6K_JJ5hvm8jy37JIpZYbkeAH%22%2C2592000%5D%22%3B%7D; jsilinks-frontend=7ceb04212174308deac6873ee36d0e17; _identity=007d3182f256cf3221a9a372cde436e98ee98ee6cad3d0a979b691fb4b56fa31a%3A2%3A%7Bi%3A0%3Bs%3A9%3A%22_identity%22%3Bi%3A1%3Bs%3A46%3A%22%5B1%2C%22L_mppZfd98Mr-I8QBY_EBQ-7Lpm2_Bo7%22%2C2592000%5D%22%3B%7D; PHPBACKSESSID=cdd81702f386dde9763c51a45420dc7f; _backendPASSUser=f534598f569fa1321928d15b05ecf3306e5454e2ed2a3ecab166022d560a4a17a%3A2%3A%7Bi%3A0%3Bs%3A16%3A%22_backendPASSUser%22%3Bi%3A1%3Bs%3A46%3A%22%5B1%2C%22uPyzYNidl_M561fYurQjst0oMuQEin0w%22%2C2592000%5D%22%3B%7D; _backendCSRF=13370b7a25cea7760d474a8aeedaf983d87dafe27366d10d877a4f0a742f729ba%3A2%3A%7Bi%3A0%3Bs%3A12%3A%22_backendCSRF%22%3Bi%3A1%3Bs%3A32%3A%22Y2xBmAIrZsV2d770_1Ct6R9Yxqwr-iJq%22%3B%7D; _csrf-frontend=bb57da817caee0478f187641286825aae42c6b5f0d0934698caa9b66046e20f2a%3A2%3A%7Bi%3A0%3Bs%3A14%3A%22_csrf-frontend%22%3Bi%3A1%3Bs%3A32%3A%22CC_FE6wt8u8eNRSYF_tytODZGSTVaWB1%22%3B%7D; PHPFRONTSESSID=a106bcf4b6018108f32b3dc63a30ea8d; advanced-backend=d6e4b1e7a95313f20442072e57212a85; _identity-backend=c97d207e4dfd974780a68ba8802c7fc6dedd0c0e29e30b827ed89570cee863f3a%3A2%3A%7Bi%3A0%3Bs%3A17%3A%22_identity-backend%22%3Bi%3A1%3Bs%3A14%3A%22%5B1%2C%22%22%2C2592000%5D%22%3B%7D; _csrf-backend=f9653cb413ff81a55b77ccdcae2a9f5404feead7299077a657b834e5a1c823c0a%3A2%3A%7Bi%3A0%3Bs%3A13%3A%22_csrf-backend%22%3Bi%3A1%3Bs%3A32%3A%22puuJha9VOLhC2BGVvWbRRzvF1ACoDJdU%22%3B%7D; _gid=GA1.1.566027150.1542016452; __tawkuuid=e::localhost::CYdJaUXL45RbChkPnw/aEGBm5tusnvzU9cOYofYEoHG2ttLzHD+yGzzhfVrQo2AF::2; PHPSESSID=8fc789f7ed04134e2b8119eb7f128849; _frontendPassUser=7c4563df39522da9e926e7e985974c83a86ad81b6390157ffb57d5765a25592ea%3A2%3A%7Bi%3A0%3Bs%3A17%3A%22_frontendPassUser%22%3Bi%3A1%3Bs%3A46%3A%22%5B1%2C%22moybQBnSY244xkJxAL73W-HfG3JQTvFp%22%2C2592000%5D%22%3B%7D; _csrf=12ba43d5989929164af541a5d6fff8832ceb266d52281979b8b9d88c8f35c081a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22l_LhuQBYWK0erlZ6ETuID83ZxWeIPxYy%22%3B%7D; TawkConnectionTime=0'
+    'PATH' => '/usr/bin:/bin:/usr/sbin:/sbin'
+    'DYLD_LIBRARY_PATH' => '/Applications/XAMPP/xamppfiles/lib'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache/2.4.25 (Unix) OpenSSL/1.0.2j PHP/7.1.1 mod_perl/2.0.8-dev Perl/v5.16.3'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => '/Applications/XAMPP/xamppfiles/htdocs'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/Applications/XAMPP/xamppfiles/htdocs'
+    'SERVER_ADMIN' => 'you@example.com'
+    'SCRIPT_FILENAME' => '/Applications/XAMPP/xamppfiles/htdocs/yii2-forum-training/backend/web/index.php'
+    'REMOTE_PORT' => '60534'
+    'REDIRECT_URL' => '/yii2-forum-training/backend/web/site/index'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/yii2-forum-training/backend/web/site/index'
+    'SCRIPT_NAME' => '/yii2-forum-training/backend/web/index.php'
+    'PHP_SELF' => '/yii2-forum-training/backend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1542035255.52
+    'REQUEST_TIME' => 1542035255
+]
+2018-11-12 16:08:01 [::1][1][d6e4b1e7a95313f20442072e57212a85][error][yii\base\UnknownMethodException] yii\base\UnknownMethodException: Calling unknown method: yii\base\Security::authKeyInfo() in /Applications/XAMPP/xamppfiles/htdocs/yii2-forum-training/vendor/yiisoft/yii2/base/Component.php:300
+Stack trace:
+#0 /Applications/XAMPP/xamppfiles/htdocs/yii2-forum-training/backend/views/site/index.php(43): yii\base\Component->__call('authKeyInfo', Array)
+#1 /Applications/XAMPP/xamppfiles/htdocs/yii2-forum-training/vendor/yiisoft/yii2/base/View.php(336): require('/Applications/X...')
+#2 /Applications/XAMPP/xamppfiles/htdocs/yii2-forum-training/vendor/yiisoft/yii2/base/View.php(254): yii\base\View->renderPhpFile('/Applications/X...', Array)
+#3 /Applications/XAMPP/xamppfiles/htdocs/yii2-forum-training/vendor/yiisoft/yii2/base/View.php(156): yii\base\View->renderFile('/Applications/X...', Array, Object(backend\controllers\SiteController))
+#4 /Applications/XAMPP/xamppfiles/htdocs/yii2-forum-training/vendor/yiisoft/yii2/base/Controller.php(384): yii\base\View->render('index', Array, Object(backend\controllers\SiteController))
+#5 /Applications/XAMPP/xamppfiles/htdocs/yii2-forum-training/backend/controllers/SiteController.php(63): yii\base\Controller->render('index')
+#6 [internal function]: backend\controllers\SiteController->actionIndex()
+#7 /Applications/XAMPP/xamppfiles/htdocs/yii2-forum-training/vendor/yiisoft/yii2/base/InlineAction.php(57): call_user_func_array(Array, Array)
+#8 /Applications/XAMPP/xamppfiles/htdocs/yii2-forum-training/vendor/yiisoft/yii2/base/Controller.php(157): yii\base\InlineAction->runWithParams(Array)
+#9 /Applications/XAMPP/xamppfiles/htdocs/yii2-forum-training/vendor/yiisoft/yii2/base/Module.php(528): yii\base\Controller->runAction('index', Array)
+#10 /Applications/XAMPP/xamppfiles/htdocs/yii2-forum-training/vendor/yiisoft/yii2/web/Application.php(103): yii\base\Module->runAction('site/index', Array)
+#11 /Applications/XAMPP/xamppfiles/htdocs/yii2-forum-training/vendor/yiisoft/yii2/base/Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#12 /Applications/XAMPP/xamppfiles/htdocs/yii2-forum-training/backend/web/index.php(17): yii\base\Application->run()
+#13 {main}
+2018-11-12 16:07:58 [::1][1][d6e4b1e7a95313f20442072e57212a85][info][application] $_GET = []
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    'PHPBASICSESSID' => 'c84dabf2330a9a536b578e9cac5675f9'
+    '_basicCSRF' => 'baeb0a0b4ed783fa9e500919635d771443709a2b10b4abab4dd297b977cc7a65a:2:{i:0;s:10:\"_basicCSRF\";i:1;s:32:\"dQiP7uVxh-ffQl34Pn6X_Qe8qMWnjYcM\";}'
+    'tailorshub-frontend' => 'a94b4efe20b59cf9340a3e2d1ade4016'
+    'INOERP123123' => 'ba10d81fb5999b0cf34b264f0c07f91d'
+    'FAff4f990e9b17767d77209e972b22d618' => '8a4929afed366eb0f347dff488f7e13a'
+    '_csrf-seftonfross' => 'f8d9e3c1e338bb12bdb3648e31fc8ae973307f8737cbf24ed71f16109e642989a:2:{i:0;s:17:\"_csrf-seftonfross\";i:1;s:32:\"8zVfaAptBfOGDO4UtTYuSTmMxRVUQkcQ\";}'
+    'Idea-edd8db2d' => '2f6f5e5b-192e-4305-baeb-571107513b05'
+    '_ga' => 'GA1.1.568245260.1537000047'
+    'ckCsrfToken' => '3ZFDOtem9DJ9cbhFkV05V9R2cNUyK2zU9EvLkjA7'
+    'KCFINDER_showname' => 'on'
+    'KCFINDER_showsize' => 'off'
+    'KCFINDER_showtime' => 'off'
+    'KCFINDER_order' => 'name'
+    'KCFINDER_orderDesc' => 'off'
+    'KCFINDER_view' => 'thumbs'
+    'KCFINDER_displaySettings' => 'off'
+    '_frontendLawyer' => '3e7584ec09968df4637431820667553c423035b45936154cfd2968554e35a407a:2:{i:0;s:15:\"_frontendLawyer\";i:1;s:47:\"[10,\"$2y$13$pb9YcxiTdK2ERv95RKVN7.7LJ\",2592000]\";}'
+    '_frontendCSRF' => '39b12ca78484e70cb43321ef5477932b99ddd9335ac128114d5a7db83440498aa:2:{i:0;s:13:\"_frontendCSRF\";i:1;s:32:\"hvYEq9cHsa7ENLgqCQYb6nMZ-nuvmx8G\";}'
+    '_identity-user' => '146c6fa6860dac60709df9c1e9a0f1d2b8358586c34e73abe48586e81bca5d50a:2:{i:0;s:14:\"_identity-user\";i:1;s:46:\"[4,\"vxdOdWx4qvdC5xoCDuyD5mQTITnsX7yy\",2592000]\";}'
+    'advanced-frontend' => 'b0b13f4d6eddfb8a5822262f73390a18'
+    '_identity-frontend' => '037f84ba9be060846021ebb26fcac04ffedf3080d83a37c62a8e7c90dc1fd0bba:2:{i:0;s:18:\"_identity-frontend\";i:1;s:46:\"[1,\"mBn4AGuu6K_JJ5hvm8jy37JIpZYbkeAH\",2592000]\";}'
+    'jsilinks-frontend' => '7ceb04212174308deac6873ee36d0e17'
+    '_identity' => '007d3182f256cf3221a9a372cde436e98ee98ee6cad3d0a979b691fb4b56fa31a:2:{i:0;s:9:\"_identity\";i:1;s:46:\"[1,\"L_mppZfd98Mr-I8QBY_EBQ-7Lpm2_Bo7\",2592000]\";}'
+    'PHPBACKSESSID' => 'cdd81702f386dde9763c51a45420dc7f'
+    '_backendPASSUser' => 'f534598f569fa1321928d15b05ecf3306e5454e2ed2a3ecab166022d560a4a17a:2:{i:0;s:16:\"_backendPASSUser\";i:1;s:46:\"[1,\"uPyzYNidl_M561fYurQjst0oMuQEin0w\",2592000]\";}'
+    '_backendCSRF' => '13370b7a25cea7760d474a8aeedaf983d87dafe27366d10d877a4f0a742f729ba:2:{i:0;s:12:\"_backendCSRF\";i:1;s:32:\"Y2xBmAIrZsV2d770_1Ct6R9Yxqwr-iJq\";}'
+    '_csrf-frontend' => 'bb57da817caee0478f187641286825aae42c6b5f0d0934698caa9b66046e20f2a:2:{i:0;s:14:\"_csrf-frontend\";i:1;s:32:\"CC_FE6wt8u8eNRSYF_tytODZGSTVaWB1\";}'
+    'PHPFRONTSESSID' => 'a106bcf4b6018108f32b3dc63a30ea8d'
+    'advanced-backend' => 'd6e4b1e7a95313f20442072e57212a85'
+    '_identity-backend' => 'c97d207e4dfd974780a68ba8802c7fc6dedd0c0e29e30b827ed89570cee863f3a:2:{i:0;s:17:\"_identity-backend\";i:1;s:14:\"[1,\"\",2592000]\";}'
+    '_csrf-backend' => 'f9653cb413ff81a55b77ccdcae2a9f5404feead7299077a657b834e5a1c823c0a:2:{i:0;s:13:\"_csrf-backend\";i:1;s:32:\"puuJha9VOLhC2BGVvWbRRzvF1ACoDJdU\";}'
+    '_gid' => 'GA1.1.566027150.1542016452'
+    '__tawkuuid' => 'e::localhost::CYdJaUXL45RbChkPnw/aEGBm5tusnvzU9cOYofYEoHG2ttLzHD yGzzhfVrQo2AF::2'
+    'PHPSESSID' => '8fc789f7ed04134e2b8119eb7f128849'
+    '_frontendPassUser' => '7c4563df39522da9e926e7e985974c83a86ad81b6390157ffb57d5765a25592ea:2:{i:0;s:17:\"_frontendPassUser\";i:1;s:46:\"[1,\"moybQBnSY244xkJxAL73W-HfG3JQTvFp\",2592000]\";}'
+    '_csrf' => '12ba43d5989929164af541a5d6fff8832ceb266d52281979b8b9d88c8f35c081a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"l_LhuQBYWK0erlZ6ETuID83ZxWeIPxYy\";}'
+    'TawkConnectionTime' => '0'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__returnUrl' => '/yii2-forum-training/backend/web/'
+    '__id' => 1
+]
+
+$_SERVER = [
+    'REDIRECT_UNIQUE_ID' => 'W@mXTn8AAAEAAAK-aS8AAAAE'
+    'REDIRECT_STATUS' => '200'
+    'UNIQUE_ID' => 'W@mXTn8AAAEAAAK-aS8AAAAE'
+    'HTTP_HOST' => 'localhost'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_13_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/70.0.3538.77 Safari/537.36'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8'
+    'HTTP_REFERER' => 'http://localhost/yii2-forum-training/backend/web/categories'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, br'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.9'
+    'HTTP_COOKIE' => 'PHPBASICSESSID=c84dabf2330a9a536b578e9cac5675f9; _basicCSRF=baeb0a0b4ed783fa9e500919635d771443709a2b10b4abab4dd297b977cc7a65a%3A2%3A%7Bi%3A0%3Bs%3A10%3A%22_basicCSRF%22%3Bi%3A1%3Bs%3A32%3A%22dQiP7uVxh-ffQl34Pn6X_Qe8qMWnjYcM%22%3B%7D; tailorshub-frontend=a94b4efe20b59cf9340a3e2d1ade4016; INOERP123123=ba10d81fb5999b0cf34b264f0c07f91d; FAff4f990e9b17767d77209e972b22d618=8a4929afed366eb0f347dff488f7e13a; _csrf-seftonfross=f8d9e3c1e338bb12bdb3648e31fc8ae973307f8737cbf24ed71f16109e642989a%3A2%3A%7Bi%3A0%3Bs%3A17%3A%22_csrf-seftonfross%22%3Bi%3A1%3Bs%3A32%3A%228zVfaAptBfOGDO4UtTYuSTmMxRVUQkcQ%22%3B%7D; Idea-edd8db2d=2f6f5e5b-192e-4305-baeb-571107513b05; _ga=GA1.1.568245260.1537000047; ckCsrfToken=3ZFDOtem9DJ9cbhFkV05V9R2cNUyK2zU9EvLkjA7; KCFINDER_showname=on; KCFINDER_showsize=off; KCFINDER_showtime=off; KCFINDER_order=name; KCFINDER_orderDesc=off; KCFINDER_view=thumbs; KCFINDER_displaySettings=off; _frontendLawyer=3e7584ec09968df4637431820667553c423035b45936154cfd2968554e35a407a%3A2%3A%7Bi%3A0%3Bs%3A15%3A%22_frontendLawyer%22%3Bi%3A1%3Bs%3A47%3A%22%5B10%2C%22%242y%2413%24pb9YcxiTdK2ERv95RKVN7.7LJ%22%2C2592000%5D%22%3B%7D; _frontendCSRF=39b12ca78484e70cb43321ef5477932b99ddd9335ac128114d5a7db83440498aa%3A2%3A%7Bi%3A0%3Bs%3A13%3A%22_frontendCSRF%22%3Bi%3A1%3Bs%3A32%3A%22hvYEq9cHsa7ENLgqCQYb6nMZ-nuvmx8G%22%3B%7D; _identity-user=146c6fa6860dac60709df9c1e9a0f1d2b8358586c34e73abe48586e81bca5d50a%3A2%3A%7Bi%3A0%3Bs%3A14%3A%22_identity-user%22%3Bi%3A1%3Bs%3A46%3A%22%5B4%2C%22vxdOdWx4qvdC5xoCDuyD5mQTITnsX7yy%22%2C2592000%5D%22%3B%7D; advanced-frontend=b0b13f4d6eddfb8a5822262f73390a18; _identity-frontend=037f84ba9be060846021ebb26fcac04ffedf3080d83a37c62a8e7c90dc1fd0bba%3A2%3A%7Bi%3A0%3Bs%3A18%3A%22_identity-frontend%22%3Bi%3A1%3Bs%3A46%3A%22%5B1%2C%22mBn4AGuu6K_JJ5hvm8jy37JIpZYbkeAH%22%2C2592000%5D%22%3B%7D; jsilinks-frontend=7ceb04212174308deac6873ee36d0e17; _identity=007d3182f256cf3221a9a372cde436e98ee98ee6cad3d0a979b691fb4b56fa31a%3A2%3A%7Bi%3A0%3Bs%3A9%3A%22_identity%22%3Bi%3A1%3Bs%3A46%3A%22%5B1%2C%22L_mppZfd98Mr-I8QBY_EBQ-7Lpm2_Bo7%22%2C2592000%5D%22%3B%7D; PHPBACKSESSID=cdd81702f386dde9763c51a45420dc7f; _backendPASSUser=f534598f569fa1321928d15b05ecf3306e5454e2ed2a3ecab166022d560a4a17a%3A2%3A%7Bi%3A0%3Bs%3A16%3A%22_backendPASSUser%22%3Bi%3A1%3Bs%3A46%3A%22%5B1%2C%22uPyzYNidl_M561fYurQjst0oMuQEin0w%22%2C2592000%5D%22%3B%7D; _backendCSRF=13370b7a25cea7760d474a8aeedaf983d87dafe27366d10d877a4f0a742f729ba%3A2%3A%7Bi%3A0%3Bs%3A12%3A%22_backendCSRF%22%3Bi%3A1%3Bs%3A32%3A%22Y2xBmAIrZsV2d770_1Ct6R9Yxqwr-iJq%22%3B%7D; _csrf-frontend=bb57da817caee0478f187641286825aae42c6b5f0d0934698caa9b66046e20f2a%3A2%3A%7Bi%3A0%3Bs%3A14%3A%22_csrf-frontend%22%3Bi%3A1%3Bs%3A32%3A%22CC_FE6wt8u8eNRSYF_tytODZGSTVaWB1%22%3B%7D; PHPFRONTSESSID=a106bcf4b6018108f32b3dc63a30ea8d; advanced-backend=d6e4b1e7a95313f20442072e57212a85; _identity-backend=c97d207e4dfd974780a68ba8802c7fc6dedd0c0e29e30b827ed89570cee863f3a%3A2%3A%7Bi%3A0%3Bs%3A17%3A%22_identity-backend%22%3Bi%3A1%3Bs%3A14%3A%22%5B1%2C%22%22%2C2592000%5D%22%3B%7D; _csrf-backend=f9653cb413ff81a55b77ccdcae2a9f5404feead7299077a657b834e5a1c823c0a%3A2%3A%7Bi%3A0%3Bs%3A13%3A%22_csrf-backend%22%3Bi%3A1%3Bs%3A32%3A%22puuJha9VOLhC2BGVvWbRRzvF1ACoDJdU%22%3B%7D; _gid=GA1.1.566027150.1542016452; __tawkuuid=e::localhost::CYdJaUXL45RbChkPnw/aEGBm5tusnvzU9cOYofYEoHG2ttLzHD+yGzzhfVrQo2AF::2; PHPSESSID=8fc789f7ed04134e2b8119eb7f128849; _frontendPassUser=7c4563df39522da9e926e7e985974c83a86ad81b6390157ffb57d5765a25592ea%3A2%3A%7Bi%3A0%3Bs%3A17%3A%22_frontendPassUser%22%3Bi%3A1%3Bs%3A46%3A%22%5B1%2C%22moybQBnSY244xkJxAL73W-HfG3JQTvFp%22%2C2592000%5D%22%3B%7D; _csrf=12ba43d5989929164af541a5d6fff8832ceb266d52281979b8b9d88c8f35c081a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22l_LhuQBYWK0erlZ6ETuID83ZxWeIPxYy%22%3B%7D; TawkConnectionTime=0'
+    'PATH' => '/usr/bin:/bin:/usr/sbin:/sbin'
+    'DYLD_LIBRARY_PATH' => '/Applications/XAMPP/xamppfiles/lib'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache/2.4.25 (Unix) OpenSSL/1.0.2j PHP/7.1.1 mod_perl/2.0.8-dev Perl/v5.16.3'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => '/Applications/XAMPP/xamppfiles/htdocs'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/Applications/XAMPP/xamppfiles/htdocs'
+    'SERVER_ADMIN' => 'you@example.com'
+    'SCRIPT_FILENAME' => '/Applications/XAMPP/xamppfiles/htdocs/yii2-forum-training/backend/web/index.php'
+    'REMOTE_PORT' => '60560'
+    'REDIRECT_URL' => '/yii2-forum-training/backend/web/site/index'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/yii2-forum-training/backend/web/site/index'
+    'SCRIPT_NAME' => '/yii2-forum-training/backend/web/index.php'
+    'PHP_SELF' => '/yii2-forum-training/backend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1542035278.489
+    'REQUEST_TIME' => 1542035278
+]
+2018-11-12 16:08:23 [::1][1][d6e4b1e7a95313f20442072e57212a85][error][yii\base\UnknownMethodException] yii\base\UnknownMethodException: Calling unknown method: yii\base\Security::cipher() in /Applications/XAMPP/xamppfiles/htdocs/yii2-forum-training/vendor/yiisoft/yii2/base/Component.php:300
+Stack trace:
+#0 /Applications/XAMPP/xamppfiles/htdocs/yii2-forum-training/backend/views/site/index.php(43): yii\base\Component->__call('cipher', Array)
+#1 /Applications/XAMPP/xamppfiles/htdocs/yii2-forum-training/vendor/yiisoft/yii2/base/View.php(336): require('/Applications/X...')
+#2 /Applications/XAMPP/xamppfiles/htdocs/yii2-forum-training/vendor/yiisoft/yii2/base/View.php(254): yii\base\View->renderPhpFile('/Applications/X...', Array)
+#3 /Applications/XAMPP/xamppfiles/htdocs/yii2-forum-training/vendor/yiisoft/yii2/base/View.php(156): yii\base\View->renderFile('/Applications/X...', Array, Object(backend\controllers\SiteController))
+#4 /Applications/XAMPP/xamppfiles/htdocs/yii2-forum-training/vendor/yiisoft/yii2/base/Controller.php(384): yii\base\View->render('index', Array, Object(backend\controllers\SiteController))
+#5 /Applications/XAMPP/xamppfiles/htdocs/yii2-forum-training/backend/controllers/SiteController.php(63): yii\base\Controller->render('index')
+#6 [internal function]: backend\controllers\SiteController->actionIndex()
+#7 /Applications/XAMPP/xamppfiles/htdocs/yii2-forum-training/vendor/yiisoft/yii2/base/InlineAction.php(57): call_user_func_array(Array, Array)
+#8 /Applications/XAMPP/xamppfiles/htdocs/yii2-forum-training/vendor/yiisoft/yii2/base/Controller.php(157): yii\base\InlineAction->runWithParams(Array)
+#9 /Applications/XAMPP/xamppfiles/htdocs/yii2-forum-training/vendor/yiisoft/yii2/base/Module.php(528): yii\base\Controller->runAction('index', Array)
+#10 /Applications/XAMPP/xamppfiles/htdocs/yii2-forum-training/vendor/yiisoft/yii2/web/Application.php(103): yii\base\Module->runAction('site/index', Array)
+#11 /Applications/XAMPP/xamppfiles/htdocs/yii2-forum-training/vendor/yiisoft/yii2/base/Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#12 /Applications/XAMPP/xamppfiles/htdocs/yii2-forum-training/backend/web/index.php(17): yii\base\Application->run()
+#13 {main}
+2018-11-12 16:08:21 [::1][1][d6e4b1e7a95313f20442072e57212a85][info][application] $_GET = []
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    'PHPBASICSESSID' => 'c84dabf2330a9a536b578e9cac5675f9'
+    '_basicCSRF' => 'baeb0a0b4ed783fa9e500919635d771443709a2b10b4abab4dd297b977cc7a65a:2:{i:0;s:10:\"_basicCSRF\";i:1;s:32:\"dQiP7uVxh-ffQl34Pn6X_Qe8qMWnjYcM\";}'
+    'tailorshub-frontend' => 'a94b4efe20b59cf9340a3e2d1ade4016'
+    'INOERP123123' => 'ba10d81fb5999b0cf34b264f0c07f91d'
+    'FAff4f990e9b17767d77209e972b22d618' => '8a4929afed366eb0f347dff488f7e13a'
+    '_csrf-seftonfross' => 'f8d9e3c1e338bb12bdb3648e31fc8ae973307f8737cbf24ed71f16109e642989a:2:{i:0;s:17:\"_csrf-seftonfross\";i:1;s:32:\"8zVfaAptBfOGDO4UtTYuSTmMxRVUQkcQ\";}'
+    'Idea-edd8db2d' => '2f6f5e5b-192e-4305-baeb-571107513b05'
+    '_ga' => 'GA1.1.568245260.1537000047'
+    'ckCsrfToken' => '3ZFDOtem9DJ9cbhFkV05V9R2cNUyK2zU9EvLkjA7'
+    'KCFINDER_showname' => 'on'
+    'KCFINDER_showsize' => 'off'
+    'KCFINDER_showtime' => 'off'
+    'KCFINDER_order' => 'name'
+    'KCFINDER_orderDesc' => 'off'
+    'KCFINDER_view' => 'thumbs'
+    'KCFINDER_displaySettings' => 'off'
+    '_frontendLawyer' => '3e7584ec09968df4637431820667553c423035b45936154cfd2968554e35a407a:2:{i:0;s:15:\"_frontendLawyer\";i:1;s:47:\"[10,\"$2y$13$pb9YcxiTdK2ERv95RKVN7.7LJ\",2592000]\";}'
+    '_frontendCSRF' => '39b12ca78484e70cb43321ef5477932b99ddd9335ac128114d5a7db83440498aa:2:{i:0;s:13:\"_frontendCSRF\";i:1;s:32:\"hvYEq9cHsa7ENLgqCQYb6nMZ-nuvmx8G\";}'
+    '_identity-user' => '146c6fa6860dac60709df9c1e9a0f1d2b8358586c34e73abe48586e81bca5d50a:2:{i:0;s:14:\"_identity-user\";i:1;s:46:\"[4,\"vxdOdWx4qvdC5xoCDuyD5mQTITnsX7yy\",2592000]\";}'
+    'advanced-frontend' => 'b0b13f4d6eddfb8a5822262f73390a18'
+    '_identity-frontend' => '037f84ba9be060846021ebb26fcac04ffedf3080d83a37c62a8e7c90dc1fd0bba:2:{i:0;s:18:\"_identity-frontend\";i:1;s:46:\"[1,\"mBn4AGuu6K_JJ5hvm8jy37JIpZYbkeAH\",2592000]\";}'
+    'jsilinks-frontend' => '7ceb04212174308deac6873ee36d0e17'
+    '_identity' => '007d3182f256cf3221a9a372cde436e98ee98ee6cad3d0a979b691fb4b56fa31a:2:{i:0;s:9:\"_identity\";i:1;s:46:\"[1,\"L_mppZfd98Mr-I8QBY_EBQ-7Lpm2_Bo7\",2592000]\";}'
+    'PHPBACKSESSID' => 'cdd81702f386dde9763c51a45420dc7f'
+    '_backendPASSUser' => 'f534598f569fa1321928d15b05ecf3306e5454e2ed2a3ecab166022d560a4a17a:2:{i:0;s:16:\"_backendPASSUser\";i:1;s:46:\"[1,\"uPyzYNidl_M561fYurQjst0oMuQEin0w\",2592000]\";}'
+    '_backendCSRF' => '13370b7a25cea7760d474a8aeedaf983d87dafe27366d10d877a4f0a742f729ba:2:{i:0;s:12:\"_backendCSRF\";i:1;s:32:\"Y2xBmAIrZsV2d770_1Ct6R9Yxqwr-iJq\";}'
+    '_csrf-frontend' => 'bb57da817caee0478f187641286825aae42c6b5f0d0934698caa9b66046e20f2a:2:{i:0;s:14:\"_csrf-frontend\";i:1;s:32:\"CC_FE6wt8u8eNRSYF_tytODZGSTVaWB1\";}'
+    'PHPFRONTSESSID' => 'a106bcf4b6018108f32b3dc63a30ea8d'
+    'advanced-backend' => 'd6e4b1e7a95313f20442072e57212a85'
+    '_identity-backend' => 'c97d207e4dfd974780a68ba8802c7fc6dedd0c0e29e30b827ed89570cee863f3a:2:{i:0;s:17:\"_identity-backend\";i:1;s:14:\"[1,\"\",2592000]\";}'
+    '_csrf-backend' => 'f9653cb413ff81a55b77ccdcae2a9f5404feead7299077a657b834e5a1c823c0a:2:{i:0;s:13:\"_csrf-backend\";i:1;s:32:\"puuJha9VOLhC2BGVvWbRRzvF1ACoDJdU\";}'
+    '_gid' => 'GA1.1.566027150.1542016452'
+    '__tawkuuid' => 'e::localhost::CYdJaUXL45RbChkPnw/aEGBm5tusnvzU9cOYofYEoHG2ttLzHD yGzzhfVrQo2AF::2'
+    'PHPSESSID' => '8fc789f7ed04134e2b8119eb7f128849'
+    '_frontendPassUser' => '7c4563df39522da9e926e7e985974c83a86ad81b6390157ffb57d5765a25592ea:2:{i:0;s:17:\"_frontendPassUser\";i:1;s:46:\"[1,\"moybQBnSY244xkJxAL73W-HfG3JQTvFp\",2592000]\";}'
+    '_csrf' => '12ba43d5989929164af541a5d6fff8832ceb266d52281979b8b9d88c8f35c081a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"l_LhuQBYWK0erlZ6ETuID83ZxWeIPxYy\";}'
+    'TawkConnectionTime' => '0'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__returnUrl' => '/yii2-forum-training/backend/web/'
+    '__id' => 1
+]
+
+$_SERVER = [
+    'REDIRECT_UNIQUE_ID' => 'W@mXZX8AAAEAAAK73@QAAAAA'
+    'REDIRECT_STATUS' => '200'
+    'UNIQUE_ID' => 'W@mXZX8AAAEAAAK73@QAAAAA'
+    'HTTP_HOST' => 'localhost'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_13_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/70.0.3538.77 Safari/537.36'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8'
+    'HTTP_REFERER' => 'http://localhost/yii2-forum-training/backend/web/categories'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, br'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.9'
+    'HTTP_COOKIE' => 'PHPBASICSESSID=c84dabf2330a9a536b578e9cac5675f9; _basicCSRF=baeb0a0b4ed783fa9e500919635d771443709a2b10b4abab4dd297b977cc7a65a%3A2%3A%7Bi%3A0%3Bs%3A10%3A%22_basicCSRF%22%3Bi%3A1%3Bs%3A32%3A%22dQiP7uVxh-ffQl34Pn6X_Qe8qMWnjYcM%22%3B%7D; tailorshub-frontend=a94b4efe20b59cf9340a3e2d1ade4016; INOERP123123=ba10d81fb5999b0cf34b264f0c07f91d; FAff4f990e9b17767d77209e972b22d618=8a4929afed366eb0f347dff488f7e13a; _csrf-seftonfross=f8d9e3c1e338bb12bdb3648e31fc8ae973307f8737cbf24ed71f16109e642989a%3A2%3A%7Bi%3A0%3Bs%3A17%3A%22_csrf-seftonfross%22%3Bi%3A1%3Bs%3A32%3A%228zVfaAptBfOGDO4UtTYuSTmMxRVUQkcQ%22%3B%7D; Idea-edd8db2d=2f6f5e5b-192e-4305-baeb-571107513b05; _ga=GA1.1.568245260.1537000047; ckCsrfToken=3ZFDOtem9DJ9cbhFkV05V9R2cNUyK2zU9EvLkjA7; KCFINDER_showname=on; KCFINDER_showsize=off; KCFINDER_showtime=off; KCFINDER_order=name; KCFINDER_orderDesc=off; KCFINDER_view=thumbs; KCFINDER_displaySettings=off; _frontendLawyer=3e7584ec09968df4637431820667553c423035b45936154cfd2968554e35a407a%3A2%3A%7Bi%3A0%3Bs%3A15%3A%22_frontendLawyer%22%3Bi%3A1%3Bs%3A47%3A%22%5B10%2C%22%242y%2413%24pb9YcxiTdK2ERv95RKVN7.7LJ%22%2C2592000%5D%22%3B%7D; _frontendCSRF=39b12ca78484e70cb43321ef5477932b99ddd9335ac128114d5a7db83440498aa%3A2%3A%7Bi%3A0%3Bs%3A13%3A%22_frontendCSRF%22%3Bi%3A1%3Bs%3A32%3A%22hvYEq9cHsa7ENLgqCQYb6nMZ-nuvmx8G%22%3B%7D; _identity-user=146c6fa6860dac60709df9c1e9a0f1d2b8358586c34e73abe48586e81bca5d50a%3A2%3A%7Bi%3A0%3Bs%3A14%3A%22_identity-user%22%3Bi%3A1%3Bs%3A46%3A%22%5B4%2C%22vxdOdWx4qvdC5xoCDuyD5mQTITnsX7yy%22%2C2592000%5D%22%3B%7D; advanced-frontend=b0b13f4d6eddfb8a5822262f73390a18; _identity-frontend=037f84ba9be060846021ebb26fcac04ffedf3080d83a37c62a8e7c90dc1fd0bba%3A2%3A%7Bi%3A0%3Bs%3A18%3A%22_identity-frontend%22%3Bi%3A1%3Bs%3A46%3A%22%5B1%2C%22mBn4AGuu6K_JJ5hvm8jy37JIpZYbkeAH%22%2C2592000%5D%22%3B%7D; jsilinks-frontend=7ceb04212174308deac6873ee36d0e17; _identity=007d3182f256cf3221a9a372cde436e98ee98ee6cad3d0a979b691fb4b56fa31a%3A2%3A%7Bi%3A0%3Bs%3A9%3A%22_identity%22%3Bi%3A1%3Bs%3A46%3A%22%5B1%2C%22L_mppZfd98Mr-I8QBY_EBQ-7Lpm2_Bo7%22%2C2592000%5D%22%3B%7D; PHPBACKSESSID=cdd81702f386dde9763c51a45420dc7f; _backendPASSUser=f534598f569fa1321928d15b05ecf3306e5454e2ed2a3ecab166022d560a4a17a%3A2%3A%7Bi%3A0%3Bs%3A16%3A%22_backendPASSUser%22%3Bi%3A1%3Bs%3A46%3A%22%5B1%2C%22uPyzYNidl_M561fYurQjst0oMuQEin0w%22%2C2592000%5D%22%3B%7D; _backendCSRF=13370b7a25cea7760d474a8aeedaf983d87dafe27366d10d877a4f0a742f729ba%3A2%3A%7Bi%3A0%3Bs%3A12%3A%22_backendCSRF%22%3Bi%3A1%3Bs%3A32%3A%22Y2xBmAIrZsV2d770_1Ct6R9Yxqwr-iJq%22%3B%7D; _csrf-frontend=bb57da817caee0478f187641286825aae42c6b5f0d0934698caa9b66046e20f2a%3A2%3A%7Bi%3A0%3Bs%3A14%3A%22_csrf-frontend%22%3Bi%3A1%3Bs%3A32%3A%22CC_FE6wt8u8eNRSYF_tytODZGSTVaWB1%22%3B%7D; PHPFRONTSESSID=a106bcf4b6018108f32b3dc63a30ea8d; advanced-backend=d6e4b1e7a95313f20442072e57212a85; _identity-backend=c97d207e4dfd974780a68ba8802c7fc6dedd0c0e29e30b827ed89570cee863f3a%3A2%3A%7Bi%3A0%3Bs%3A17%3A%22_identity-backend%22%3Bi%3A1%3Bs%3A14%3A%22%5B1%2C%22%22%2C2592000%5D%22%3B%7D; _csrf-backend=f9653cb413ff81a55b77ccdcae2a9f5404feead7299077a657b834e5a1c823c0a%3A2%3A%7Bi%3A0%3Bs%3A13%3A%22_csrf-backend%22%3Bi%3A1%3Bs%3A32%3A%22puuJha9VOLhC2BGVvWbRRzvF1ACoDJdU%22%3B%7D; _gid=GA1.1.566027150.1542016452; __tawkuuid=e::localhost::CYdJaUXL45RbChkPnw/aEGBm5tusnvzU9cOYofYEoHG2ttLzHD+yGzzhfVrQo2AF::2; PHPSESSID=8fc789f7ed04134e2b8119eb7f128849; _frontendPassUser=7c4563df39522da9e926e7e985974c83a86ad81b6390157ffb57d5765a25592ea%3A2%3A%7Bi%3A0%3Bs%3A17%3A%22_frontendPassUser%22%3Bi%3A1%3Bs%3A46%3A%22%5B1%2C%22moybQBnSY244xkJxAL73W-HfG3JQTvFp%22%2C2592000%5D%22%3B%7D; _csrf=12ba43d5989929164af541a5d6fff8832ceb266d52281979b8b9d88c8f35c081a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22l_LhuQBYWK0erlZ6ETuID83ZxWeIPxYy%22%3B%7D; TawkConnectionTime=0'
+    'PATH' => '/usr/bin:/bin:/usr/sbin:/sbin'
+    'DYLD_LIBRARY_PATH' => '/Applications/XAMPP/xamppfiles/lib'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache/2.4.25 (Unix) OpenSSL/1.0.2j PHP/7.1.1 mod_perl/2.0.8-dev Perl/v5.16.3'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => '/Applications/XAMPP/xamppfiles/htdocs'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/Applications/XAMPP/xamppfiles/htdocs'
+    'SERVER_ADMIN' => 'you@example.com'
+    'SCRIPT_FILENAME' => '/Applications/XAMPP/xamppfiles/htdocs/yii2-forum-training/backend/web/index.php'
+    'REMOTE_PORT' => '60596'
+    'REDIRECT_URL' => '/yii2-forum-training/backend/web/site/index'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/yii2-forum-training/backend/web/site/index'
+    'SCRIPT_NAME' => '/yii2-forum-training/backend/web/index.php'
+    'PHP_SELF' => '/yii2-forum-training/backend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1542035301.156
+    'REQUEST_TIME' => 1542035301
+]
+2018-11-21 12:12:04 [::1][1][1742da2f1e829f93fc2d0f756a6ab1ca][error][yii\web\HttpException:404] yii\base\InvalidRouteException: Unable to resolve the request "posts". in /Applications/XAMPP/xamppfiles/htdocs/yii2-forum-training/vendor/yiisoft/yii2/base/Module.php:537
+Stack trace:
+#0 /Applications/XAMPP/xamppfiles/htdocs/yii2-forum-training/vendor/yiisoft/yii2/web/Application.php(103): yii\base\Module->runAction('posts', Array)
+#1 /Applications/XAMPP/xamppfiles/htdocs/yii2-forum-training/vendor/yiisoft/yii2/base/Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#2 /Applications/XAMPP/xamppfiles/htdocs/yii2-forum-training/backend/web/index.php(17): yii\base\Application->run()
+#3 {main}
+
+Next yii\web\NotFoundHttpException: Page not found. in /Applications/XAMPP/xamppfiles/htdocs/yii2-forum-training/vendor/yiisoft/yii2/web/Application.php:115
+Stack trace:
+#0 /Applications/XAMPP/xamppfiles/htdocs/yii2-forum-training/vendor/yiisoft/yii2/base/Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#1 /Applications/XAMPP/xamppfiles/htdocs/yii2-forum-training/backend/web/index.php(17): yii\base\Application->run()
+#2 {main}
+2018-11-21 12:12:04 [::1][1][1742da2f1e829f93fc2d0f756a6ab1ca][info][application] $_GET = []
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    'PHPBASICSESSID' => 'c84dabf2330a9a536b578e9cac5675f9'
+    '_basicCSRF' => 'baeb0a0b4ed783fa9e500919635d771443709a2b10b4abab4dd297b977cc7a65a:2:{i:0;s:10:\"_basicCSRF\";i:1;s:32:\"dQiP7uVxh-ffQl34Pn6X_Qe8qMWnjYcM\";}'
+    'tailorshub-frontend' => 'a94b4efe20b59cf9340a3e2d1ade4016'
+    'INOERP123123' => 'ba10d81fb5999b0cf34b264f0c07f91d'
+    'FAff4f990e9b17767d77209e972b22d618' => '8a4929afed366eb0f347dff488f7e13a'
+    '_csrf-seftonfross' => 'f8d9e3c1e338bb12bdb3648e31fc8ae973307f8737cbf24ed71f16109e642989a:2:{i:0;s:17:\"_csrf-seftonfross\";i:1;s:32:\"8zVfaAptBfOGDO4UtTYuSTmMxRVUQkcQ\";}'
+    'Idea-edd8db2d' => '2f6f5e5b-192e-4305-baeb-571107513b05'
+    '_ga' => 'GA1.1.568245260.1537000047'
+    'ckCsrfToken' => '3ZFDOtem9DJ9cbhFkV05V9R2cNUyK2zU9EvLkjA7'
+    'KCFINDER_showname' => 'on'
+    'KCFINDER_showsize' => 'off'
+    'KCFINDER_showtime' => 'off'
+    'KCFINDER_order' => 'name'
+    'KCFINDER_orderDesc' => 'off'
+    'KCFINDER_view' => 'thumbs'
+    'KCFINDER_displaySettings' => 'off'
+    '_frontendLawyer' => '3e7584ec09968df4637431820667553c423035b45936154cfd2968554e35a407a:2:{i:0;s:15:\"_frontendLawyer\";i:1;s:47:\"[10,\"$2y$13$pb9YcxiTdK2ERv95RKVN7.7LJ\",2592000]\";}'
+    '_frontendCSRF' => '39b12ca78484e70cb43321ef5477932b99ddd9335ac128114d5a7db83440498aa:2:{i:0;s:13:\"_frontendCSRF\";i:1;s:32:\"hvYEq9cHsa7ENLgqCQYb6nMZ-nuvmx8G\";}'
+    '_identity-user' => '146c6fa6860dac60709df9c1e9a0f1d2b8358586c34e73abe48586e81bca5d50a:2:{i:0;s:14:\"_identity-user\";i:1;s:46:\"[4,\"vxdOdWx4qvdC5xoCDuyD5mQTITnsX7yy\",2592000]\";}'
+    'advanced-frontend' => 'b0b13f4d6eddfb8a5822262f73390a18'
+    '_identity-frontend' => '037f84ba9be060846021ebb26fcac04ffedf3080d83a37c62a8e7c90dc1fd0bba:2:{i:0;s:18:\"_identity-frontend\";i:1;s:46:\"[1,\"mBn4AGuu6K_JJ5hvm8jy37JIpZYbkeAH\",2592000]\";}'
+    '_identity' => '007d3182f256cf3221a9a372cde436e98ee98ee6cad3d0a979b691fb4b56fa31a:2:{i:0;s:9:\"_identity\";i:1;s:46:\"[1,\"L_mppZfd98Mr-I8QBY_EBQ-7Lpm2_Bo7\",2592000]\";}'
+    '_backendPASSUser' => 'f534598f569fa1321928d15b05ecf3306e5454e2ed2a3ecab166022d560a4a17a:2:{i:0;s:16:\"_backendPASSUser\";i:1;s:46:\"[1,\"uPyzYNidl_M561fYurQjst0oMuQEin0w\",2592000]\";}'
+    '_backendCSRF' => '13370b7a25cea7760d474a8aeedaf983d87dafe27366d10d877a4f0a742f729ba:2:{i:0;s:12:\"_backendCSRF\";i:1;s:32:\"Y2xBmAIrZsV2d770_1Ct6R9Yxqwr-iJq\";}'
+    'PHPFRONTSESSID' => 'a106bcf4b6018108f32b3dc63a30ea8d'
+    '__tawkuuid' => 'e::localhost::CYdJaUXL45RbChkPnw/aEGBm5tusnvzU9cOYofYEoHG2ttLzHD yGzzhfVrQo2AF::2'
+    'PHPSESSID' => '8fc789f7ed04134e2b8119eb7f128849'
+    '_frontendPassUser' => '7c4563df39522da9e926e7e985974c83a86ad81b6390157ffb57d5765a25592ea:2:{i:0;s:17:\"_frontendPassUser\";i:1;s:46:\"[1,\"moybQBnSY244xkJxAL73W-HfG3JQTvFp\",2592000]\";}'
+    'TawkConnectionTime' => '0'
+    'jsilinks-frontend' => 'be8ea8adce4a36a655e03f51c7422a38'
+    'PHPBACKSESSID' => 'acc528e23773a8587feb9a1dd509fbcd'
+    '_csrf' => '93a2b02b3fd1d9ce19d3920f4b75e07222081d993f125ebaf8dee75363a4d883a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"RrP4n8qXWjsWKobo3PMPbWe3FBq7xlCN\";}'
+    '_csrf-frontend' => 'bea7c50cda908049a6725cfa8b68971f76520be0a6463162f1540a43ed49aa66a:2:{i:0;s:14:\"_csrf-frontend\";i:1;s:32:\"MtfmJV7zhl-UK2goG-MMcLmG1jNJSspg\";}'
+    'advanced-backend' => '1742da2f1e829f93fc2d0f756a6ab1ca'
+    '_identity-backend' => 'c97d207e4dfd974780a68ba8802c7fc6dedd0c0e29e30b827ed89570cee863f3a:2:{i:0;s:17:\"_identity-backend\";i:1;s:14:\"[1,\"\",2592000]\";}'
+    '_csrf-backend' => '531462ef6621b12bc31d274d7eba3090beed6342e2929250cfeb151d1f04ccbba:2:{i:0;s:13:\"_csrf-backend\";i:1;s:32:\"TWPzxS8degTteBH1Z1T6cQLxHRgoJtUU\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__returnUrl' => '/yii2-forum-training/admin'
+    '__id' => 1
+]
+
+$_SERVER = [
+    'REDIRECT_UNIQUE_ID' => 'W-U9hH8AAAEAABaY@EAAAAAG'
+    'REDIRECT_STATUS' => '200'
+    'UNIQUE_ID' => 'W-U9hH8AAAEAABaY@EAAAAAG'
+    'HTTP_HOST' => 'localhost'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_13_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/70.0.3538.102 Safari/537.36'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8'
+    'HTTP_REFERER' => 'http://localhost/yii2-forum-training/admin'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, br'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.9'
+    'HTTP_COOKIE' => 'PHPBASICSESSID=c84dabf2330a9a536b578e9cac5675f9; _basicCSRF=baeb0a0b4ed783fa9e500919635d771443709a2b10b4abab4dd297b977cc7a65a%3A2%3A%7Bi%3A0%3Bs%3A10%3A%22_basicCSRF%22%3Bi%3A1%3Bs%3A32%3A%22dQiP7uVxh-ffQl34Pn6X_Qe8qMWnjYcM%22%3B%7D; tailorshub-frontend=a94b4efe20b59cf9340a3e2d1ade4016; INOERP123123=ba10d81fb5999b0cf34b264f0c07f91d; FAff4f990e9b17767d77209e972b22d618=8a4929afed366eb0f347dff488f7e13a; _csrf-seftonfross=f8d9e3c1e338bb12bdb3648e31fc8ae973307f8737cbf24ed71f16109e642989a%3A2%3A%7Bi%3A0%3Bs%3A17%3A%22_csrf-seftonfross%22%3Bi%3A1%3Bs%3A32%3A%228zVfaAptBfOGDO4UtTYuSTmMxRVUQkcQ%22%3B%7D; Idea-edd8db2d=2f6f5e5b-192e-4305-baeb-571107513b05; _ga=GA1.1.568245260.1537000047; ckCsrfToken=3ZFDOtem9DJ9cbhFkV05V9R2cNUyK2zU9EvLkjA7; KCFINDER_showname=on; KCFINDER_showsize=off; KCFINDER_showtime=off; KCFINDER_order=name; KCFINDER_orderDesc=off; KCFINDER_view=thumbs; KCFINDER_displaySettings=off; _frontendLawyer=3e7584ec09968df4637431820667553c423035b45936154cfd2968554e35a407a%3A2%3A%7Bi%3A0%3Bs%3A15%3A%22_frontendLawyer%22%3Bi%3A1%3Bs%3A47%3A%22%5B10%2C%22%242y%2413%24pb9YcxiTdK2ERv95RKVN7.7LJ%22%2C2592000%5D%22%3B%7D; _frontendCSRF=39b12ca78484e70cb43321ef5477932b99ddd9335ac128114d5a7db83440498aa%3A2%3A%7Bi%3A0%3Bs%3A13%3A%22_frontendCSRF%22%3Bi%3A1%3Bs%3A32%3A%22hvYEq9cHsa7ENLgqCQYb6nMZ-nuvmx8G%22%3B%7D; _identity-user=146c6fa6860dac60709df9c1e9a0f1d2b8358586c34e73abe48586e81bca5d50a%3A2%3A%7Bi%3A0%3Bs%3A14%3A%22_identity-user%22%3Bi%3A1%3Bs%3A46%3A%22%5B4%2C%22vxdOdWx4qvdC5xoCDuyD5mQTITnsX7yy%22%2C2592000%5D%22%3B%7D; advanced-frontend=b0b13f4d6eddfb8a5822262f73390a18; _identity-frontend=037f84ba9be060846021ebb26fcac04ffedf3080d83a37c62a8e7c90dc1fd0bba%3A2%3A%7Bi%3A0%3Bs%3A18%3A%22_identity-frontend%22%3Bi%3A1%3Bs%3A46%3A%22%5B1%2C%22mBn4AGuu6K_JJ5hvm8jy37JIpZYbkeAH%22%2C2592000%5D%22%3B%7D; _identity=007d3182f256cf3221a9a372cde436e98ee98ee6cad3d0a979b691fb4b56fa31a%3A2%3A%7Bi%3A0%3Bs%3A9%3A%22_identity%22%3Bi%3A1%3Bs%3A46%3A%22%5B1%2C%22L_mppZfd98Mr-I8QBY_EBQ-7Lpm2_Bo7%22%2C2592000%5D%22%3B%7D; _backendPASSUser=f534598f569fa1321928d15b05ecf3306e5454e2ed2a3ecab166022d560a4a17a%3A2%3A%7Bi%3A0%3Bs%3A16%3A%22_backendPASSUser%22%3Bi%3A1%3Bs%3A46%3A%22%5B1%2C%22uPyzYNidl_M561fYurQjst0oMuQEin0w%22%2C2592000%5D%22%3B%7D; _backendCSRF=13370b7a25cea7760d474a8aeedaf983d87dafe27366d10d877a4f0a742f729ba%3A2%3A%7Bi%3A0%3Bs%3A12%3A%22_backendCSRF%22%3Bi%3A1%3Bs%3A32%3A%22Y2xBmAIrZsV2d770_1Ct6R9Yxqwr-iJq%22%3B%7D; PHPFRONTSESSID=a106bcf4b6018108f32b3dc63a30ea8d; __tawkuuid=e::localhost::CYdJaUXL45RbChkPnw/aEGBm5tusnvzU9cOYofYEoHG2ttLzHD+yGzzhfVrQo2AF::2; PHPSESSID=8fc789f7ed04134e2b8119eb7f128849; _frontendPassUser=7c4563df39522da9e926e7e985974c83a86ad81b6390157ffb57d5765a25592ea%3A2%3A%7Bi%3A0%3Bs%3A17%3A%22_frontendPassUser%22%3Bi%3A1%3Bs%3A46%3A%22%5B1%2C%22moybQBnSY244xkJxAL73W-HfG3JQTvFp%22%2C2592000%5D%22%3B%7D; TawkConnectionTime=0; jsilinks-frontend=be8ea8adce4a36a655e03f51c7422a38; PHPBACKSESSID=acc528e23773a8587feb9a1dd509fbcd; _csrf=93a2b02b3fd1d9ce19d3920f4b75e07222081d993f125ebaf8dee75363a4d883a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22RrP4n8qXWjsWKobo3PMPbWe3FBq7xlCN%22%3B%7D; _csrf-frontend=bea7c50cda908049a6725cfa8b68971f76520be0a6463162f1540a43ed49aa66a%3A2%3A%7Bi%3A0%3Bs%3A14%3A%22_csrf-frontend%22%3Bi%3A1%3Bs%3A32%3A%22MtfmJV7zhl-UK2goG-MMcLmG1jNJSspg%22%3B%7D; advanced-backend=1742da2f1e829f93fc2d0f756a6ab1ca; _identity-backend=c97d207e4dfd974780a68ba8802c7fc6dedd0c0e29e30b827ed89570cee863f3a%3A2%3A%7Bi%3A0%3Bs%3A17%3A%22_identity-backend%22%3Bi%3A1%3Bs%3A14%3A%22%5B1%2C%22%22%2C2592000%5D%22%3B%7D; _csrf-backend=531462ef6621b12bc31d274d7eba3090beed6342e2929250cfeb151d1f04ccbba%3A2%3A%7Bi%3A0%3Bs%3A13%3A%22_csrf-backend%22%3Bi%3A1%3Bs%3A32%3A%22TWPzxS8degTteBH1Z1T6cQLxHRgoJtUU%22%3B%7D'
+    'PATH' => '/usr/bin:/bin:/usr/sbin:/sbin'
+    'DYLD_LIBRARY_PATH' => '/Applications/XAMPP/xamppfiles/lib'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache/2.4.25 (Unix) OpenSSL/1.0.2j PHP/7.1.1 mod_perl/2.0.8-dev Perl/v5.16.3'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => '/Applications/XAMPP/xamppfiles/htdocs'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/Applications/XAMPP/xamppfiles/htdocs'
+    'SERVER_ADMIN' => 'you@example.com'
+    'SCRIPT_FILENAME' => '/Applications/XAMPP/xamppfiles/htdocs/yii2-forum-training/backend/web/index.php'
+    'REMOTE_PORT' => '57600'
+    'REDIRECT_URL' => '/yii2-forum-training/backend/web/posts'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/yii2-forum-training/backend/web/posts'
+    'SCRIPT_NAME' => '/yii2-forum-training/backend/web/index.php'
+    'PHP_SELF' => '/yii2-forum-training/backend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1542798724.572
+    'REQUEST_TIME' => 1542798724
+]

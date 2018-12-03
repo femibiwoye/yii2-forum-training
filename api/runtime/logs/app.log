@@ -1,0 +1,616 @@
+2018-12-03 13:04:55 [::1][-][8fc789f7ed04134e2b8119eb7f128849][error][yii\base\InvalidConfigException] yii\base\InvalidConfigException: The directory does not exist: /Applications/XAMPP/xamppfiles/htdocs/yii2-forum-training/api/assets in /Applications/XAMPP/xamppfiles/htdocs/yii2-forum-training/web/vendor/yiisoft/yii2/web/AssetManager.php:213
+Stack trace:
+#0 /Applications/XAMPP/xamppfiles/htdocs/yii2-forum-training/web/vendor/yiisoft/yii2/base/BaseObject.php(109): yii\web\AssetManager->init()
+#1 [internal function]: yii\base\BaseObject->__construct(Array)
+#2 /Applications/XAMPP/xamppfiles/htdocs/yii2-forum-training/web/vendor/yiisoft/yii2/di/Container.php(375): ReflectionClass->newInstanceArgs(Array)
+#3 /Applications/XAMPP/xamppfiles/htdocs/yii2-forum-training/web/vendor/yiisoft/yii2/di/Container.php(156): yii\di\Container->build('yii\\web\\AssetMa...', Array, Array)
+#4 /Applications/XAMPP/xamppfiles/htdocs/yii2-forum-training/web/vendor/yiisoft/yii2/BaseYii.php(349): yii\di\Container->get('yii\\web\\AssetMa...', Array, Array)
+#5 /Applications/XAMPP/xamppfiles/htdocs/yii2-forum-training/web/vendor/yiisoft/yii2/di/ServiceLocator.php(137): yii\BaseYii::createObject(Array)
+#6 /Applications/XAMPP/xamppfiles/htdocs/yii2-forum-training/web/vendor/yiisoft/yii2/base/Module.php(742): yii\di\ServiceLocator->get('assetManager', true)
+#7 /Applications/XAMPP/xamppfiles/htdocs/yii2-forum-training/web/vendor/yiisoft/yii2/di/ServiceLocator.php(74): yii\base\Module->get('assetManager')
+#8 /Applications/XAMPP/xamppfiles/htdocs/yii2-forum-training/web/vendor/yiisoft/yii2-gii/src/Module.php(135): yii\di\ServiceLocator->__get('assetManager')
+#9 /Applications/XAMPP/xamppfiles/htdocs/yii2-forum-training/web/vendor/yiisoft/yii2-gii/src/Module.php(124): yii\gii\Module->resetGlobalSettings()
+#10 /Applications/XAMPP/xamppfiles/htdocs/yii2-forum-training/web/vendor/yiisoft/yii2/base/Controller.php(145): yii\gii\Module->beforeAction(Object(yii\base\InlineAction))
+#11 /Applications/XAMPP/xamppfiles/htdocs/yii2-forum-training/web/vendor/yiisoft/yii2/base/Module.php(528): yii\base\Controller->runAction('index', Array)
+#12 /Applications/XAMPP/xamppfiles/htdocs/yii2-forum-training/web/vendor/yiisoft/yii2/web/Application.php(103): yii\base\Module->runAction('gii/default/ind...', Array)
+#13 /Applications/XAMPP/xamppfiles/htdocs/yii2-forum-training/web/vendor/yiisoft/yii2/base/Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#14 /Applications/XAMPP/xamppfiles/htdocs/yii2-forum-training/api/index.php(8): yii\base\Application->run()
+#15 {main}
+2018-12-03 13:04:55 [::1][-][8fc789f7ed04134e2b8119eb7f128849][info][application] $_GET = []
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    'PHPBASICSESSID' => 'c84dabf2330a9a536b578e9cac5675f9'
+    '_basicCSRF' => 'baeb0a0b4ed783fa9e500919635d771443709a2b10b4abab4dd297b977cc7a65a:2:{i:0;s:10:\"_basicCSRF\";i:1;s:32:\"dQiP7uVxh-ffQl34Pn6X_Qe8qMWnjYcM\";}'
+    'tailorshub-frontend' => 'a94b4efe20b59cf9340a3e2d1ade4016'
+    'INOERP123123' => 'ba10d81fb5999b0cf34b264f0c07f91d'
+    'FAff4f990e9b17767d77209e972b22d618' => '8a4929afed366eb0f347dff488f7e13a'
+    '_csrf-seftonfross' => 'f8d9e3c1e338bb12bdb3648e31fc8ae973307f8737cbf24ed71f16109e642989a:2:{i:0;s:17:\"_csrf-seftonfross\";i:1;s:32:\"8zVfaAptBfOGDO4UtTYuSTmMxRVUQkcQ\";}'
+    'Idea-edd8db2d' => '2f6f5e5b-192e-4305-baeb-571107513b05'
+    '_ga' => 'GA1.1.568245260.1537000047'
+    'ckCsrfToken' => '3ZFDOtem9DJ9cbhFkV05V9R2cNUyK2zU9EvLkjA7'
+    'KCFINDER_showname' => 'on'
+    'KCFINDER_showsize' => 'off'
+    'KCFINDER_showtime' => 'off'
+    'KCFINDER_order' => 'name'
+    'KCFINDER_orderDesc' => 'off'
+    'KCFINDER_view' => 'thumbs'
+    'KCFINDER_displaySettings' => 'off'
+    '_frontendLawyer' => '3e7584ec09968df4637431820667553c423035b45936154cfd2968554e35a407a:2:{i:0;s:15:\"_frontendLawyer\";i:1;s:47:\"[10,\"$2y$13$pb9YcxiTdK2ERv95RKVN7.7LJ\",2592000]\";}'
+    '_frontendCSRF' => '39b12ca78484e70cb43321ef5477932b99ddd9335ac128114d5a7db83440498aa:2:{i:0;s:13:\"_frontendCSRF\";i:1;s:32:\"hvYEq9cHsa7ENLgqCQYb6nMZ-nuvmx8G\";}'
+    '_identity-user' => '146c6fa6860dac60709df9c1e9a0f1d2b8358586c34e73abe48586e81bca5d50a:2:{i:0;s:14:\"_identity-user\";i:1;s:46:\"[4,\"vxdOdWx4qvdC5xoCDuyD5mQTITnsX7yy\",2592000]\";}'
+    '_identity-frontend' => '037f84ba9be060846021ebb26fcac04ffedf3080d83a37c62a8e7c90dc1fd0bba:2:{i:0;s:18:\"_identity-frontend\";i:1;s:46:\"[1,\"mBn4AGuu6K_JJ5hvm8jy37JIpZYbkeAH\",2592000]\";}'
+    '_backendPASSUser' => 'f534598f569fa1321928d15b05ecf3306e5454e2ed2a3ecab166022d560a4a17a:2:{i:0;s:16:\"_backendPASSUser\";i:1;s:46:\"[1,\"uPyzYNidl_M561fYurQjst0oMuQEin0w\",2592000]\";}'
+    '_backendCSRF' => '13370b7a25cea7760d474a8aeedaf983d87dafe27366d10d877a4f0a742f729ba:2:{i:0;s:12:\"_backendCSRF\";i:1;s:32:\"Y2xBmAIrZsV2d770_1Ct6R9Yxqwr-iJq\";}'
+    'PHPSESSID' => '8fc789f7ed04134e2b8119eb7f128849'
+    '_frontendPassUser' => '7c4563df39522da9e926e7e985974c83a86ad81b6390157ffb57d5765a25592ea:2:{i:0;s:17:\"_frontendPassUser\";i:1;s:46:\"[1,\"moybQBnSY244xkJxAL73W-HfG3JQTvFp\",2592000]\";}'
+    'jsilinks-frontend' => 'be8ea8adce4a36a655e03f51c7422a38'
+    'PHPBACKSESSID' => 'acc528e23773a8587feb9a1dd509fbcd'
+    '_csrf' => '93a2b02b3fd1d9ce19d3920f4b75e07222081d993f125ebaf8dee75363a4d883a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"RrP4n8qXWjsWKobo3PMPbWe3FBq7xlCN\";}'
+    '_csrf-frontend' => 'bea7c50cda908049a6725cfa8b68971f76520be0a6463162f1540a43ed49aa66a:2:{i:0;s:14:\"_csrf-frontend\";i:1;s:32:\"MtfmJV7zhl-UK2goG-MMcLmG1jNJSspg\";}'
+    'advanced-backend' => '1742da2f1e829f93fc2d0f756a6ab1ca'
+    '_identity-backend' => 'c97d207e4dfd974780a68ba8802c7fc6dedd0c0e29e30b827ed89570cee863f3a:2:{i:0;s:17:\"_identity-backend\";i:1;s:14:\"[1,\"\",2592000]\";}'
+    '_csrf-backend' => '531462ef6621b12bc31d274d7eba3090beed6342e2929250cfeb151d1f04ccbba:2:{i:0;s:13:\"_csrf-backend\";i:1;s:32:\"TWPzxS8degTteBH1Z1T6cQLxHRgoJtUU\";}'
+    'IsMember' => '1'
+    'gramblr_sessid' => 'S__x8DIht7Fd1H_IWz139gz8zouFfJi6b3-HGHwG0NvBpMj7uGTlNOSZXc3Q3ZeJX3MHGoQ0rdo3OoSSd1eWpyAk'
+    'NG_TRANSLATE_LANG_KEY' => '\"en\"'
+    'validate_amazingpicxx' => '1'
+    'PHPFRONTSESSID' => '8f8c4a9d54572fc1fb15f1adb367492b'
+    '__tawkuuid' => 'e::localhost::AGQN44ttIJO1gvXUv NhEPMs9hEv XgnK3xcWW2V67TcFpOZD3JORCcxA29KUH6I::2'
+    'TawkConnectionTime' => '0'
+    'advanced-frontend' => 'c6766acef19f2560912ddb74efefbdf8'
+]
+
+$_SESSION = [
+    '__flash' => []
+]
+
+$_SERVER = [
+    'REDIRECT_UNIQUE_ID' => 'XAUb538AAAEAANs7eJsAAAAB'
+    'REDIRECT_STATUS' => '200'
+    'UNIQUE_ID' => 'XAUb538AAAEAANs7eJsAAAAB'
+    'HTTP_HOST' => 'localhost'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_13_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/70.0.3538.110 Safari/537.36'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, br'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.9'
+    'HTTP_COOKIE' => 'PHPBASICSESSID=c84dabf2330a9a536b578e9cac5675f9; _basicCSRF=baeb0a0b4ed783fa9e500919635d771443709a2b10b4abab4dd297b977cc7a65a%3A2%3A%7Bi%3A0%3Bs%3A10%3A%22_basicCSRF%22%3Bi%3A1%3Bs%3A32%3A%22dQiP7uVxh-ffQl34Pn6X_Qe8qMWnjYcM%22%3B%7D; tailorshub-frontend=a94b4efe20b59cf9340a3e2d1ade4016; INOERP123123=ba10d81fb5999b0cf34b264f0c07f91d; FAff4f990e9b17767d77209e972b22d618=8a4929afed366eb0f347dff488f7e13a; _csrf-seftonfross=f8d9e3c1e338bb12bdb3648e31fc8ae973307f8737cbf24ed71f16109e642989a%3A2%3A%7Bi%3A0%3Bs%3A17%3A%22_csrf-seftonfross%22%3Bi%3A1%3Bs%3A32%3A%228zVfaAptBfOGDO4UtTYuSTmMxRVUQkcQ%22%3B%7D; Idea-edd8db2d=2f6f5e5b-192e-4305-baeb-571107513b05; _ga=GA1.1.568245260.1537000047; ckCsrfToken=3ZFDOtem9DJ9cbhFkV05V9R2cNUyK2zU9EvLkjA7; KCFINDER_showname=on; KCFINDER_showsize=off; KCFINDER_showtime=off; KCFINDER_order=name; KCFINDER_orderDesc=off; KCFINDER_view=thumbs; KCFINDER_displaySettings=off; _frontendLawyer=3e7584ec09968df4637431820667553c423035b45936154cfd2968554e35a407a%3A2%3A%7Bi%3A0%3Bs%3A15%3A%22_frontendLawyer%22%3Bi%3A1%3Bs%3A47%3A%22%5B10%2C%22%242y%2413%24pb9YcxiTdK2ERv95RKVN7.7LJ%22%2C2592000%5D%22%3B%7D; _frontendCSRF=39b12ca78484e70cb43321ef5477932b99ddd9335ac128114d5a7db83440498aa%3A2%3A%7Bi%3A0%3Bs%3A13%3A%22_frontendCSRF%22%3Bi%3A1%3Bs%3A32%3A%22hvYEq9cHsa7ENLgqCQYb6nMZ-nuvmx8G%22%3B%7D; _identity-user=146c6fa6860dac60709df9c1e9a0f1d2b8358586c34e73abe48586e81bca5d50a%3A2%3A%7Bi%3A0%3Bs%3A14%3A%22_identity-user%22%3Bi%3A1%3Bs%3A46%3A%22%5B4%2C%22vxdOdWx4qvdC5xoCDuyD5mQTITnsX7yy%22%2C2592000%5D%22%3B%7D; _identity-frontend=037f84ba9be060846021ebb26fcac04ffedf3080d83a37c62a8e7c90dc1fd0bba%3A2%3A%7Bi%3A0%3Bs%3A18%3A%22_identity-frontend%22%3Bi%3A1%3Bs%3A46%3A%22%5B1%2C%22mBn4AGuu6K_JJ5hvm8jy37JIpZYbkeAH%22%2C2592000%5D%22%3B%7D; _backendPASSUser=f534598f569fa1321928d15b05ecf3306e5454e2ed2a3ecab166022d560a4a17a%3A2%3A%7Bi%3A0%3Bs%3A16%3A%22_backendPASSUser%22%3Bi%3A1%3Bs%3A46%3A%22%5B1%2C%22uPyzYNidl_M561fYurQjst0oMuQEin0w%22%2C2592000%5D%22%3B%7D; _backendCSRF=13370b7a25cea7760d474a8aeedaf983d87dafe27366d10d877a4f0a742f729ba%3A2%3A%7Bi%3A0%3Bs%3A12%3A%22_backendCSRF%22%3Bi%3A1%3Bs%3A32%3A%22Y2xBmAIrZsV2d770_1Ct6R9Yxqwr-iJq%22%3B%7D; PHPSESSID=8fc789f7ed04134e2b8119eb7f128849; _frontendPassUser=7c4563df39522da9e926e7e985974c83a86ad81b6390157ffb57d5765a25592ea%3A2%3A%7Bi%3A0%3Bs%3A17%3A%22_frontendPassUser%22%3Bi%3A1%3Bs%3A46%3A%22%5B1%2C%22moybQBnSY244xkJxAL73W-HfG3JQTvFp%22%2C2592000%5D%22%3B%7D; jsilinks-frontend=be8ea8adce4a36a655e03f51c7422a38; PHPBACKSESSID=acc528e23773a8587feb9a1dd509fbcd; _csrf=93a2b02b3fd1d9ce19d3920f4b75e07222081d993f125ebaf8dee75363a4d883a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22RrP4n8qXWjsWKobo3PMPbWe3FBq7xlCN%22%3B%7D; _csrf-frontend=bea7c50cda908049a6725cfa8b68971f76520be0a6463162f1540a43ed49aa66a%3A2%3A%7Bi%3A0%3Bs%3A14%3A%22_csrf-frontend%22%3Bi%3A1%3Bs%3A32%3A%22MtfmJV7zhl-UK2goG-MMcLmG1jNJSspg%22%3B%7D; advanced-backend=1742da2f1e829f93fc2d0f756a6ab1ca; _identity-backend=c97d207e4dfd974780a68ba8802c7fc6dedd0c0e29e30b827ed89570cee863f3a%3A2%3A%7Bi%3A0%3Bs%3A17%3A%22_identity-backend%22%3Bi%3A1%3Bs%3A14%3A%22%5B1%2C%22%22%2C2592000%5D%22%3B%7D; _csrf-backend=531462ef6621b12bc31d274d7eba3090beed6342e2929250cfeb151d1f04ccbba%3A2%3A%7Bi%3A0%3Bs%3A13%3A%22_csrf-backend%22%3Bi%3A1%3Bs%3A32%3A%22TWPzxS8degTteBH1Z1T6cQLxHRgoJtUU%22%3B%7D; IsMember=1; gramblr.sessid=S__x8DIht7Fd1H_IWz139gz8zouFfJi6b3-HGHwG0NvBpMj7uGTlNOSZXc3Q3ZeJX3MHGoQ0rdo3OoSSd1eWpyAk; NG_TRANSLATE_LANG_KEY=%22en%22; validate_amazingpicxx=1; PHPFRONTSESSID=8f8c4a9d54572fc1fb15f1adb367492b; __tawkuuid=e::localhost::AGQN44ttIJO1gvXUv+NhEPMs9hEv+XgnK3xcWW2V67TcFpOZD3JORCcxA29KUH6I::2; TawkConnectionTime=0; advanced-frontend=c6766acef19f2560912ddb74efefbdf8'
+    'PATH' => '/usr/bin:/bin:/usr/sbin:/sbin'
+    'DYLD_LIBRARY_PATH' => '/Applications/XAMPP/xamppfiles/lib'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache/2.4.25 (Unix) OpenSSL/1.0.2j PHP/7.1.1 mod_perl/2.0.8-dev Perl/v5.16.3'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => '/Applications/XAMPP/xamppfiles/htdocs'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/Applications/XAMPP/xamppfiles/htdocs'
+    'SERVER_ADMIN' => 'you@example.com'
+    'SCRIPT_FILENAME' => '/Applications/XAMPP/xamppfiles/htdocs/yii2-forum-training/api/index.php'
+    'REMOTE_PORT' => '64332'
+    'REDIRECT_URL' => '/yii2-forum-training/api/gii'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/yii2-forum-training/api/gii'
+    'SCRIPT_NAME' => '/yii2-forum-training/api/index.php'
+    'PHP_SELF' => '/yii2-forum-training/api/index.php'
+    'REQUEST_TIME_FLOAT' => 1543838695.432
+    'REQUEST_TIME' => 1543838695
+]
+2018-12-03 13:15:18 [::1][-][8fc789f7ed04134e2b8119eb7f128849][error][yii\web\HttpException:404] yii\base\InvalidRouteException: Unable to resolve the request "". in /Applications/XAMPP/xamppfiles/htdocs/yii2-forum-training/web/vendor/yiisoft/yii2/base/Module.php:537
+Stack trace:
+#0 /Applications/XAMPP/xamppfiles/htdocs/yii2-forum-training/web/vendor/yiisoft/yii2/web/Application.php(103): yii\base\Module->runAction('', Array)
+#1 /Applications/XAMPP/xamppfiles/htdocs/yii2-forum-training/web/vendor/yiisoft/yii2/base/Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#2 /Applications/XAMPP/xamppfiles/htdocs/yii2-forum-training/api/index.php(8): yii\base\Application->run()
+#3 {main}
+
+Next yii\web\NotFoundHttpException: Page not found. in /Applications/XAMPP/xamppfiles/htdocs/yii2-forum-training/web/vendor/yiisoft/yii2/web/Application.php:115
+Stack trace:
+#0 /Applications/XAMPP/xamppfiles/htdocs/yii2-forum-training/web/vendor/yiisoft/yii2/base/Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#1 /Applications/XAMPP/xamppfiles/htdocs/yii2-forum-training/api/index.php(8): yii\base\Application->run()
+#2 {main}
+2018-12-03 13:15:18 [::1][-][8fc789f7ed04134e2b8119eb7f128849][info][application] $_GET = []
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    'PHPBASICSESSID' => 'c84dabf2330a9a536b578e9cac5675f9'
+    '_basicCSRF' => 'baeb0a0b4ed783fa9e500919635d771443709a2b10b4abab4dd297b977cc7a65a:2:{i:0;s:10:\"_basicCSRF\";i:1;s:32:\"dQiP7uVxh-ffQl34Pn6X_Qe8qMWnjYcM\";}'
+    'tailorshub-frontend' => 'a94b4efe20b59cf9340a3e2d1ade4016'
+    'INOERP123123' => 'ba10d81fb5999b0cf34b264f0c07f91d'
+    'FAff4f990e9b17767d77209e972b22d618' => '8a4929afed366eb0f347dff488f7e13a'
+    '_csrf-seftonfross' => 'f8d9e3c1e338bb12bdb3648e31fc8ae973307f8737cbf24ed71f16109e642989a:2:{i:0;s:17:\"_csrf-seftonfross\";i:1;s:32:\"8zVfaAptBfOGDO4UtTYuSTmMxRVUQkcQ\";}'
+    'Idea-edd8db2d' => '2f6f5e5b-192e-4305-baeb-571107513b05'
+    '_ga' => 'GA1.1.568245260.1537000047'
+    'ckCsrfToken' => '3ZFDOtem9DJ9cbhFkV05V9R2cNUyK2zU9EvLkjA7'
+    'KCFINDER_showname' => 'on'
+    'KCFINDER_showsize' => 'off'
+    'KCFINDER_showtime' => 'off'
+    'KCFINDER_order' => 'name'
+    'KCFINDER_orderDesc' => 'off'
+    'KCFINDER_view' => 'thumbs'
+    'KCFINDER_displaySettings' => 'off'
+    '_frontendLawyer' => '3e7584ec09968df4637431820667553c423035b45936154cfd2968554e35a407a:2:{i:0;s:15:\"_frontendLawyer\";i:1;s:47:\"[10,\"$2y$13$pb9YcxiTdK2ERv95RKVN7.7LJ\",2592000]\";}'
+    '_frontendCSRF' => '39b12ca78484e70cb43321ef5477932b99ddd9335ac128114d5a7db83440498aa:2:{i:0;s:13:\"_frontendCSRF\";i:1;s:32:\"hvYEq9cHsa7ENLgqCQYb6nMZ-nuvmx8G\";}'
+    '_identity-user' => '146c6fa6860dac60709df9c1e9a0f1d2b8358586c34e73abe48586e81bca5d50a:2:{i:0;s:14:\"_identity-user\";i:1;s:46:\"[4,\"vxdOdWx4qvdC5xoCDuyD5mQTITnsX7yy\",2592000]\";}'
+    '_identity-frontend' => '037f84ba9be060846021ebb26fcac04ffedf3080d83a37c62a8e7c90dc1fd0bba:2:{i:0;s:18:\"_identity-frontend\";i:1;s:46:\"[1,\"mBn4AGuu6K_JJ5hvm8jy37JIpZYbkeAH\",2592000]\";}'
+    '_backendPASSUser' => 'f534598f569fa1321928d15b05ecf3306e5454e2ed2a3ecab166022d560a4a17a:2:{i:0;s:16:\"_backendPASSUser\";i:1;s:46:\"[1,\"uPyzYNidl_M561fYurQjst0oMuQEin0w\",2592000]\";}'
+    '_backendCSRF' => '13370b7a25cea7760d474a8aeedaf983d87dafe27366d10d877a4f0a742f729ba:2:{i:0;s:12:\"_backendCSRF\";i:1;s:32:\"Y2xBmAIrZsV2d770_1Ct6R9Yxqwr-iJq\";}'
+    'PHPSESSID' => '8fc789f7ed04134e2b8119eb7f128849'
+    '_frontendPassUser' => '7c4563df39522da9e926e7e985974c83a86ad81b6390157ffb57d5765a25592ea:2:{i:0;s:17:\"_frontendPassUser\";i:1;s:46:\"[1,\"moybQBnSY244xkJxAL73W-HfG3JQTvFp\",2592000]\";}'
+    'jsilinks-frontend' => 'be8ea8adce4a36a655e03f51c7422a38'
+    'PHPBACKSESSID' => 'acc528e23773a8587feb9a1dd509fbcd'
+    '_csrf' => '93a2b02b3fd1d9ce19d3920f4b75e07222081d993f125ebaf8dee75363a4d883a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"RrP4n8qXWjsWKobo3PMPbWe3FBq7xlCN\";}'
+    '_csrf-frontend' => 'bea7c50cda908049a6725cfa8b68971f76520be0a6463162f1540a43ed49aa66a:2:{i:0;s:14:\"_csrf-frontend\";i:1;s:32:\"MtfmJV7zhl-UK2goG-MMcLmG1jNJSspg\";}'
+    'advanced-backend' => '1742da2f1e829f93fc2d0f756a6ab1ca'
+    '_identity-backend' => 'c97d207e4dfd974780a68ba8802c7fc6dedd0c0e29e30b827ed89570cee863f3a:2:{i:0;s:17:\"_identity-backend\";i:1;s:14:\"[1,\"\",2592000]\";}'
+    '_csrf-backend' => '531462ef6621b12bc31d274d7eba3090beed6342e2929250cfeb151d1f04ccbba:2:{i:0;s:13:\"_csrf-backend\";i:1;s:32:\"TWPzxS8degTteBH1Z1T6cQLxHRgoJtUU\";}'
+    'IsMember' => '1'
+    'gramblr_sessid' => 'S__x8DIht7Fd1H_IWz139gz8zouFfJi6b3-HGHwG0NvBpMj7uGTlNOSZXc3Q3ZeJX3MHGoQ0rdo3OoSSd1eWpyAk'
+    'NG_TRANSLATE_LANG_KEY' => '\"en\"'
+    'validate_amazingpicxx' => '1'
+    'PHPFRONTSESSID' => '8f8c4a9d54572fc1fb15f1adb367492b'
+    '__tawkuuid' => 'e::localhost::AGQN44ttIJO1gvXUv NhEPMs9hEv XgnK3xcWW2V67TcFpOZD3JORCcxA29KUH6I::2'
+    'TawkConnectionTime' => '0'
+    'advanced-frontend' => 'c6766acef19f2560912ddb74efefbdf8'
+]
+
+$_SESSION = [
+    '__flash' => []
+]
+
+$_SERVER = [
+    'UNIQUE_ID' => 'XAUeVn8AAAEAAHOAVCMAAAAH'
+    'HTTP_HOST' => 'localhost'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_13_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/70.0.3538.110 Safari/537.36'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, br'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.9'
+    'HTTP_COOKIE' => 'PHPBASICSESSID=c84dabf2330a9a536b578e9cac5675f9; _basicCSRF=baeb0a0b4ed783fa9e500919635d771443709a2b10b4abab4dd297b977cc7a65a%3A2%3A%7Bi%3A0%3Bs%3A10%3A%22_basicCSRF%22%3Bi%3A1%3Bs%3A32%3A%22dQiP7uVxh-ffQl34Pn6X_Qe8qMWnjYcM%22%3B%7D; tailorshub-frontend=a94b4efe20b59cf9340a3e2d1ade4016; INOERP123123=ba10d81fb5999b0cf34b264f0c07f91d; FAff4f990e9b17767d77209e972b22d618=8a4929afed366eb0f347dff488f7e13a; _csrf-seftonfross=f8d9e3c1e338bb12bdb3648e31fc8ae973307f8737cbf24ed71f16109e642989a%3A2%3A%7Bi%3A0%3Bs%3A17%3A%22_csrf-seftonfross%22%3Bi%3A1%3Bs%3A32%3A%228zVfaAptBfOGDO4UtTYuSTmMxRVUQkcQ%22%3B%7D; Idea-edd8db2d=2f6f5e5b-192e-4305-baeb-571107513b05; _ga=GA1.1.568245260.1537000047; ckCsrfToken=3ZFDOtem9DJ9cbhFkV05V9R2cNUyK2zU9EvLkjA7; KCFINDER_showname=on; KCFINDER_showsize=off; KCFINDER_showtime=off; KCFINDER_order=name; KCFINDER_orderDesc=off; KCFINDER_view=thumbs; KCFINDER_displaySettings=off; _frontendLawyer=3e7584ec09968df4637431820667553c423035b45936154cfd2968554e35a407a%3A2%3A%7Bi%3A0%3Bs%3A15%3A%22_frontendLawyer%22%3Bi%3A1%3Bs%3A47%3A%22%5B10%2C%22%242y%2413%24pb9YcxiTdK2ERv95RKVN7.7LJ%22%2C2592000%5D%22%3B%7D; _frontendCSRF=39b12ca78484e70cb43321ef5477932b99ddd9335ac128114d5a7db83440498aa%3A2%3A%7Bi%3A0%3Bs%3A13%3A%22_frontendCSRF%22%3Bi%3A1%3Bs%3A32%3A%22hvYEq9cHsa7ENLgqCQYb6nMZ-nuvmx8G%22%3B%7D; _identity-user=146c6fa6860dac60709df9c1e9a0f1d2b8358586c34e73abe48586e81bca5d50a%3A2%3A%7Bi%3A0%3Bs%3A14%3A%22_identity-user%22%3Bi%3A1%3Bs%3A46%3A%22%5B4%2C%22vxdOdWx4qvdC5xoCDuyD5mQTITnsX7yy%22%2C2592000%5D%22%3B%7D; _identity-frontend=037f84ba9be060846021ebb26fcac04ffedf3080d83a37c62a8e7c90dc1fd0bba%3A2%3A%7Bi%3A0%3Bs%3A18%3A%22_identity-frontend%22%3Bi%3A1%3Bs%3A46%3A%22%5B1%2C%22mBn4AGuu6K_JJ5hvm8jy37JIpZYbkeAH%22%2C2592000%5D%22%3B%7D; _backendPASSUser=f534598f569fa1321928d15b05ecf3306e5454e2ed2a3ecab166022d560a4a17a%3A2%3A%7Bi%3A0%3Bs%3A16%3A%22_backendPASSUser%22%3Bi%3A1%3Bs%3A46%3A%22%5B1%2C%22uPyzYNidl_M561fYurQjst0oMuQEin0w%22%2C2592000%5D%22%3B%7D; _backendCSRF=13370b7a25cea7760d474a8aeedaf983d87dafe27366d10d877a4f0a742f729ba%3A2%3A%7Bi%3A0%3Bs%3A12%3A%22_backendCSRF%22%3Bi%3A1%3Bs%3A32%3A%22Y2xBmAIrZsV2d770_1Ct6R9Yxqwr-iJq%22%3B%7D; PHPSESSID=8fc789f7ed04134e2b8119eb7f128849; _frontendPassUser=7c4563df39522da9e926e7e985974c83a86ad81b6390157ffb57d5765a25592ea%3A2%3A%7Bi%3A0%3Bs%3A17%3A%22_frontendPassUser%22%3Bi%3A1%3Bs%3A46%3A%22%5B1%2C%22moybQBnSY244xkJxAL73W-HfG3JQTvFp%22%2C2592000%5D%22%3B%7D; jsilinks-frontend=be8ea8adce4a36a655e03f51c7422a38; PHPBACKSESSID=acc528e23773a8587feb9a1dd509fbcd; _csrf=93a2b02b3fd1d9ce19d3920f4b75e07222081d993f125ebaf8dee75363a4d883a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22RrP4n8qXWjsWKobo3PMPbWe3FBq7xlCN%22%3B%7D; _csrf-frontend=bea7c50cda908049a6725cfa8b68971f76520be0a6463162f1540a43ed49aa66a%3A2%3A%7Bi%3A0%3Bs%3A14%3A%22_csrf-frontend%22%3Bi%3A1%3Bs%3A32%3A%22MtfmJV7zhl-UK2goG-MMcLmG1jNJSspg%22%3B%7D; advanced-backend=1742da2f1e829f93fc2d0f756a6ab1ca; _identity-backend=c97d207e4dfd974780a68ba8802c7fc6dedd0c0e29e30b827ed89570cee863f3a%3A2%3A%7Bi%3A0%3Bs%3A17%3A%22_identity-backend%22%3Bi%3A1%3Bs%3A14%3A%22%5B1%2C%22%22%2C2592000%5D%22%3B%7D; _csrf-backend=531462ef6621b12bc31d274d7eba3090beed6342e2929250cfeb151d1f04ccbba%3A2%3A%7Bi%3A0%3Bs%3A13%3A%22_csrf-backend%22%3Bi%3A1%3Bs%3A32%3A%22TWPzxS8degTteBH1Z1T6cQLxHRgoJtUU%22%3B%7D; IsMember=1; gramblr.sessid=S__x8DIht7Fd1H_IWz139gz8zouFfJi6b3-HGHwG0NvBpMj7uGTlNOSZXc3Q3ZeJX3MHGoQ0rdo3OoSSd1eWpyAk; NG_TRANSLATE_LANG_KEY=%22en%22; validate_amazingpicxx=1; PHPFRONTSESSID=8f8c4a9d54572fc1fb15f1adb367492b; __tawkuuid=e::localhost::AGQN44ttIJO1gvXUv+NhEPMs9hEv+XgnK3xcWW2V67TcFpOZD3JORCcxA29KUH6I::2; TawkConnectionTime=0; advanced-frontend=c6766acef19f2560912ddb74efefbdf8'
+    'PATH' => '/usr/bin:/bin:/usr/sbin:/sbin'
+    'DYLD_LIBRARY_PATH' => '/Applications/XAMPP/xamppfiles/lib'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache/2.4.25 (Unix) OpenSSL/1.0.2j PHP/7.1.1 mod_perl/2.0.8-dev Perl/v5.16.3'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => '/Applications/XAMPP/xamppfiles/htdocs'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/Applications/XAMPP/xamppfiles/htdocs'
+    'SERVER_ADMIN' => 'you@example.com'
+    'SCRIPT_FILENAME' => '/Applications/XAMPP/xamppfiles/htdocs/yii2-forum-training/api/index.php'
+    'REMOTE_PORT' => '65035'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/yii2-forum-training/api/'
+    'SCRIPT_NAME' => '/yii2-forum-training/api/index.php'
+    'PHP_SELF' => '/yii2-forum-training/api/index.php'
+    'REQUEST_TIME_FLOAT' => 1543839318.456
+    'REQUEST_TIME' => 1543839318
+]
+2018-12-03 13:15:23 [::1][-][8fc789f7ed04134e2b8119eb7f128849][error][ReflectionException] ReflectionException: Class api\modules\v1\Module does not exist in /Applications/XAMPP/xamppfiles/htdocs/yii2-forum-training/web/vendor/yiisoft/yii2/di/Container.php:428
+Stack trace:
+#0 /Applications/XAMPP/xamppfiles/htdocs/yii2-forum-training/web/vendor/yiisoft/yii2/di/Container.php(428): ReflectionClass->__construct('api\\modules\\v1\\...')
+#1 /Applications/XAMPP/xamppfiles/htdocs/yii2-forum-training/web/vendor/yiisoft/yii2/di/Container.php(364): yii\di\Container->getDependencies('api\\modules\\v1\\...')
+#2 /Applications/XAMPP/xamppfiles/htdocs/yii2-forum-training/web/vendor/yiisoft/yii2/di/Container.php(156): yii\di\Container->build('api\\modules\\v1\\...', Array, Array)
+#3 /Applications/XAMPP/xamppfiles/htdocs/yii2-forum-training/web/vendor/yiisoft/yii2/BaseYii.php(349): yii\di\Container->get('api\\modules\\v1\\...', Array, Array)
+#4 /Applications/XAMPP/xamppfiles/htdocs/yii2-forum-training/web/vendor/yiisoft/yii2/base/Module.php(427): yii\BaseYii::createObject(Array, Array)
+#5 /Applications/XAMPP/xamppfiles/htdocs/yii2-forum-training/web/vendor/yiisoft/yii2/base/Module.php(586): yii\base\Module->getModule('v1')
+#6 /Applications/XAMPP/xamppfiles/htdocs/yii2-forum-training/web/vendor/yiisoft/yii2/base/Module.php(522): yii\base\Module->createController('')
+#7 /Applications/XAMPP/xamppfiles/htdocs/yii2-forum-training/web/vendor/yiisoft/yii2/web/Application.php(103): yii\base\Module->runAction('v1', Array)
+#8 /Applications/XAMPP/xamppfiles/htdocs/yii2-forum-training/web/vendor/yiisoft/yii2/base/Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#9 /Applications/XAMPP/xamppfiles/htdocs/yii2-forum-training/api/index.php(8): yii\base\Application->run()
+#10 {main}
+2018-12-03 13:15:23 [::1][-][8fc789f7ed04134e2b8119eb7f128849][info][application] $_GET = []
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    'PHPBASICSESSID' => 'c84dabf2330a9a536b578e9cac5675f9'
+    '_basicCSRF' => 'baeb0a0b4ed783fa9e500919635d771443709a2b10b4abab4dd297b977cc7a65a:2:{i:0;s:10:\"_basicCSRF\";i:1;s:32:\"dQiP7uVxh-ffQl34Pn6X_Qe8qMWnjYcM\";}'
+    'tailorshub-frontend' => 'a94b4efe20b59cf9340a3e2d1ade4016'
+    'INOERP123123' => 'ba10d81fb5999b0cf34b264f0c07f91d'
+    'FAff4f990e9b17767d77209e972b22d618' => '8a4929afed366eb0f347dff488f7e13a'
+    '_csrf-seftonfross' => 'f8d9e3c1e338bb12bdb3648e31fc8ae973307f8737cbf24ed71f16109e642989a:2:{i:0;s:17:\"_csrf-seftonfross\";i:1;s:32:\"8zVfaAptBfOGDO4UtTYuSTmMxRVUQkcQ\";}'
+    'Idea-edd8db2d' => '2f6f5e5b-192e-4305-baeb-571107513b05'
+    '_ga' => 'GA1.1.568245260.1537000047'
+    'ckCsrfToken' => '3ZFDOtem9DJ9cbhFkV05V9R2cNUyK2zU9EvLkjA7'
+    'KCFINDER_showname' => 'on'
+    'KCFINDER_showsize' => 'off'
+    'KCFINDER_showtime' => 'off'
+    'KCFINDER_order' => 'name'
+    'KCFINDER_orderDesc' => 'off'
+    'KCFINDER_view' => 'thumbs'
+    'KCFINDER_displaySettings' => 'off'
+    '_frontendLawyer' => '3e7584ec09968df4637431820667553c423035b45936154cfd2968554e35a407a:2:{i:0;s:15:\"_frontendLawyer\";i:1;s:47:\"[10,\"$2y$13$pb9YcxiTdK2ERv95RKVN7.7LJ\",2592000]\";}'
+    '_frontendCSRF' => '39b12ca78484e70cb43321ef5477932b99ddd9335ac128114d5a7db83440498aa:2:{i:0;s:13:\"_frontendCSRF\";i:1;s:32:\"hvYEq9cHsa7ENLgqCQYb6nMZ-nuvmx8G\";}'
+    '_identity-user' => '146c6fa6860dac60709df9c1e9a0f1d2b8358586c34e73abe48586e81bca5d50a:2:{i:0;s:14:\"_identity-user\";i:1;s:46:\"[4,\"vxdOdWx4qvdC5xoCDuyD5mQTITnsX7yy\",2592000]\";}'
+    '_identity-frontend' => '037f84ba9be060846021ebb26fcac04ffedf3080d83a37c62a8e7c90dc1fd0bba:2:{i:0;s:18:\"_identity-frontend\";i:1;s:46:\"[1,\"mBn4AGuu6K_JJ5hvm8jy37JIpZYbkeAH\",2592000]\";}'
+    '_backendPASSUser' => 'f534598f569fa1321928d15b05ecf3306e5454e2ed2a3ecab166022d560a4a17a:2:{i:0;s:16:\"_backendPASSUser\";i:1;s:46:\"[1,\"uPyzYNidl_M561fYurQjst0oMuQEin0w\",2592000]\";}'
+    '_backendCSRF' => '13370b7a25cea7760d474a8aeedaf983d87dafe27366d10d877a4f0a742f729ba:2:{i:0;s:12:\"_backendCSRF\";i:1;s:32:\"Y2xBmAIrZsV2d770_1Ct6R9Yxqwr-iJq\";}'
+    'PHPSESSID' => '8fc789f7ed04134e2b8119eb7f128849'
+    '_frontendPassUser' => '7c4563df39522da9e926e7e985974c83a86ad81b6390157ffb57d5765a25592ea:2:{i:0;s:17:\"_frontendPassUser\";i:1;s:46:\"[1,\"moybQBnSY244xkJxAL73W-HfG3JQTvFp\",2592000]\";}'
+    'jsilinks-frontend' => 'be8ea8adce4a36a655e03f51c7422a38'
+    'PHPBACKSESSID' => 'acc528e23773a8587feb9a1dd509fbcd'
+    '_csrf' => '93a2b02b3fd1d9ce19d3920f4b75e07222081d993f125ebaf8dee75363a4d883a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"RrP4n8qXWjsWKobo3PMPbWe3FBq7xlCN\";}'
+    '_csrf-frontend' => 'bea7c50cda908049a6725cfa8b68971f76520be0a6463162f1540a43ed49aa66a:2:{i:0;s:14:\"_csrf-frontend\";i:1;s:32:\"MtfmJV7zhl-UK2goG-MMcLmG1jNJSspg\";}'
+    'advanced-backend' => '1742da2f1e829f93fc2d0f756a6ab1ca'
+    '_identity-backend' => 'c97d207e4dfd974780a68ba8802c7fc6dedd0c0e29e30b827ed89570cee863f3a:2:{i:0;s:17:\"_identity-backend\";i:1;s:14:\"[1,\"\",2592000]\";}'
+    '_csrf-backend' => '531462ef6621b12bc31d274d7eba3090beed6342e2929250cfeb151d1f04ccbba:2:{i:0;s:13:\"_csrf-backend\";i:1;s:32:\"TWPzxS8degTteBH1Z1T6cQLxHRgoJtUU\";}'
+    'IsMember' => '1'
+    'gramblr_sessid' => 'S__x8DIht7Fd1H_IWz139gz8zouFfJi6b3-HGHwG0NvBpMj7uGTlNOSZXc3Q3ZeJX3MHGoQ0rdo3OoSSd1eWpyAk'
+    'NG_TRANSLATE_LANG_KEY' => '\"en\"'
+    'validate_amazingpicxx' => '1'
+    'PHPFRONTSESSID' => '8f8c4a9d54572fc1fb15f1adb367492b'
+    '__tawkuuid' => 'e::localhost::AGQN44ttIJO1gvXUv NhEPMs9hEv XgnK3xcWW2V67TcFpOZD3JORCcxA29KUH6I::2'
+    'TawkConnectionTime' => '0'
+    'advanced-frontend' => 'c6766acef19f2560912ddb74efefbdf8'
+]
+
+$_SESSION = [
+    '__flash' => []
+]
+
+$_SERVER = [
+    'REDIRECT_UNIQUE_ID' => 'XAUeW38AAAEAAJgb@2YAAAAA'
+    'REDIRECT_STATUS' => '200'
+    'UNIQUE_ID' => 'XAUeW38AAAEAAJgb@2YAAAAA'
+    'HTTP_HOST' => 'localhost'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_13_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/70.0.3538.110 Safari/537.36'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, br'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.9'
+    'HTTP_COOKIE' => 'PHPBASICSESSID=c84dabf2330a9a536b578e9cac5675f9; _basicCSRF=baeb0a0b4ed783fa9e500919635d771443709a2b10b4abab4dd297b977cc7a65a%3A2%3A%7Bi%3A0%3Bs%3A10%3A%22_basicCSRF%22%3Bi%3A1%3Bs%3A32%3A%22dQiP7uVxh-ffQl34Pn6X_Qe8qMWnjYcM%22%3B%7D; tailorshub-frontend=a94b4efe20b59cf9340a3e2d1ade4016; INOERP123123=ba10d81fb5999b0cf34b264f0c07f91d; FAff4f990e9b17767d77209e972b22d618=8a4929afed366eb0f347dff488f7e13a; _csrf-seftonfross=f8d9e3c1e338bb12bdb3648e31fc8ae973307f8737cbf24ed71f16109e642989a%3A2%3A%7Bi%3A0%3Bs%3A17%3A%22_csrf-seftonfross%22%3Bi%3A1%3Bs%3A32%3A%228zVfaAptBfOGDO4UtTYuSTmMxRVUQkcQ%22%3B%7D; Idea-edd8db2d=2f6f5e5b-192e-4305-baeb-571107513b05; _ga=GA1.1.568245260.1537000047; ckCsrfToken=3ZFDOtem9DJ9cbhFkV05V9R2cNUyK2zU9EvLkjA7; KCFINDER_showname=on; KCFINDER_showsize=off; KCFINDER_showtime=off; KCFINDER_order=name; KCFINDER_orderDesc=off; KCFINDER_view=thumbs; KCFINDER_displaySettings=off; _frontendLawyer=3e7584ec09968df4637431820667553c423035b45936154cfd2968554e35a407a%3A2%3A%7Bi%3A0%3Bs%3A15%3A%22_frontendLawyer%22%3Bi%3A1%3Bs%3A47%3A%22%5B10%2C%22%242y%2413%24pb9YcxiTdK2ERv95RKVN7.7LJ%22%2C2592000%5D%22%3B%7D; _frontendCSRF=39b12ca78484e70cb43321ef5477932b99ddd9335ac128114d5a7db83440498aa%3A2%3A%7Bi%3A0%3Bs%3A13%3A%22_frontendCSRF%22%3Bi%3A1%3Bs%3A32%3A%22hvYEq9cHsa7ENLgqCQYb6nMZ-nuvmx8G%22%3B%7D; _identity-user=146c6fa6860dac60709df9c1e9a0f1d2b8358586c34e73abe48586e81bca5d50a%3A2%3A%7Bi%3A0%3Bs%3A14%3A%22_identity-user%22%3Bi%3A1%3Bs%3A46%3A%22%5B4%2C%22vxdOdWx4qvdC5xoCDuyD5mQTITnsX7yy%22%2C2592000%5D%22%3B%7D; _identity-frontend=037f84ba9be060846021ebb26fcac04ffedf3080d83a37c62a8e7c90dc1fd0bba%3A2%3A%7Bi%3A0%3Bs%3A18%3A%22_identity-frontend%22%3Bi%3A1%3Bs%3A46%3A%22%5B1%2C%22mBn4AGuu6K_JJ5hvm8jy37JIpZYbkeAH%22%2C2592000%5D%22%3B%7D; _backendPASSUser=f534598f569fa1321928d15b05ecf3306e5454e2ed2a3ecab166022d560a4a17a%3A2%3A%7Bi%3A0%3Bs%3A16%3A%22_backendPASSUser%22%3Bi%3A1%3Bs%3A46%3A%22%5B1%2C%22uPyzYNidl_M561fYurQjst0oMuQEin0w%22%2C2592000%5D%22%3B%7D; _backendCSRF=13370b7a25cea7760d474a8aeedaf983d87dafe27366d10d877a4f0a742f729ba%3A2%3A%7Bi%3A0%3Bs%3A12%3A%22_backendCSRF%22%3Bi%3A1%3Bs%3A32%3A%22Y2xBmAIrZsV2d770_1Ct6R9Yxqwr-iJq%22%3B%7D; PHPSESSID=8fc789f7ed04134e2b8119eb7f128849; _frontendPassUser=7c4563df39522da9e926e7e985974c83a86ad81b6390157ffb57d5765a25592ea%3A2%3A%7Bi%3A0%3Bs%3A17%3A%22_frontendPassUser%22%3Bi%3A1%3Bs%3A46%3A%22%5B1%2C%22moybQBnSY244xkJxAL73W-HfG3JQTvFp%22%2C2592000%5D%22%3B%7D; jsilinks-frontend=be8ea8adce4a36a655e03f51c7422a38; PHPBACKSESSID=acc528e23773a8587feb9a1dd509fbcd; _csrf=93a2b02b3fd1d9ce19d3920f4b75e07222081d993f125ebaf8dee75363a4d883a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22RrP4n8qXWjsWKobo3PMPbWe3FBq7xlCN%22%3B%7D; _csrf-frontend=bea7c50cda908049a6725cfa8b68971f76520be0a6463162f1540a43ed49aa66a%3A2%3A%7Bi%3A0%3Bs%3A14%3A%22_csrf-frontend%22%3Bi%3A1%3Bs%3A32%3A%22MtfmJV7zhl-UK2goG-MMcLmG1jNJSspg%22%3B%7D; advanced-backend=1742da2f1e829f93fc2d0f756a6ab1ca; _identity-backend=c97d207e4dfd974780a68ba8802c7fc6dedd0c0e29e30b827ed89570cee863f3a%3A2%3A%7Bi%3A0%3Bs%3A17%3A%22_identity-backend%22%3Bi%3A1%3Bs%3A14%3A%22%5B1%2C%22%22%2C2592000%5D%22%3B%7D; _csrf-backend=531462ef6621b12bc31d274d7eba3090beed6342e2929250cfeb151d1f04ccbba%3A2%3A%7Bi%3A0%3Bs%3A13%3A%22_csrf-backend%22%3Bi%3A1%3Bs%3A32%3A%22TWPzxS8degTteBH1Z1T6cQLxHRgoJtUU%22%3B%7D; IsMember=1; gramblr.sessid=S__x8DIht7Fd1H_IWz139gz8zouFfJi6b3-HGHwG0NvBpMj7uGTlNOSZXc3Q3ZeJX3MHGoQ0rdo3OoSSd1eWpyAk; NG_TRANSLATE_LANG_KEY=%22en%22; validate_amazingpicxx=1; PHPFRONTSESSID=8f8c4a9d54572fc1fb15f1adb367492b; __tawkuuid=e::localhost::AGQN44ttIJO1gvXUv+NhEPMs9hEv+XgnK3xcWW2V67TcFpOZD3JORCcxA29KUH6I::2; TawkConnectionTime=0; advanced-frontend=c6766acef19f2560912ddb74efefbdf8'
+    'PATH' => '/usr/bin:/bin:/usr/sbin:/sbin'
+    'DYLD_LIBRARY_PATH' => '/Applications/XAMPP/xamppfiles/lib'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache/2.4.25 (Unix) OpenSSL/1.0.2j PHP/7.1.1 mod_perl/2.0.8-dev Perl/v5.16.3'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => '/Applications/XAMPP/xamppfiles/htdocs'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/Applications/XAMPP/xamppfiles/htdocs'
+    'SERVER_ADMIN' => 'you@example.com'
+    'SCRIPT_FILENAME' => '/Applications/XAMPP/xamppfiles/htdocs/yii2-forum-training/api/index.php'
+    'REMOTE_PORT' => '65046'
+    'REDIRECT_URL' => '/yii2-forum-training/api/v1'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/yii2-forum-training/api/v1'
+    'SCRIPT_NAME' => '/yii2-forum-training/api/index.php'
+    'PHP_SELF' => '/yii2-forum-training/api/index.php'
+    'REQUEST_TIME_FLOAT' => 1543839323.327
+    'REQUEST_TIME' => 1543839323
+]
+2018-12-03 13:16:05 [::1][-][8fc789f7ed04134e2b8119eb7f128849][error][ReflectionException] ReflectionException: Class api\modules\v1\Module does not exist in /Applications/XAMPP/xamppfiles/htdocs/yii2-forum-training/web/vendor/yiisoft/yii2/di/Container.php:428
+Stack trace:
+#0 /Applications/XAMPP/xamppfiles/htdocs/yii2-forum-training/web/vendor/yiisoft/yii2/di/Container.php(428): ReflectionClass->__construct('api\\modules\\v1\\...')
+#1 /Applications/XAMPP/xamppfiles/htdocs/yii2-forum-training/web/vendor/yiisoft/yii2/di/Container.php(364): yii\di\Container->getDependencies('api\\modules\\v1\\...')
+#2 /Applications/XAMPP/xamppfiles/htdocs/yii2-forum-training/web/vendor/yiisoft/yii2/di/Container.php(156): yii\di\Container->build('api\\modules\\v1\\...', Array, Array)
+#3 /Applications/XAMPP/xamppfiles/htdocs/yii2-forum-training/web/vendor/yiisoft/yii2/BaseYii.php(349): yii\di\Container->get('api\\modules\\v1\\...', Array, Array)
+#4 /Applications/XAMPP/xamppfiles/htdocs/yii2-forum-training/web/vendor/yiisoft/yii2/base/Module.php(427): yii\BaseYii::createObject(Array, Array)
+#5 /Applications/XAMPP/xamppfiles/htdocs/yii2-forum-training/web/vendor/yiisoft/yii2/base/Module.php(586): yii\base\Module->getModule('v1')
+#6 /Applications/XAMPP/xamppfiles/htdocs/yii2-forum-training/web/vendor/yiisoft/yii2/base/Module.php(522): yii\base\Module->createController('')
+#7 /Applications/XAMPP/xamppfiles/htdocs/yii2-forum-training/web/vendor/yiisoft/yii2/web/Application.php(103): yii\base\Module->runAction('v1', Array)
+#8 /Applications/XAMPP/xamppfiles/htdocs/yii2-forum-training/web/vendor/yiisoft/yii2/base/Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#9 /Applications/XAMPP/xamppfiles/htdocs/yii2-forum-training/api/index.php(8): yii\base\Application->run()
+#10 {main}
+2018-12-03 13:16:05 [::1][-][8fc789f7ed04134e2b8119eb7f128849][info][application] $_GET = []
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    'PHPBASICSESSID' => 'c84dabf2330a9a536b578e9cac5675f9'
+    '_basicCSRF' => 'baeb0a0b4ed783fa9e500919635d771443709a2b10b4abab4dd297b977cc7a65a:2:{i:0;s:10:\"_basicCSRF\";i:1;s:32:\"dQiP7uVxh-ffQl34Pn6X_Qe8qMWnjYcM\";}'
+    'tailorshub-frontend' => 'a94b4efe20b59cf9340a3e2d1ade4016'
+    'INOERP123123' => 'ba10d81fb5999b0cf34b264f0c07f91d'
+    'FAff4f990e9b17767d77209e972b22d618' => '8a4929afed366eb0f347dff488f7e13a'
+    '_csrf-seftonfross' => 'f8d9e3c1e338bb12bdb3648e31fc8ae973307f8737cbf24ed71f16109e642989a:2:{i:0;s:17:\"_csrf-seftonfross\";i:1;s:32:\"8zVfaAptBfOGDO4UtTYuSTmMxRVUQkcQ\";}'
+    'Idea-edd8db2d' => '2f6f5e5b-192e-4305-baeb-571107513b05'
+    '_ga' => 'GA1.1.568245260.1537000047'
+    'ckCsrfToken' => '3ZFDOtem9DJ9cbhFkV05V9R2cNUyK2zU9EvLkjA7'
+    'KCFINDER_showname' => 'on'
+    'KCFINDER_showsize' => 'off'
+    'KCFINDER_showtime' => 'off'
+    'KCFINDER_order' => 'name'
+    'KCFINDER_orderDesc' => 'off'
+    'KCFINDER_view' => 'thumbs'
+    'KCFINDER_displaySettings' => 'off'
+    '_frontendLawyer' => '3e7584ec09968df4637431820667553c423035b45936154cfd2968554e35a407a:2:{i:0;s:15:\"_frontendLawyer\";i:1;s:47:\"[10,\"$2y$13$pb9YcxiTdK2ERv95RKVN7.7LJ\",2592000]\";}'
+    '_frontendCSRF' => '39b12ca78484e70cb43321ef5477932b99ddd9335ac128114d5a7db83440498aa:2:{i:0;s:13:\"_frontendCSRF\";i:1;s:32:\"hvYEq9cHsa7ENLgqCQYb6nMZ-nuvmx8G\";}'
+    '_identity-user' => '146c6fa6860dac60709df9c1e9a0f1d2b8358586c34e73abe48586e81bca5d50a:2:{i:0;s:14:\"_identity-user\";i:1;s:46:\"[4,\"vxdOdWx4qvdC5xoCDuyD5mQTITnsX7yy\",2592000]\";}'
+    '_identity-frontend' => '037f84ba9be060846021ebb26fcac04ffedf3080d83a37c62a8e7c90dc1fd0bba:2:{i:0;s:18:\"_identity-frontend\";i:1;s:46:\"[1,\"mBn4AGuu6K_JJ5hvm8jy37JIpZYbkeAH\",2592000]\";}'
+    '_backendPASSUser' => 'f534598f569fa1321928d15b05ecf3306e5454e2ed2a3ecab166022d560a4a17a:2:{i:0;s:16:\"_backendPASSUser\";i:1;s:46:\"[1,\"uPyzYNidl_M561fYurQjst0oMuQEin0w\",2592000]\";}'
+    '_backendCSRF' => '13370b7a25cea7760d474a8aeedaf983d87dafe27366d10d877a4f0a742f729ba:2:{i:0;s:12:\"_backendCSRF\";i:1;s:32:\"Y2xBmAIrZsV2d770_1Ct6R9Yxqwr-iJq\";}'
+    'PHPSESSID' => '8fc789f7ed04134e2b8119eb7f128849'
+    '_frontendPassUser' => '7c4563df39522da9e926e7e985974c83a86ad81b6390157ffb57d5765a25592ea:2:{i:0;s:17:\"_frontendPassUser\";i:1;s:46:\"[1,\"moybQBnSY244xkJxAL73W-HfG3JQTvFp\",2592000]\";}'
+    'jsilinks-frontend' => 'be8ea8adce4a36a655e03f51c7422a38'
+    'PHPBACKSESSID' => 'acc528e23773a8587feb9a1dd509fbcd'
+    '_csrf' => '93a2b02b3fd1d9ce19d3920f4b75e07222081d993f125ebaf8dee75363a4d883a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"RrP4n8qXWjsWKobo3PMPbWe3FBq7xlCN\";}'
+    '_csrf-frontend' => 'bea7c50cda908049a6725cfa8b68971f76520be0a6463162f1540a43ed49aa66a:2:{i:0;s:14:\"_csrf-frontend\";i:1;s:32:\"MtfmJV7zhl-UK2goG-MMcLmG1jNJSspg\";}'
+    'advanced-backend' => '1742da2f1e829f93fc2d0f756a6ab1ca'
+    '_identity-backend' => 'c97d207e4dfd974780a68ba8802c7fc6dedd0c0e29e30b827ed89570cee863f3a:2:{i:0;s:17:\"_identity-backend\";i:1;s:14:\"[1,\"\",2592000]\";}'
+    '_csrf-backend' => '531462ef6621b12bc31d274d7eba3090beed6342e2929250cfeb151d1f04ccbba:2:{i:0;s:13:\"_csrf-backend\";i:1;s:32:\"TWPzxS8degTteBH1Z1T6cQLxHRgoJtUU\";}'
+    'IsMember' => '1'
+    'gramblr_sessid' => 'S__x8DIht7Fd1H_IWz139gz8zouFfJi6b3-HGHwG0NvBpMj7uGTlNOSZXc3Q3ZeJX3MHGoQ0rdo3OoSSd1eWpyAk'
+    'NG_TRANSLATE_LANG_KEY' => '\"en\"'
+    'validate_amazingpicxx' => '1'
+    'PHPFRONTSESSID' => '8f8c4a9d54572fc1fb15f1adb367492b'
+    '__tawkuuid' => 'e::localhost::AGQN44ttIJO1gvXUv NhEPMs9hEv XgnK3xcWW2V67TcFpOZD3JORCcxA29KUH6I::2'
+    'TawkConnectionTime' => '0'
+    'advanced-frontend' => 'c6766acef19f2560912ddb74efefbdf8'
+]
+
+$_SESSION = [
+    '__flash' => []
+]
+
+$_SERVER = [
+    'REDIRECT_UNIQUE_ID' => 'XAUehX8AAAEAAHX6J7oAAAAI'
+    'REDIRECT_STATUS' => '200'
+    'UNIQUE_ID' => 'XAUehX8AAAEAAHX6J7oAAAAI'
+    'HTTP_HOST' => 'localhost'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_13_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/70.0.3538.110 Safari/537.36'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, br'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.9'
+    'HTTP_COOKIE' => 'PHPBASICSESSID=c84dabf2330a9a536b578e9cac5675f9; _basicCSRF=baeb0a0b4ed783fa9e500919635d771443709a2b10b4abab4dd297b977cc7a65a%3A2%3A%7Bi%3A0%3Bs%3A10%3A%22_basicCSRF%22%3Bi%3A1%3Bs%3A32%3A%22dQiP7uVxh-ffQl34Pn6X_Qe8qMWnjYcM%22%3B%7D; tailorshub-frontend=a94b4efe20b59cf9340a3e2d1ade4016; INOERP123123=ba10d81fb5999b0cf34b264f0c07f91d; FAff4f990e9b17767d77209e972b22d618=8a4929afed366eb0f347dff488f7e13a; _csrf-seftonfross=f8d9e3c1e338bb12bdb3648e31fc8ae973307f8737cbf24ed71f16109e642989a%3A2%3A%7Bi%3A0%3Bs%3A17%3A%22_csrf-seftonfross%22%3Bi%3A1%3Bs%3A32%3A%228zVfaAptBfOGDO4UtTYuSTmMxRVUQkcQ%22%3B%7D; Idea-edd8db2d=2f6f5e5b-192e-4305-baeb-571107513b05; _ga=GA1.1.568245260.1537000047; ckCsrfToken=3ZFDOtem9DJ9cbhFkV05V9R2cNUyK2zU9EvLkjA7; KCFINDER_showname=on; KCFINDER_showsize=off; KCFINDER_showtime=off; KCFINDER_order=name; KCFINDER_orderDesc=off; KCFINDER_view=thumbs; KCFINDER_displaySettings=off; _frontendLawyer=3e7584ec09968df4637431820667553c423035b45936154cfd2968554e35a407a%3A2%3A%7Bi%3A0%3Bs%3A15%3A%22_frontendLawyer%22%3Bi%3A1%3Bs%3A47%3A%22%5B10%2C%22%242y%2413%24pb9YcxiTdK2ERv95RKVN7.7LJ%22%2C2592000%5D%22%3B%7D; _frontendCSRF=39b12ca78484e70cb43321ef5477932b99ddd9335ac128114d5a7db83440498aa%3A2%3A%7Bi%3A0%3Bs%3A13%3A%22_frontendCSRF%22%3Bi%3A1%3Bs%3A32%3A%22hvYEq9cHsa7ENLgqCQYb6nMZ-nuvmx8G%22%3B%7D; _identity-user=146c6fa6860dac60709df9c1e9a0f1d2b8358586c34e73abe48586e81bca5d50a%3A2%3A%7Bi%3A0%3Bs%3A14%3A%22_identity-user%22%3Bi%3A1%3Bs%3A46%3A%22%5B4%2C%22vxdOdWx4qvdC5xoCDuyD5mQTITnsX7yy%22%2C2592000%5D%22%3B%7D; _identity-frontend=037f84ba9be060846021ebb26fcac04ffedf3080d83a37c62a8e7c90dc1fd0bba%3A2%3A%7Bi%3A0%3Bs%3A18%3A%22_identity-frontend%22%3Bi%3A1%3Bs%3A46%3A%22%5B1%2C%22mBn4AGuu6K_JJ5hvm8jy37JIpZYbkeAH%22%2C2592000%5D%22%3B%7D; _backendPASSUser=f534598f569fa1321928d15b05ecf3306e5454e2ed2a3ecab166022d560a4a17a%3A2%3A%7Bi%3A0%3Bs%3A16%3A%22_backendPASSUser%22%3Bi%3A1%3Bs%3A46%3A%22%5B1%2C%22uPyzYNidl_M561fYurQjst0oMuQEin0w%22%2C2592000%5D%22%3B%7D; _backendCSRF=13370b7a25cea7760d474a8aeedaf983d87dafe27366d10d877a4f0a742f729ba%3A2%3A%7Bi%3A0%3Bs%3A12%3A%22_backendCSRF%22%3Bi%3A1%3Bs%3A32%3A%22Y2xBmAIrZsV2d770_1Ct6R9Yxqwr-iJq%22%3B%7D; PHPSESSID=8fc789f7ed04134e2b8119eb7f128849; _frontendPassUser=7c4563df39522da9e926e7e985974c83a86ad81b6390157ffb57d5765a25592ea%3A2%3A%7Bi%3A0%3Bs%3A17%3A%22_frontendPassUser%22%3Bi%3A1%3Bs%3A46%3A%22%5B1%2C%22moybQBnSY244xkJxAL73W-HfG3JQTvFp%22%2C2592000%5D%22%3B%7D; jsilinks-frontend=be8ea8adce4a36a655e03f51c7422a38; PHPBACKSESSID=acc528e23773a8587feb9a1dd509fbcd; _csrf=93a2b02b3fd1d9ce19d3920f4b75e07222081d993f125ebaf8dee75363a4d883a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22RrP4n8qXWjsWKobo3PMPbWe3FBq7xlCN%22%3B%7D; _csrf-frontend=bea7c50cda908049a6725cfa8b68971f76520be0a6463162f1540a43ed49aa66a%3A2%3A%7Bi%3A0%3Bs%3A14%3A%22_csrf-frontend%22%3Bi%3A1%3Bs%3A32%3A%22MtfmJV7zhl-UK2goG-MMcLmG1jNJSspg%22%3B%7D; advanced-backend=1742da2f1e829f93fc2d0f756a6ab1ca; _identity-backend=c97d207e4dfd974780a68ba8802c7fc6dedd0c0e29e30b827ed89570cee863f3a%3A2%3A%7Bi%3A0%3Bs%3A17%3A%22_identity-backend%22%3Bi%3A1%3Bs%3A14%3A%22%5B1%2C%22%22%2C2592000%5D%22%3B%7D; _csrf-backend=531462ef6621b12bc31d274d7eba3090beed6342e2929250cfeb151d1f04ccbba%3A2%3A%7Bi%3A0%3Bs%3A13%3A%22_csrf-backend%22%3Bi%3A1%3Bs%3A32%3A%22TWPzxS8degTteBH1Z1T6cQLxHRgoJtUU%22%3B%7D; IsMember=1; gramblr.sessid=S__x8DIht7Fd1H_IWz139gz8zouFfJi6b3-HGHwG0NvBpMj7uGTlNOSZXc3Q3ZeJX3MHGoQ0rdo3OoSSd1eWpyAk; NG_TRANSLATE_LANG_KEY=%22en%22; validate_amazingpicxx=1; PHPFRONTSESSID=8f8c4a9d54572fc1fb15f1adb367492b; __tawkuuid=e::localhost::AGQN44ttIJO1gvXUv+NhEPMs9hEv+XgnK3xcWW2V67TcFpOZD3JORCcxA29KUH6I::2; TawkConnectionTime=0; advanced-frontend=c6766acef19f2560912ddb74efefbdf8'
+    'PATH' => '/usr/bin:/bin:/usr/sbin:/sbin'
+    'DYLD_LIBRARY_PATH' => '/Applications/XAMPP/xamppfiles/lib'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache/2.4.25 (Unix) OpenSSL/1.0.2j PHP/7.1.1 mod_perl/2.0.8-dev Perl/v5.16.3'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => '/Applications/XAMPP/xamppfiles/htdocs'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/Applications/XAMPP/xamppfiles/htdocs'
+    'SERVER_ADMIN' => 'you@example.com'
+    'SCRIPT_FILENAME' => '/Applications/XAMPP/xamppfiles/htdocs/yii2-forum-training/api/index.php'
+    'REMOTE_PORT' => '65111'
+    'REDIRECT_URL' => '/yii2-forum-training/api/v1'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/yii2-forum-training/api/v1'
+    'SCRIPT_NAME' => '/yii2-forum-training/api/index.php'
+    'PHP_SELF' => '/yii2-forum-training/api/index.php'
+    'REQUEST_TIME_FLOAT' => 1543839365.78
+    'REQUEST_TIME' => 1543839365
+]
+2018-12-03 13:19:57 [::1][-][8fc789f7ed04134e2b8119eb7f128849][error][yii\base\ViewNotFoundException] yii\base\ViewNotFoundException: The view file does not exist: /Applications/XAMPP/xamppfiles/htdocs/yii2-forum-training/api/views/layouts/main.php in /Applications/XAMPP/xamppfiles/htdocs/yii2-forum-training/web/vendor/yiisoft/yii2/base/View.php:233
+Stack trace:
+#0 /Applications/XAMPP/xamppfiles/htdocs/yii2-forum-training/web/vendor/yiisoft/yii2/base/Controller.php(399): yii\base\View->renderFile('/Applications/X...', Array, Object(api\modules\v1\controllers\DefaultController))
+#1 /Applications/XAMPP/xamppfiles/htdocs/yii2-forum-training/web/vendor/yiisoft/yii2/base/Controller.php(385): yii\base\Controller->renderContent('<div class="v1-...')
+#2 /Applications/XAMPP/xamppfiles/htdocs/yii2-forum-training/api/modules/v1/controllers/DefaultController.php(18): yii\base\Controller->render('index')
+#3 [internal function]: api\modules\v1\controllers\DefaultController->actionIndex()
+#4 /Applications/XAMPP/xamppfiles/htdocs/yii2-forum-training/web/vendor/yiisoft/yii2/base/InlineAction.php(57): call_user_func_array(Array, Array)
+#5 /Applications/XAMPP/xamppfiles/htdocs/yii2-forum-training/web/vendor/yiisoft/yii2/base/Controller.php(157): yii\base\InlineAction->runWithParams(Array)
+#6 /Applications/XAMPP/xamppfiles/htdocs/yii2-forum-training/web/vendor/yiisoft/yii2/base/Module.php(528): yii\base\Controller->runAction('', Array)
+#7 /Applications/XAMPP/xamppfiles/htdocs/yii2-forum-training/web/vendor/yiisoft/yii2/web/Application.php(103): yii\base\Module->runAction('v1', Array)
+#8 /Applications/XAMPP/xamppfiles/htdocs/yii2-forum-training/web/vendor/yiisoft/yii2/base/Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#9 /Applications/XAMPP/xamppfiles/htdocs/yii2-forum-training/api/index.php(12): yii\base\Application->run()
+#10 {main}
+2018-12-03 13:19:56 [::1][-][8fc789f7ed04134e2b8119eb7f128849][info][application] $_GET = []
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    'PHPBASICSESSID' => 'c84dabf2330a9a536b578e9cac5675f9'
+    '_basicCSRF' => 'baeb0a0b4ed783fa9e500919635d771443709a2b10b4abab4dd297b977cc7a65a:2:{i:0;s:10:\"_basicCSRF\";i:1;s:32:\"dQiP7uVxh-ffQl34Pn6X_Qe8qMWnjYcM\";}'
+    'tailorshub-frontend' => 'a94b4efe20b59cf9340a3e2d1ade4016'
+    'INOERP123123' => 'ba10d81fb5999b0cf34b264f0c07f91d'
+    'FAff4f990e9b17767d77209e972b22d618' => '8a4929afed366eb0f347dff488f7e13a'
+    '_csrf-seftonfross' => 'f8d9e3c1e338bb12bdb3648e31fc8ae973307f8737cbf24ed71f16109e642989a:2:{i:0;s:17:\"_csrf-seftonfross\";i:1;s:32:\"8zVfaAptBfOGDO4UtTYuSTmMxRVUQkcQ\";}'
+    'Idea-edd8db2d' => '2f6f5e5b-192e-4305-baeb-571107513b05'
+    '_ga' => 'GA1.1.568245260.1537000047'
+    'ckCsrfToken' => '3ZFDOtem9DJ9cbhFkV05V9R2cNUyK2zU9EvLkjA7'
+    'KCFINDER_showname' => 'on'
+    'KCFINDER_showsize' => 'off'
+    'KCFINDER_showtime' => 'off'
+    'KCFINDER_order' => 'name'
+    'KCFINDER_orderDesc' => 'off'
+    'KCFINDER_view' => 'thumbs'
+    'KCFINDER_displaySettings' => 'off'
+    '_frontendLawyer' => '3e7584ec09968df4637431820667553c423035b45936154cfd2968554e35a407a:2:{i:0;s:15:\"_frontendLawyer\";i:1;s:47:\"[10,\"$2y$13$pb9YcxiTdK2ERv95RKVN7.7LJ\",2592000]\";}'
+    '_frontendCSRF' => '39b12ca78484e70cb43321ef5477932b99ddd9335ac128114d5a7db83440498aa:2:{i:0;s:13:\"_frontendCSRF\";i:1;s:32:\"hvYEq9cHsa7ENLgqCQYb6nMZ-nuvmx8G\";}'
+    '_identity-user' => '146c6fa6860dac60709df9c1e9a0f1d2b8358586c34e73abe48586e81bca5d50a:2:{i:0;s:14:\"_identity-user\";i:1;s:46:\"[4,\"vxdOdWx4qvdC5xoCDuyD5mQTITnsX7yy\",2592000]\";}'
+    '_identity-frontend' => '037f84ba9be060846021ebb26fcac04ffedf3080d83a37c62a8e7c90dc1fd0bba:2:{i:0;s:18:\"_identity-frontend\";i:1;s:46:\"[1,\"mBn4AGuu6K_JJ5hvm8jy37JIpZYbkeAH\",2592000]\";}'
+    '_backendPASSUser' => 'f534598f569fa1321928d15b05ecf3306e5454e2ed2a3ecab166022d560a4a17a:2:{i:0;s:16:\"_backendPASSUser\";i:1;s:46:\"[1,\"uPyzYNidl_M561fYurQjst0oMuQEin0w\",2592000]\";}'
+    '_backendCSRF' => '13370b7a25cea7760d474a8aeedaf983d87dafe27366d10d877a4f0a742f729ba:2:{i:0;s:12:\"_backendCSRF\";i:1;s:32:\"Y2xBmAIrZsV2d770_1Ct6R9Yxqwr-iJq\";}'
+    'PHPSESSID' => '8fc789f7ed04134e2b8119eb7f128849'
+    '_frontendPassUser' => '7c4563df39522da9e926e7e985974c83a86ad81b6390157ffb57d5765a25592ea:2:{i:0;s:17:\"_frontendPassUser\";i:1;s:46:\"[1,\"moybQBnSY244xkJxAL73W-HfG3JQTvFp\",2592000]\";}'
+    'jsilinks-frontend' => 'be8ea8adce4a36a655e03f51c7422a38'
+    'PHPBACKSESSID' => 'acc528e23773a8587feb9a1dd509fbcd'
+    '_csrf' => '93a2b02b3fd1d9ce19d3920f4b75e07222081d993f125ebaf8dee75363a4d883a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"RrP4n8qXWjsWKobo3PMPbWe3FBq7xlCN\";}'
+    '_csrf-frontend' => 'bea7c50cda908049a6725cfa8b68971f76520be0a6463162f1540a43ed49aa66a:2:{i:0;s:14:\"_csrf-frontend\";i:1;s:32:\"MtfmJV7zhl-UK2goG-MMcLmG1jNJSspg\";}'
+    'advanced-backend' => '1742da2f1e829f93fc2d0f756a6ab1ca'
+    '_identity-backend' => 'c97d207e4dfd974780a68ba8802c7fc6dedd0c0e29e30b827ed89570cee863f3a:2:{i:0;s:17:\"_identity-backend\";i:1;s:14:\"[1,\"\",2592000]\";}'
+    '_csrf-backend' => '531462ef6621b12bc31d274d7eba3090beed6342e2929250cfeb151d1f04ccbba:2:{i:0;s:13:\"_csrf-backend\";i:1;s:32:\"TWPzxS8degTteBH1Z1T6cQLxHRgoJtUU\";}'
+    'IsMember' => '1'
+    'gramblr_sessid' => 'S__x8DIht7Fd1H_IWz139gz8zouFfJi6b3-HGHwG0NvBpMj7uGTlNOSZXc3Q3ZeJX3MHGoQ0rdo3OoSSd1eWpyAk'
+    'NG_TRANSLATE_LANG_KEY' => '\"en\"'
+    'validate_amazingpicxx' => '1'
+    'PHPFRONTSESSID' => '8f8c4a9d54572fc1fb15f1adb367492b'
+    '__tawkuuid' => 'e::localhost::AGQN44ttIJO1gvXUv NhEPMs9hEv XgnK3xcWW2V67TcFpOZD3JORCcxA29KUH6I::2'
+    'TawkConnectionTime' => '0'
+    'advanced-frontend' => 'c6766acef19f2560912ddb74efefbdf8'
+]
+
+$_SESSION = [
+    '__flash' => []
+]
+
+$_SERVER = [
+    'REDIRECT_UNIQUE_ID' => 'XAUfbH8AAAEAAHX0RVwAAAAC'
+    'REDIRECT_STATUS' => '200'
+    'UNIQUE_ID' => 'XAUfbH8AAAEAAHX0RVwAAAAC'
+    'HTTP_HOST' => 'localhost'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_13_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/70.0.3538.110 Safari/537.36'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, br'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.9'
+    'HTTP_COOKIE' => 'PHPBASICSESSID=c84dabf2330a9a536b578e9cac5675f9; _basicCSRF=baeb0a0b4ed783fa9e500919635d771443709a2b10b4abab4dd297b977cc7a65a%3A2%3A%7Bi%3A0%3Bs%3A10%3A%22_basicCSRF%22%3Bi%3A1%3Bs%3A32%3A%22dQiP7uVxh-ffQl34Pn6X_Qe8qMWnjYcM%22%3B%7D; tailorshub-frontend=a94b4efe20b59cf9340a3e2d1ade4016; INOERP123123=ba10d81fb5999b0cf34b264f0c07f91d; FAff4f990e9b17767d77209e972b22d618=8a4929afed366eb0f347dff488f7e13a; _csrf-seftonfross=f8d9e3c1e338bb12bdb3648e31fc8ae973307f8737cbf24ed71f16109e642989a%3A2%3A%7Bi%3A0%3Bs%3A17%3A%22_csrf-seftonfross%22%3Bi%3A1%3Bs%3A32%3A%228zVfaAptBfOGDO4UtTYuSTmMxRVUQkcQ%22%3B%7D; Idea-edd8db2d=2f6f5e5b-192e-4305-baeb-571107513b05; _ga=GA1.1.568245260.1537000047; ckCsrfToken=3ZFDOtem9DJ9cbhFkV05V9R2cNUyK2zU9EvLkjA7; KCFINDER_showname=on; KCFINDER_showsize=off; KCFINDER_showtime=off; KCFINDER_order=name; KCFINDER_orderDesc=off; KCFINDER_view=thumbs; KCFINDER_displaySettings=off; _frontendLawyer=3e7584ec09968df4637431820667553c423035b45936154cfd2968554e35a407a%3A2%3A%7Bi%3A0%3Bs%3A15%3A%22_frontendLawyer%22%3Bi%3A1%3Bs%3A47%3A%22%5B10%2C%22%242y%2413%24pb9YcxiTdK2ERv95RKVN7.7LJ%22%2C2592000%5D%22%3B%7D; _frontendCSRF=39b12ca78484e70cb43321ef5477932b99ddd9335ac128114d5a7db83440498aa%3A2%3A%7Bi%3A0%3Bs%3A13%3A%22_frontendCSRF%22%3Bi%3A1%3Bs%3A32%3A%22hvYEq9cHsa7ENLgqCQYb6nMZ-nuvmx8G%22%3B%7D; _identity-user=146c6fa6860dac60709df9c1e9a0f1d2b8358586c34e73abe48586e81bca5d50a%3A2%3A%7Bi%3A0%3Bs%3A14%3A%22_identity-user%22%3Bi%3A1%3Bs%3A46%3A%22%5B4%2C%22vxdOdWx4qvdC5xoCDuyD5mQTITnsX7yy%22%2C2592000%5D%22%3B%7D; _identity-frontend=037f84ba9be060846021ebb26fcac04ffedf3080d83a37c62a8e7c90dc1fd0bba%3A2%3A%7Bi%3A0%3Bs%3A18%3A%22_identity-frontend%22%3Bi%3A1%3Bs%3A46%3A%22%5B1%2C%22mBn4AGuu6K_JJ5hvm8jy37JIpZYbkeAH%22%2C2592000%5D%22%3B%7D; _backendPASSUser=f534598f569fa1321928d15b05ecf3306e5454e2ed2a3ecab166022d560a4a17a%3A2%3A%7Bi%3A0%3Bs%3A16%3A%22_backendPASSUser%22%3Bi%3A1%3Bs%3A46%3A%22%5B1%2C%22uPyzYNidl_M561fYurQjst0oMuQEin0w%22%2C2592000%5D%22%3B%7D; _backendCSRF=13370b7a25cea7760d474a8aeedaf983d87dafe27366d10d877a4f0a742f729ba%3A2%3A%7Bi%3A0%3Bs%3A12%3A%22_backendCSRF%22%3Bi%3A1%3Bs%3A32%3A%22Y2xBmAIrZsV2d770_1Ct6R9Yxqwr-iJq%22%3B%7D; PHPSESSID=8fc789f7ed04134e2b8119eb7f128849; _frontendPassUser=7c4563df39522da9e926e7e985974c83a86ad81b6390157ffb57d5765a25592ea%3A2%3A%7Bi%3A0%3Bs%3A17%3A%22_frontendPassUser%22%3Bi%3A1%3Bs%3A46%3A%22%5B1%2C%22moybQBnSY244xkJxAL73W-HfG3JQTvFp%22%2C2592000%5D%22%3B%7D; jsilinks-frontend=be8ea8adce4a36a655e03f51c7422a38; PHPBACKSESSID=acc528e23773a8587feb9a1dd509fbcd; _csrf=93a2b02b3fd1d9ce19d3920f4b75e07222081d993f125ebaf8dee75363a4d883a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22RrP4n8qXWjsWKobo3PMPbWe3FBq7xlCN%22%3B%7D; _csrf-frontend=bea7c50cda908049a6725cfa8b68971f76520be0a6463162f1540a43ed49aa66a%3A2%3A%7Bi%3A0%3Bs%3A14%3A%22_csrf-frontend%22%3Bi%3A1%3Bs%3A32%3A%22MtfmJV7zhl-UK2goG-MMcLmG1jNJSspg%22%3B%7D; advanced-backend=1742da2f1e829f93fc2d0f756a6ab1ca; _identity-backend=c97d207e4dfd974780a68ba8802c7fc6dedd0c0e29e30b827ed89570cee863f3a%3A2%3A%7Bi%3A0%3Bs%3A17%3A%22_identity-backend%22%3Bi%3A1%3Bs%3A14%3A%22%5B1%2C%22%22%2C2592000%5D%22%3B%7D; _csrf-backend=531462ef6621b12bc31d274d7eba3090beed6342e2929250cfeb151d1f04ccbba%3A2%3A%7Bi%3A0%3Bs%3A13%3A%22_csrf-backend%22%3Bi%3A1%3Bs%3A32%3A%22TWPzxS8degTteBH1Z1T6cQLxHRgoJtUU%22%3B%7D; IsMember=1; gramblr.sessid=S__x8DIht7Fd1H_IWz139gz8zouFfJi6b3-HGHwG0NvBpMj7uGTlNOSZXc3Q3ZeJX3MHGoQ0rdo3OoSSd1eWpyAk; NG_TRANSLATE_LANG_KEY=%22en%22; validate_amazingpicxx=1; PHPFRONTSESSID=8f8c4a9d54572fc1fb15f1adb367492b; __tawkuuid=e::localhost::AGQN44ttIJO1gvXUv+NhEPMs9hEv+XgnK3xcWW2V67TcFpOZD3JORCcxA29KUH6I::2; TawkConnectionTime=0; advanced-frontend=c6766acef19f2560912ddb74efefbdf8'
+    'PATH' => '/usr/bin:/bin:/usr/sbin:/sbin'
+    'DYLD_LIBRARY_PATH' => '/Applications/XAMPP/xamppfiles/lib'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache/2.4.25 (Unix) OpenSSL/1.0.2j PHP/7.1.1 mod_perl/2.0.8-dev Perl/v5.16.3'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => '/Applications/XAMPP/xamppfiles/htdocs'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/Applications/XAMPP/xamppfiles/htdocs'
+    'SERVER_ADMIN' => 'you@example.com'
+    'SCRIPT_FILENAME' => '/Applications/XAMPP/xamppfiles/htdocs/yii2-forum-training/api/index.php'
+    'REMOTE_PORT' => '65400'
+    'REDIRECT_URL' => '/yii2-forum-training/api/v1'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/yii2-forum-training/api/v1'
+    'SCRIPT_NAME' => '/yii2-forum-training/api/index.php'
+    'PHP_SELF' => '/yii2-forum-training/api/index.php'
+    'REQUEST_TIME_FLOAT' => 1543839596.983
+    'REQUEST_TIME' => 1543839596
+]
+2018-12-03 13:21:17 [::1][-][8fc789f7ed04134e2b8119eb7f128849][error][yii\base\InvalidArgumentException] yii\base\InvalidArgumentException: Response content must not be an array. in /Applications/XAMPP/xamppfiles/htdocs/yii2-forum-training/web/vendor/yiisoft/yii2/web/Response.php:1057
+Stack trace:
+#0 /Applications/XAMPP/xamppfiles/htdocs/yii2-forum-training/web/vendor/yiisoft/yii2/web/Response.php(337): yii\web\Response->prepare()
+#1 /Applications/XAMPP/xamppfiles/htdocs/yii2-forum-training/web/vendor/yiisoft/yii2/base/Application.php(392): yii\web\Response->send()
+#2 /Applications/XAMPP/xamppfiles/htdocs/yii2-forum-training/api/index.php(12): yii\base\Application->run()
+#3 {main}
+2018-12-03 13:21:17 [::1][-][8fc789f7ed04134e2b8119eb7f128849][info][application] $_GET = []
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    'PHPBASICSESSID' => 'c84dabf2330a9a536b578e9cac5675f9'
+    '_basicCSRF' => 'baeb0a0b4ed783fa9e500919635d771443709a2b10b4abab4dd297b977cc7a65a:2:{i:0;s:10:\"_basicCSRF\";i:1;s:32:\"dQiP7uVxh-ffQl34Pn6X_Qe8qMWnjYcM\";}'
+    'tailorshub-frontend' => 'a94b4efe20b59cf9340a3e2d1ade4016'
+    'INOERP123123' => 'ba10d81fb5999b0cf34b264f0c07f91d'
+    'FAff4f990e9b17767d77209e972b22d618' => '8a4929afed366eb0f347dff488f7e13a'
+    '_csrf-seftonfross' => 'f8d9e3c1e338bb12bdb3648e31fc8ae973307f8737cbf24ed71f16109e642989a:2:{i:0;s:17:\"_csrf-seftonfross\";i:1;s:32:\"8zVfaAptBfOGDO4UtTYuSTmMxRVUQkcQ\";}'
+    'Idea-edd8db2d' => '2f6f5e5b-192e-4305-baeb-571107513b05'
+    '_ga' => 'GA1.1.568245260.1537000047'
+    'ckCsrfToken' => '3ZFDOtem9DJ9cbhFkV05V9R2cNUyK2zU9EvLkjA7'
+    'KCFINDER_showname' => 'on'
+    'KCFINDER_showsize' => 'off'
+    'KCFINDER_showtime' => 'off'
+    'KCFINDER_order' => 'name'
+    'KCFINDER_orderDesc' => 'off'
+    'KCFINDER_view' => 'thumbs'
+    'KCFINDER_displaySettings' => 'off'
+    '_frontendLawyer' => '3e7584ec09968df4637431820667553c423035b45936154cfd2968554e35a407a:2:{i:0;s:15:\"_frontendLawyer\";i:1;s:47:\"[10,\"$2y$13$pb9YcxiTdK2ERv95RKVN7.7LJ\",2592000]\";}'
+    '_frontendCSRF' => '39b12ca78484e70cb43321ef5477932b99ddd9335ac128114d5a7db83440498aa:2:{i:0;s:13:\"_frontendCSRF\";i:1;s:32:\"hvYEq9cHsa7ENLgqCQYb6nMZ-nuvmx8G\";}'
+    '_identity-user' => '146c6fa6860dac60709df9c1e9a0f1d2b8358586c34e73abe48586e81bca5d50a:2:{i:0;s:14:\"_identity-user\";i:1;s:46:\"[4,\"vxdOdWx4qvdC5xoCDuyD5mQTITnsX7yy\",2592000]\";}'
+    '_identity-frontend' => '037f84ba9be060846021ebb26fcac04ffedf3080d83a37c62a8e7c90dc1fd0bba:2:{i:0;s:18:\"_identity-frontend\";i:1;s:46:\"[1,\"mBn4AGuu6K_JJ5hvm8jy37JIpZYbkeAH\",2592000]\";}'
+    '_backendPASSUser' => 'f534598f569fa1321928d15b05ecf3306e5454e2ed2a3ecab166022d560a4a17a:2:{i:0;s:16:\"_backendPASSUser\";i:1;s:46:\"[1,\"uPyzYNidl_M561fYurQjst0oMuQEin0w\",2592000]\";}'
+    '_backendCSRF' => '13370b7a25cea7760d474a8aeedaf983d87dafe27366d10d877a4f0a742f729ba:2:{i:0;s:12:\"_backendCSRF\";i:1;s:32:\"Y2xBmAIrZsV2d770_1Ct6R9Yxqwr-iJq\";}'
+    'PHPSESSID' => '8fc789f7ed04134e2b8119eb7f128849'
+    '_frontendPassUser' => '7c4563df39522da9e926e7e985974c83a86ad81b6390157ffb57d5765a25592ea:2:{i:0;s:17:\"_frontendPassUser\";i:1;s:46:\"[1,\"moybQBnSY244xkJxAL73W-HfG3JQTvFp\",2592000]\";}'
+    'jsilinks-frontend' => 'be8ea8adce4a36a655e03f51c7422a38'
+    'PHPBACKSESSID' => 'acc528e23773a8587feb9a1dd509fbcd'
+    '_csrf' => '93a2b02b3fd1d9ce19d3920f4b75e07222081d993f125ebaf8dee75363a4d883a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"RrP4n8qXWjsWKobo3PMPbWe3FBq7xlCN\";}'
+    '_csrf-frontend' => 'bea7c50cda908049a6725cfa8b68971f76520be0a6463162f1540a43ed49aa66a:2:{i:0;s:14:\"_csrf-frontend\";i:1;s:32:\"MtfmJV7zhl-UK2goG-MMcLmG1jNJSspg\";}'
+    'advanced-backend' => '1742da2f1e829f93fc2d0f756a6ab1ca'
+    '_identity-backend' => 'c97d207e4dfd974780a68ba8802c7fc6dedd0c0e29e30b827ed89570cee863f3a:2:{i:0;s:17:\"_identity-backend\";i:1;s:14:\"[1,\"\",2592000]\";}'
+    '_csrf-backend' => '531462ef6621b12bc31d274d7eba3090beed6342e2929250cfeb151d1f04ccbba:2:{i:0;s:13:\"_csrf-backend\";i:1;s:32:\"TWPzxS8degTteBH1Z1T6cQLxHRgoJtUU\";}'
+    'IsMember' => '1'
+    'gramblr_sessid' => 'S__x8DIht7Fd1H_IWz139gz8zouFfJi6b3-HGHwG0NvBpMj7uGTlNOSZXc3Q3ZeJX3MHGoQ0rdo3OoSSd1eWpyAk'
+    'NG_TRANSLATE_LANG_KEY' => '\"en\"'
+    'validate_amazingpicxx' => '1'
+    'PHPFRONTSESSID' => '8f8c4a9d54572fc1fb15f1adb367492b'
+    '__tawkuuid' => 'e::localhost::AGQN44ttIJO1gvXUv NhEPMs9hEv XgnK3xcWW2V67TcFpOZD3JORCcxA29KUH6I::2'
+    'TawkConnectionTime' => '0'
+    'advanced-frontend' => 'c6766acef19f2560912ddb74efefbdf8'
+]
+
+$_SESSION = [
+    '__flash' => []
+]
+
+$_SERVER = [
+    'REDIRECT_UNIQUE_ID' => 'XAUfvX8AAAEAAHX7pmkAAAAK'
+    'REDIRECT_STATUS' => '200'
+    'UNIQUE_ID' => 'XAUfvX8AAAEAAHX7pmkAAAAK'
+    'HTTP_HOST' => 'localhost'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_13_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/70.0.3538.110 Safari/537.36'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, br'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.9'
+    'HTTP_COOKIE' => 'PHPBASICSESSID=c84dabf2330a9a536b578e9cac5675f9; _basicCSRF=baeb0a0b4ed783fa9e500919635d771443709a2b10b4abab4dd297b977cc7a65a%3A2%3A%7Bi%3A0%3Bs%3A10%3A%22_basicCSRF%22%3Bi%3A1%3Bs%3A32%3A%22dQiP7uVxh-ffQl34Pn6X_Qe8qMWnjYcM%22%3B%7D; tailorshub-frontend=a94b4efe20b59cf9340a3e2d1ade4016; INOERP123123=ba10d81fb5999b0cf34b264f0c07f91d; FAff4f990e9b17767d77209e972b22d618=8a4929afed366eb0f347dff488f7e13a; _csrf-seftonfross=f8d9e3c1e338bb12bdb3648e31fc8ae973307f8737cbf24ed71f16109e642989a%3A2%3A%7Bi%3A0%3Bs%3A17%3A%22_csrf-seftonfross%22%3Bi%3A1%3Bs%3A32%3A%228zVfaAptBfOGDO4UtTYuSTmMxRVUQkcQ%22%3B%7D; Idea-edd8db2d=2f6f5e5b-192e-4305-baeb-571107513b05; _ga=GA1.1.568245260.1537000047; ckCsrfToken=3ZFDOtem9DJ9cbhFkV05V9R2cNUyK2zU9EvLkjA7; KCFINDER_showname=on; KCFINDER_showsize=off; KCFINDER_showtime=off; KCFINDER_order=name; KCFINDER_orderDesc=off; KCFINDER_view=thumbs; KCFINDER_displaySettings=off; _frontendLawyer=3e7584ec09968df4637431820667553c423035b45936154cfd2968554e35a407a%3A2%3A%7Bi%3A0%3Bs%3A15%3A%22_frontendLawyer%22%3Bi%3A1%3Bs%3A47%3A%22%5B10%2C%22%242y%2413%24pb9YcxiTdK2ERv95RKVN7.7LJ%22%2C2592000%5D%22%3B%7D; _frontendCSRF=39b12ca78484e70cb43321ef5477932b99ddd9335ac128114d5a7db83440498aa%3A2%3A%7Bi%3A0%3Bs%3A13%3A%22_frontendCSRF%22%3Bi%3A1%3Bs%3A32%3A%22hvYEq9cHsa7ENLgqCQYb6nMZ-nuvmx8G%22%3B%7D; _identity-user=146c6fa6860dac60709df9c1e9a0f1d2b8358586c34e73abe48586e81bca5d50a%3A2%3A%7Bi%3A0%3Bs%3A14%3A%22_identity-user%22%3Bi%3A1%3Bs%3A46%3A%22%5B4%2C%22vxdOdWx4qvdC5xoCDuyD5mQTITnsX7yy%22%2C2592000%5D%22%3B%7D; _identity-frontend=037f84ba9be060846021ebb26fcac04ffedf3080d83a37c62a8e7c90dc1fd0bba%3A2%3A%7Bi%3A0%3Bs%3A18%3A%22_identity-frontend%22%3Bi%3A1%3Bs%3A46%3A%22%5B1%2C%22mBn4AGuu6K_JJ5hvm8jy37JIpZYbkeAH%22%2C2592000%5D%22%3B%7D; _backendPASSUser=f534598f569fa1321928d15b05ecf3306e5454e2ed2a3ecab166022d560a4a17a%3A2%3A%7Bi%3A0%3Bs%3A16%3A%22_backendPASSUser%22%3Bi%3A1%3Bs%3A46%3A%22%5B1%2C%22uPyzYNidl_M561fYurQjst0oMuQEin0w%22%2C2592000%5D%22%3B%7D; _backendCSRF=13370b7a25cea7760d474a8aeedaf983d87dafe27366d10d877a4f0a742f729ba%3A2%3A%7Bi%3A0%3Bs%3A12%3A%22_backendCSRF%22%3Bi%3A1%3Bs%3A32%3A%22Y2xBmAIrZsV2d770_1Ct6R9Yxqwr-iJq%22%3B%7D; PHPSESSID=8fc789f7ed04134e2b8119eb7f128849; _frontendPassUser=7c4563df39522da9e926e7e985974c83a86ad81b6390157ffb57d5765a25592ea%3A2%3A%7Bi%3A0%3Bs%3A17%3A%22_frontendPassUser%22%3Bi%3A1%3Bs%3A46%3A%22%5B1%2C%22moybQBnSY244xkJxAL73W-HfG3JQTvFp%22%2C2592000%5D%22%3B%7D; jsilinks-frontend=be8ea8adce4a36a655e03f51c7422a38; PHPBACKSESSID=acc528e23773a8587feb9a1dd509fbcd; _csrf=93a2b02b3fd1d9ce19d3920f4b75e07222081d993f125ebaf8dee75363a4d883a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22RrP4n8qXWjsWKobo3PMPbWe3FBq7xlCN%22%3B%7D; _csrf-frontend=bea7c50cda908049a6725cfa8b68971f76520be0a6463162f1540a43ed49aa66a%3A2%3A%7Bi%3A0%3Bs%3A14%3A%22_csrf-frontend%22%3Bi%3A1%3Bs%3A32%3A%22MtfmJV7zhl-UK2goG-MMcLmG1jNJSspg%22%3B%7D; advanced-backend=1742da2f1e829f93fc2d0f756a6ab1ca; _identity-backend=c97d207e4dfd974780a68ba8802c7fc6dedd0c0e29e30b827ed89570cee863f3a%3A2%3A%7Bi%3A0%3Bs%3A17%3A%22_identity-backend%22%3Bi%3A1%3Bs%3A14%3A%22%5B1%2C%22%22%2C2592000%5D%22%3B%7D; _csrf-backend=531462ef6621b12bc31d274d7eba3090beed6342e2929250cfeb151d1f04ccbba%3A2%3A%7Bi%3A0%3Bs%3A13%3A%22_csrf-backend%22%3Bi%3A1%3Bs%3A32%3A%22TWPzxS8degTteBH1Z1T6cQLxHRgoJtUU%22%3B%7D; IsMember=1; gramblr.sessid=S__x8DIht7Fd1H_IWz139gz8zouFfJi6b3-HGHwG0NvBpMj7uGTlNOSZXc3Q3ZeJX3MHGoQ0rdo3OoSSd1eWpyAk; NG_TRANSLATE_LANG_KEY=%22en%22; validate_amazingpicxx=1; PHPFRONTSESSID=8f8c4a9d54572fc1fb15f1adb367492b; __tawkuuid=e::localhost::AGQN44ttIJO1gvXUv+NhEPMs9hEv+XgnK3xcWW2V67TcFpOZD3JORCcxA29KUH6I::2; TawkConnectionTime=0; advanced-frontend=c6766acef19f2560912ddb74efefbdf8'
+    'PATH' => '/usr/bin:/bin:/usr/sbin:/sbin'
+    'DYLD_LIBRARY_PATH' => '/Applications/XAMPP/xamppfiles/lib'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache/2.4.25 (Unix) OpenSSL/1.0.2j PHP/7.1.1 mod_perl/2.0.8-dev Perl/v5.16.3'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => '/Applications/XAMPP/xamppfiles/htdocs'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/Applications/XAMPP/xamppfiles/htdocs'
+    'SERVER_ADMIN' => 'you@example.com'
+    'SCRIPT_FILENAME' => '/Applications/XAMPP/xamppfiles/htdocs/yii2-forum-training/api/index.php'
+    'REMOTE_PORT' => '65507'
+    'REDIRECT_URL' => '/yii2-forum-training/api/v1'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/yii2-forum-training/api/v1'
+    'SCRIPT_NAME' => '/yii2-forum-training/api/index.php'
+    'PHP_SELF' => '/yii2-forum-training/api/index.php'
+    'REQUEST_TIME_FLOAT' => 1543839677.937
+    'REQUEST_TIME' => 1543839677
+]
