@@ -7,7 +7,7 @@ $config = [
     'bootstrap' => ['log'],
     'aliases' => [
         '@bower' => '@vendor/bower-asset',
-        '@npm'   => '@vendor/npm-asset',
+        '@npm' => '@vendor/npm-asset',
     ],
     'modules' => [
         'v1' => [
@@ -15,18 +15,24 @@ $config = [
         ],
     ],
     'components' => [
-        'response'=>[
-            'format'=>\yii\web\Response::FORMAT_JSON
+        'response' => [
+            'format' => \yii\web\Response::FORMAT_JSON
         ],
         'request' => [
-            'cookieValidationKey' => 'afsrt',
+            //'cookieValidationKey' => 'afsrt',
+            'enableCookieValidation' => false,
+            'enableCsrfValidation' => false,
+            'enableCsrfCookie' => false,
+            'parsers' => [
+                'application/json' => 'yii\web\JsonParser'
+            ]
         ],
-        'cache' => [
+        /*'cache' => [
             'class' => 'yii\caching\FileCache',
-        ],
+        ],*/
         'user' => [
             'identityClass' => 'app\models\User',
-            'enableAutoLogin' => true,
+            //'enableAutoLogin' => true,
         ],
 
 
@@ -51,7 +57,10 @@ $config = [
         'urlManager' => [
             'enablePrettyUrl' => true,
             'showScriptName' => false,
+            //'enableStrictParsing'=>true,
             'rules' => [
+                //'v1/posts/view/<id:>'=>'v1/posts/view'
+                'v1/posts/view/<id[-a-zA-Z 0-9]+>'=>'v1/posts/view'
             ],
         ],
 
