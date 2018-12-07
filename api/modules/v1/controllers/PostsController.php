@@ -10,15 +10,31 @@ namespace api\modules\v1\controllers;
 
 
 use frontend\models\Posts;
+use yii\filters\auth\HttpBearerAuth;
 use yii\rest\ActiveController;
 use yii\rest\Controller;
 use Yii;
 
 class PostsController extends Controller
 {
+    public function behaviors()
+    {
+        $behaviors = parent::behaviors();
+        $behaviors['authenticator'] = [
+            'class' => HttpBearerAuth::className()
+        ];
+        return $behaviors;
+    }
+
+
     public function actionIndex()
     {
         return Posts::find()->all();
+    }
+
+    public function actionProfile()
+    {
+     return Yii::$app->user->identity;
     }
 
     public function actionView($id)
