@@ -12,6 +12,7 @@ use Faker\Factory;
 use frontend\models\Category;
 use frontend\models\Comments;
 use frontend\models\Dislike;
+use frontend\models\Feeder;
 use Yii;
 use frontend\models\Posts;
 use yii\base\ErrorException;
@@ -164,7 +165,6 @@ class PostsController extends Controller
     public function actionFake()
     {
         $faker = \Faker\Factory::create();
-
         /*echo $faker->title;
         echo '<br>';
         echo Html::encode($faker->paragraph(9));
@@ -207,10 +207,10 @@ class PostsController extends Controller
         echo '<br>';
         echo $faker->url;
         echo '<br>';*/
-        echo($faker->paragraph(20));
-        die;
+        //echo($faker->paragraph(20));
+        //die;
         $cats = ['sport', 'sports', 'sports-2', 'family-matters'];
-        for ($i = 1; $i < 51; $i++) {
+        for ($i = 1; $i < 5; $i++) {
             $post = new Posts();
             $post->category = $cats[rand(0, 3)];
             echo $i . ': ';
@@ -220,6 +220,11 @@ class PostsController extends Controller
             $post->body = $faker->paragraph(20);
             $post->save();
         }
+    }
+
+    public function actionQueueFeeder()
+    {
+        echo Yii::$app->queue->delay( 30)->push(new Feeder(['count'=>10]));
     }
 
     public function actionView($id)

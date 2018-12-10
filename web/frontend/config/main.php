@@ -21,6 +21,18 @@ return [
         ],
     ],
     'components' => [
+        'db' => [
+            'class' => \yii\db\Connection::className(),
+            // ...
+        ],
+        'queue' => [
+            'class' => \yii\queue\db\Queue::className(),
+            'db' => 'db', // DB connection component or its config
+            'tableName' => '{{%queue}}', // Table name
+            'channel' => 'default', // Queue channel key
+            'mutex' => \yii\mutex\MysqlMutex::className(), // Mutex used to sync queries
+        ],
+
         'request' => [
             'csrfParam' => '_csrf-frontend',
             'baseUrl' => $baseUrl,
